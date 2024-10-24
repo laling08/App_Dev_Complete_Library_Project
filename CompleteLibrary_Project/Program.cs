@@ -1,5 +1,8 @@
 namespace CompleteLibrary_Project
 {
+    /// <summary>
+    ///  This is the start of our Complete Library Project.
+    /// </summary>
     internal static class Program
     {
         /// <summary>
