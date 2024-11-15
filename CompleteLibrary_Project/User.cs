@@ -8,10 +8,10 @@ namespace CompleteLibrary_Project
 {
     public abstract class User
     {
-        protected string FName { get; set; }
-        protected string LName { get; set; }
-        protected int Id { get; private set; }
-        protected DateTime Dob { get; set; }
+        public string FName { get; set; }
+        public string LName { get; set; }
+        public int Id { get; private set; }
+        public DateTime Dob { get; set; }
         private static int _count = 1;
 
         private Media[] _currentCheckouts;

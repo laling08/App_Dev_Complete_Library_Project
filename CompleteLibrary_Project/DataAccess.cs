@@ -20,7 +20,7 @@ namespace CompleteLibrary_Project
         /// </summary>
         /// <typeparam name="Book"></typeparam>
         /// <param name="book">the new book to add to the json file</param>
-        public static void SaveBookToFile<Book>(Book book)
+        public static void SaveBookToFile(Book book)
         {
             string filePath = Path.Combine(basePath, "books.json");
             string jsonString = File.ReadAllText(filePath);
@@ -28,7 +28,7 @@ namespace CompleteLibrary_Project
             // Remove the closing bracket in order to add another object
             jsonString = jsonString.TrimEnd(']', ' ', '\n', '\r');
             var bookJsonString = JsonSerializer.Serialize(book, new JsonSerializerOptions { WriteIndented = true });
-            
+
             jsonString += ",\n" + bookJsonString + "\n]";
 
             File.WriteAllText(filePath, jsonString);
@@ -39,7 +39,7 @@ namespace CompleteLibrary_Project
         /// </summary>
         /// <typeparam name="Movie"></typeparam>
         /// <param name="movie">the new movie to add to the json file</param>
-        public static void SaveMovieToFile<Movie>(Movie movie)
+        public static void SaveMovieToFile(Movie movie)
         {
             string filePath = Path.Combine(basePath, "movies.json");
             string jsonString = File.ReadAllText(filePath);
@@ -58,7 +58,7 @@ namespace CompleteLibrary_Project
         /// </summary>
         /// <typeparam name="Audiobook"></typeparam>
         /// <param name="audiobook">the new audiobook to add to the json file</param>
-        public static void SaveAudiobookToFile<Audiobook>(Audiobook audiobook)
+        public static void SaveAudiobookToFile(Audiobook audiobook)
         {
             string filePath = Path.Combine(basePath, "audiobooks.json");
             string jsonString = File.ReadAllText(filePath);
@@ -77,7 +77,7 @@ namespace CompleteLibrary_Project
         /// </summary>
         /// <typeparam name="Magazine"></typeparam>
         /// <param name="magazine">the new magazine to add to the json file</param>
-        public static void SaveMagazineToFile<Magazine>(Magazine magazine)
+        public static void SaveMagazineToFile(Magazine magazine)
         {
             string filePath = Path.Combine(basePath, "magazines.json");
             string jsonString = File.ReadAllText(filePath);
@@ -95,7 +95,7 @@ namespace CompleteLibrary_Project
         /// </summary>
         /// <typeparam name="Book"></typeparam>
         /// <returns>book objects from the json file</returns>
-        public static List<Book> LoadAllBooks<Book>()
+        public static List<Book> LoadAllBooks()
         {
             string filePath = Path.Combine(basePath, "books.json");
             var jsonString = File.ReadAllText(filePath);
@@ -107,7 +107,7 @@ namespace CompleteLibrary_Project
         /// </summary>
         /// <typeparam name="Movie"></typeparam>
         /// <returns>movie objects from the json file</returns>
-        public static List<Movie> LoadAllMovies<Movie>()
+        public static List<Movie> LoadAllMovies()
         {
             string filePath = Path.Combine(basePath, "movies.json");
             var jsonString = File.ReadAllText(filePath);
@@ -119,7 +119,7 @@ namespace CompleteLibrary_Project
         /// </summary>
         /// <typeparam name="Audiobook"></typeparam>
         /// <returns>audiobook objects from the json file</returns>
-        public static List<Audiobook> LoadAllAudiobooks<Audiobook>()
+        public static List<Audiobook> LoadAllAudiobooks()
         {
             string filePath = Path.Combine(basePath, "audiobooks.json");
             var jsonString = File.ReadAllText(filePath);
@@ -131,7 +131,7 @@ namespace CompleteLibrary_Project
         /// </summary>
         /// <typeparam name="Magazine"></typeparam>
         /// <returns>magazine objects from the json file</returns>
-        public static List<Magazine> LoadAllMagazines<Magazine>()
+        public static List<Magazine> LoadAllMagazines()
         {
             string filePath = Path.Combine(basePath, "magazines.json");
             var jsonString = File.ReadAllText(filePath);
@@ -144,9 +144,9 @@ namespace CompleteLibrary_Project
         /// <typeparam name="Book"></typeparam>
         /// <param name="id">the id of the book to be found</param>
         /// <returns>a book object corresponding to the id</returns>
-        public static Book loadBook<Book>(int id)
+        public static Book loadBook(int id)
         {
-            List<Book> books = LoadAllBooks<Book>();
+            List<Book> books = LoadAllBooks();
 
             return books?.FirstOrDefault(book => book.Id == id);
         }
@@ -157,9 +157,9 @@ namespace CompleteLibrary_Project
         /// <typeparam name="Movie"></typeparam>
         /// <param name="id">the id of the movie to be found</param>
         /// <returns>a movie object from the json file with the corresponding id</returns>
-        public static Movie loadMovie<Movie>(int id)
+        public static Movie loadMovie(int id)
         {
-            List<Movie> movies = LoadAllMovies<Movie>();
+            List<Movie> movies = LoadAllMovies();
 
             return movies?.FirstOrDefault(movie => movie.Id == id);
         }
@@ -170,9 +170,9 @@ namespace CompleteLibrary_Project
         /// <typeparam name="Audiobook"></typeparam>
         /// <param name="id">the id of the audiobook to be found</param>
         /// <returns>an audiobook object from the json file with the corresponding id</returns>
-        public static Audiobook loadAudiobook<Audiobook>(int id)
+        public static Audiobook loadAudiobook(int id)
         {
-            List<Audiobook> audiobooks = LoadAllMovies<Audiobook>();
+            List<Audiobook> audiobooks = LoadAllAudiobooks();
 
             return audiobooks?.FirstOrDefault(audiobook => audiobook.Id == id);
         }
@@ -183,9 +183,9 @@ namespace CompleteLibrary_Project
         /// <typeparam name="Magazine"></typeparam>
         /// <param name="id">the id of the magazine to be found</param>
         /// <returns>a magazine object from the json file with the corresponding id</returns>
-        public static Magazine loadMagazine<Magazine>(int id)
+        public static Magazine loadMagazine(int id)
         {
-            List<Magazine> magazines = LoadAllMovies<Magazine>();
+            List<Magazine> magazines = LoadAllMagazines();
 
             return magazines?.FirstOrDefault(magazine => magazine.Id == id);
         }
@@ -197,7 +197,7 @@ namespace CompleteLibrary_Project
         /// <param name="status">the new status of the book</param>
         public static void UpdateBookStatus(int bookId, string status)
         {
-            List<Book> books = LoadAllBooks<Book>();
+            List<Book> books = LoadAllBooks();
 
             Book bookToUpdate = books.First(book => book.Id == bookId);
             bookToUpdate.Status = status;
@@ -215,7 +215,7 @@ namespace CompleteLibrary_Project
         /// <param name="status"></param>
         public static void UpdateMovieStatus(int movieId, string status)
         {
-            List<Movie> movies = LoadAllMovies<Movie>();
+            List<Movie> movies = LoadAllMovies();
 
             Movie movieToUpdate = movies.First(movie => movie.Id == movieId);
             movieToUpdate.Status = status;
@@ -233,7 +233,7 @@ namespace CompleteLibrary_Project
         /// <param name="status">the new status of the audiobook</param>
         public static void UpdateAudiobookStatus(int audiobookId, string status)
         {
-            List<Audiobook> audiobooks = LoadAllAudiobooks<Audiobook>();
+            List<Audiobook> audiobooks = LoadAllAudiobooks();
 
             Audiobook audiobookToUpdate = audiobooks.First(audiobook => audiobook.Id == audiobookId);
             audiobookToUpdate.Status = status;
@@ -251,7 +251,7 @@ namespace CompleteLibrary_Project
         /// <param name="status">the new status of the magazine</param>
         public static void UpdateMagazineStatus(int magazineId, string status)
         {
-            List<Magazine> magazines = LoadAllMagazines<Magazine>();
+            List<Magazine> magazines = LoadAllMagazines();
 
             Magazine magazineToUpdate = magazines.First(magazine => magazine.Id == magazineId);
             magazineToUpdate.Status = status;
@@ -261,6 +261,79 @@ namespace CompleteLibrary_Project
                 SaveMagazineToFile(magazine);
 
             }
+        }
+
+        // User classes
+        /// <summary>
+        /// Appends a serialized user to the user json file
+        /// </summary>
+        /// <param name="user">the user to add to the file</param>
+        public static void SaveUserToFile(User user)
+        {
+            string filePath = Path.Combine(basePath, "users.json");
+            string jsonString = File.ReadAllText(filePath);
+
+            // Remove the closing bracket in order to add another object
+            jsonString = jsonString.TrimEnd(']', ' ', '\n', '\r');
+            var bookJsonString = JsonSerializer.Serialize(user, new JsonSerializerOptions { WriteIndented = true });
+
+            jsonString += ",\n" + bookJsonString + "\n]";
+
+            File.WriteAllText(filePath, jsonString);
+        }
+
+        /// <summary>
+        /// Appends a serialized loan to the loans file
+        /// </summary>
+        /// <param name="loan"></param>
+        public static void SaveLoanToFilee(Loan loan)
+        {
+            string filePath = Path.Combine(basePath, "loans.json");
+            string jsonString = File.ReadAllText(filePath);
+
+            // Remove the closing bracket in order to add another object
+            jsonString = jsonString.TrimEnd(']', ' ', '\n', '\r');
+            var bookJsonString = JsonSerializer.Serialize(loan, new JsonSerializerOptions { WriteIndented = true });
+
+            jsonString += ",\n" + bookJsonString + "\n]";
+
+            File.WriteAllText(filePath, jsonString);
+        }
+
+        /// <summary>
+        /// Loads all the users stored in the users file
+        /// </summary>
+        /// <returns>a list of all users</returns>
+        public static List<User> LoadAllUsers()
+        {
+            string filePath = Path.Combine(basePath, "users.json");
+            var jsonString = File.ReadAllText(filePath);
+            return JsonSerializer.Deserialize<List<User>>(jsonString);
+        }
+
+        /// <summary>
+        /// Gets all the loans stored in the loans file
+        /// </summary>
+        /// <returns>a list of all loans</returns>
+        public static List<Loan> LoadAllLoans()
+        {
+            string filePath = Path.Combine(basePath, "loans.json");
+            var jsonString = File.ReadAllText(filePath);
+            return JsonSerializer.Deserialize<List<Loan>>(jsonString);
+        }
+
+        public static User loadUser(int id)
+        {
+            List<User> users = LoadAllUsers();
+
+            return users?.FirstOrDefault(user => user.Id == id);
+        }
+
+        public static Loan loadLoan(int userId, int mediaId)
+        {
+            List<Loan> loans = LoadAllLoans();
+
+            return loans?.FirstOrDefault(loan => loan.MediaId == mediaId && loan.UserId == userId);
         }
     }
 }
