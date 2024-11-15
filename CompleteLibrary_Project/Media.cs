@@ -55,7 +55,7 @@ namespace CompleteLibrary_Project
         }
 
         public abstract void Checkout();
-        public abstract void ReturnItem(char returnedCondition);
+        public abstract void ReturnItem();
         public abstract void RenewLoan();
         public abstract void GiveLateFee();
     }

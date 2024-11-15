@@ -33,7 +33,7 @@ namespace CompleteLibrary_Project
 
         public override void Checkout() { }
 
-        public override void ReturnItem(char returnedCondition) { }
+        public override void ReturnItem() { }
 
         public override void RenewLoan() { }
 

@@ -12,7 +12,7 @@ namespace CompleteLibrary_Project
     public interface ILoanable
     {
         void Checkout();
-        void ReturnItem(char returnedCondition);
+        void ReturnItem();
         void RenewLoan();
         void GiveLateFee();
     }
