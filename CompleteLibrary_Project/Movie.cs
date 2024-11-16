@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace CompleteLibrary_Project
@@ -11,7 +12,9 @@ namespace CompleteLibrary_Project
     /// </summary>
     public class Movie : Media
     {
+        [JsonPropertyName("direction")]
         public string Director { get; set; }
+        [JsonPropertyName("duration")]
         public int Duration { get; set; }
 
         public Movie(string title, string language, Genre genre, int publicationYear, int ageRestriction,

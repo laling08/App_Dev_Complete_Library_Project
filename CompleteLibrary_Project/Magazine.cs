@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace CompleteLibrary_Project
@@ -11,8 +12,11 @@ namespace CompleteLibrary_Project
     /// </summary>
     public class Magazine : Media
     {
+        [JsonPropertyName("issn")]
         public string ISSN { get; set; }
+        [JsonPropertyName("publisher")]
         public string Publisher { get; set; }
+        [JsonPropertyName("publication_month")]
         public string PublicationMonth { get; set; }
 
         public Magazine(string title, string language, Genre genre, int publicationYear, int ageRestriction,

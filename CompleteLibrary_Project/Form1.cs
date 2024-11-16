@@ -1,5 +1,6 @@
 using System.Globalization;
 using System.Resources;
+using System.Runtime.InteropServices;
 
 namespace CompleteLibrary_Project
 {
@@ -10,6 +11,7 @@ namespace CompleteLibrary_Project
         public Form1()
         {
             InitializeComponent();
+            welcomeLB.Text = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data");
         }
 
         private void membersButton_Click(object sender, EventArgs e)
@@ -37,6 +39,7 @@ namespace CompleteLibrary_Project
             Thread.CurrentThread.CurrentCulture = cultureInfo;
             Thread.CurrentThread.CurrentUICulture = cultureInfo;
 
+            
             welcomeLB.Text = rm.GetString("welcome_message");
             librariansButton.Text = rm.GetString("librarians");
             membersButton.Text = rm.GetString("members");

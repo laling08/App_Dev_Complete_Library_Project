@@ -49,6 +49,11 @@ namespace CompleteLibrary_Project
                 List<Magazine> magazines = DataAccess.LoadAllMagazines();
                 medias.AddRange(magazines);
             }
+            else
+            {
+                List<Book> books = DataAccess.LoadAllBooks();
+                medias.AddRange(books);
+            }
 
 
             resultsListBox.Items.Clear();

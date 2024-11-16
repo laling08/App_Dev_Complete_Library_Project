@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace CompleteLibrary_Project
@@ -11,10 +12,15 @@ namespace CompleteLibrary_Project
     /// </summary>
     public class Book : Media
     {
+        [JsonPropertyName("isbn")]
         public string ISBN { get; set; }
+        [JsonPropertyName("author")]
         public string Author { get; set; }
+        [JsonPropertyName("publisher")]
         public string Publisher { get; set; }
+        [JsonPropertyName("illustrator")]
         public string Illustrator { get; set; }
+        [JsonPropertyName("edition")]
         public int Edition { get; set; }
 
         public Book(string title, string language, Genre genre, int publicationYear, int ageRestriction,

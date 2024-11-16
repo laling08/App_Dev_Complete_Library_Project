@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace CompleteLibrary_Project
@@ -14,12 +15,18 @@ namespace CompleteLibrary_Project
     {
 
         private static int count = 1;
+        [JsonPropertyName("id")]
         public int Id { get; set; }
         public List<Loan> History { get; set; } = new List<Loan>();
+        [JsonPropertyName("title")]
         public string Title { get; set; }
+        [JsonPropertyName("language")]
         public string Language { get; set; }
+        [JsonPropertyName("genre")]
         public Genre Genre { get; set; }
+        [JsonPropertyName("publication_year")]
         public int PublicationYear { get; set; }
+        [JsonPropertyName("age_restriction")]
         public int AgeRestriction { get; set; }
         public int MaxCheckoutLength { get; set; }
         public string Status { get; set; } = "Available";
