@@ -18,7 +18,7 @@ namespace CompleteLibrary_Project
         MYSTERY, // 4
         ROMANCE, // 5
         THRILLER, // 6
-        HISTORY_FICTION, // 7
+        HISTORICAL_FICTION, // 7
         BIOGRAPHY_MEMOIR, // 8
         SELF_HELP, // 9
         SCIENCE, // 10
@@ -28,6 +28,8 @@ namespace CompleteLibrary_Project
         HORROR, // 14
         DOCUMENTARY, // 15
         LITERATURE, // 16
-        OTHER // 17
+        FASHION, //17
+        NEWS, // 18
+        OTHER // 19
     }
 }
