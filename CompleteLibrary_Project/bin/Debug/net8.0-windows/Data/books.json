@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "title": "The Great Gatsby",
+      "language": "English",
+      "genre": 2,
+      "publication_year": 1925,
+      "age_restriction": 10,
+      "isbn": "978-0743273565",
+      "author": "F. Scott Fitzgerald",
+      "publisher": "Scribner",
+      "illustrator": "N/A",
+      "edition": 2
+    },
+    {
+      "id": 2,
+      "title": "Harry Potter and the Philosopher's Stone",
+      "language": "English",
+      "genre": 3,
+      "publication_year": 1997,
+      "age_restriction": 0,
+      "isbn": "978-0747532699",
+      "author": "J.K. Rowling",
+      "publisher": "Bloomsbury",
+      "illustrator": "Thomas Taylor",
+      "edition": 2
+    },
+    {
+      "id": 3,
+      "title": "Le petit prince",
+      "language": "Français",
+      "genre": 16,
+      "publication_year": 1943,
+      "age_restriction": 0,
+      "isbn": "978-0156013987",
+      "author": "Antoine de Saint-Exupéry",
+      "publisher": "Reynal & Hitchcock",
+      "illustrator": "Antoine de Saint-Exupéry",
+      "edition": 3
+    }
+  ]
+  

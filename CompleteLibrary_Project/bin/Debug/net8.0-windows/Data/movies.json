@@ -1,0 +1,43 @@
+[
+    {
+      "id": 4,
+      "title": "Inception",
+      "language": "English",
+      "genre": 1,
+      "publication_year": 2010,
+      "age_restriction": 13,
+      "director": "Christopher Nolan",
+      "duration": 148
+    },
+    {
+      "id": 5,
+      "title": "Parasite",
+      "language": "Korean",
+      "genre": 6,
+      "publication_year": 2019,
+      "age_restriction": 18,
+      "director": "Bong Joon-ho",
+      "duration": 132
+    },
+    {
+      "id": 6,
+      "title": "Spirited Away",
+      "language": "Japanese",
+      "genre": "Animation",
+      "publication_year": 2001,
+      "age_restriction": 0,
+      "director": "Hayao Miyazaki",
+      "duration": 125
+    },
+    {
+      "id": 7,
+      "title": "Schindler's List",
+      "language": "English",
+      "genre": 7,
+      "publication_year": 1993,
+      "age_restriction": 18,
+      "director": "Steven Spielberg",
+      "duration": 195
+    }
+  ]
+  

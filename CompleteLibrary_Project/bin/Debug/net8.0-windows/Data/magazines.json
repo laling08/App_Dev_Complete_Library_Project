@@ -1,0 +1,58 @@
+[
+    {
+      "id": 13,
+      "title": "National Geographic",
+      "language": "English",
+      "genre": 10,
+      "publicationYear": 2024,
+      "ageRestriction": 0,
+      "issn": "0027-9358",
+      "publisher": "National Geographic Partners",
+      "publicationMonth": "January"
+    },
+    {
+      "id": 14,
+      "title": "Vogue",
+      "language": "English",
+      "genre": 17,
+      "publicationYear": 2024,
+      "ageRestriction": 10,
+      "issn": "0042-8000",
+      "publisher": "Condé Nast",
+      "publicationMonth": "February"
+    },
+    {
+      "id": 15,
+      "title": "Time",
+      "language": "English",
+      "genre": 18,
+      "publicationYear": 2024,
+      "ageRestriction": 12,
+      "issn": "0040-781X",
+      "publisher": "Time USA, LLC",
+      "publicationMonth": "March"
+    },
+    {
+      "id": 16,
+      "title": "Scientific American",
+      "language": "English",
+      "genre": 10,
+      "publicationYear": 2024,
+      "ageRestriction": 0,
+      "issn": "0036-8733",
+      "publisher": "Springer Nature",
+      "publicationMonth": "April"
+    },
+    {
+      "id": 17,
+      "title": "Forbes",
+      "language": "English",
+      "genre": 19,
+      "publicationYear": 2024,
+      "ageRestriction": 12,
+      "issn": "0015-6914",
+      "publisher": "Forbes Media",
+      "publicationMonth": "May"
+    }
+  ]
+  
