@@ -11,7 +11,6 @@ namespace CompleteLibrary_Project
         public Form1()
         {
             InitializeComponent();
-            welcomeLB.Text = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data");
         }
 
         private void membersButton_Click(object sender, EventArgs e)

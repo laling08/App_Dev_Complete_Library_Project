@@ -24,7 +24,6 @@ namespace CompleteLibrary_Project
             }
             else
             {
-                // not a shape
                 return null;
             }
         }
