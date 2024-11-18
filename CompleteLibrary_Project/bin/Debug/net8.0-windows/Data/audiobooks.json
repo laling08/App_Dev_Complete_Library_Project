@@ -28,6 +28,20 @@
       "duration": 534
     },
     {
+      "id": 18,
+      "title": "Harry Potter and the Half-Blood Prince",
+      "language": "English",
+      "genre": 3,
+      "publicationYear": 2005,
+      "ageRestriction": 0,
+      "isbn": "978-0439785969",
+      "author": "J.K. Rowling",
+      "publisher": "Bloomsbury",
+      "narrator": "Jim Dale",
+      "edition": 1,
+      "duration": 784
+    },
+    {
       "id": 10,
       "title": "Le petit prince",
       "language": "French",

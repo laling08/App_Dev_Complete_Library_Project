@@ -1,4 +1,6 @@
-﻿namespace CompleteLibrary_Project
+﻿using System.Windows.Forms;
+
+namespace CompleteLibrary_Project
 {
     partial class MembersForm
     {
@@ -32,7 +34,7 @@
             titleSearchTB = new TextBox();
             searchBT = new Button();
             typeSearchTB = new TextBox();
-            resultsListBox = new ListView();
+            resultsRTB = new RichTextBox();
             SuspendLayout();
             // 
             // label1
@@ -68,24 +70,24 @@
             typeSearchTB.Size = new Size(150, 31);
             typeSearchTB.TabIndex = 3;
             // 
-            // resultsListBox
+            // resultsRTB
             // 
-            resultsListBox.Location = new Point(49, 100);
-            resultsListBox.Name = "resultsListBox";
-            resultsListBox.Size = new Size(702, 307);
-            resultsListBox.TabIndex = 4;
-            resultsListBox.UseCompatibleStateImageBehavior = false;
+            resultsRTB.Location = new Point(50, 108);
+            resultsRTB.Name = "resultsRTB";
+            resultsRTB.Size = new Size(709, 307);
+            resultsRTB.TabIndex = 5;
+            resultsRTB.Text = "";
             // 
             // MembersForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(resultsListBox);
             Controls.Add(typeSearchTB);
             Controls.Add(searchBT);
             Controls.Add(titleSearchTB);
             Controls.Add(label1);
+            Controls.Add(resultsRTB);
             Name = "MembersForm";
             Text = "MembersForm";
             ResumeLayout(false);
@@ -98,6 +100,6 @@
         private TextBox titleSearchTB;
         private Button searchBT;
         private TextBox typeSearchTB;
-        private ListView resultsListBox;
+        private RichTextBox resultsRTB;
     }
 }

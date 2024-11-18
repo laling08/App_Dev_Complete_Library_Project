@@ -65,6 +65,18 @@ namespace CompleteLibrary_Project
         public abstract void ReturnItem();
         public abstract void RenewLoan();
         public abstract void GiveLateFee();
+
+        public override string? ToString()
+        {
+            return $"Title:\t\t{Title}\nLanguage:\t{Language}\nGenre:\t\t{Genre.ToString()}" +
+                $"\nYear:\t\t{PublicationYear}\nStatus:\t\t{Status}\n";
+        }
+
+        public virtual string? ToStringFR()
+        {
+            return $"Titre:\t\t{Title}\nLangue:\t\t{Language}\nGenre:\t\t{Genre.ToString()}" +
+                $"\nAnnée:\t\t{PublicationYear}\nStatut:\t\t{Status}\n";
+        }
     }
 
 }

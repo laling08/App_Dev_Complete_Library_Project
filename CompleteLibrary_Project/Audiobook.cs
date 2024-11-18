@@ -45,5 +45,21 @@ namespace CompleteLibrary_Project
         public override void RenewLoan() { }
 
         public override void GiveLateFee() { }
+
+        public override string? ToString()
+        {
+            string baseToString = base.ToString();
+
+            return $"AUDIOBOOK\n{baseToString}ISBN:\t\t{ISBN}\nAuthor:\t\t{Author}\nPublisher:\t{Publisher}" +
+                $"\nNarrator:\t\t{Narrator}\nEdition:\t\t{Edition}\nDuration:\t{Duration}";
+        }
+
+        public override string? ToStringFR()
+        {
+            string baseToString = base.ToStringFR();
+
+            return $"LIVREAUDIO\n{baseToString}ISBN:\t\t{ISBN}\nAuteur(e):\t\t{Author}\nMaison d'édition:\t{Publisher}" +
+                $"\nNarrateur(e):\t{Narrator}\nÉdition:\t\t{Edition}\nLongueur:\t\t{Duration}";
+        }
     }
 }

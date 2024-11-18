@@ -36,5 +36,15 @@ namespace CompleteLibrary_Project
         public override void RenewLoan() { }
 
         public override void GiveLateFee() { }
+
+        public override string? ToString()
+        {
+            return $"MAGAZINE\n{base.ToString()}ISSN:\t\t{ISSN}\nPublisher:\t{Publisher}\nYear:\t\t{PublicationYear}";
+        }
+
+        public override string? ToStringFR()
+        {
+            return $"MAGAZINE\n{base.ToString()}ISSN:\t\t{ISSN}\nMaison d'édition:\t{Publisher}\nAnnée:\t\t{PublicationYear}"; ;
+        }
     }
 }

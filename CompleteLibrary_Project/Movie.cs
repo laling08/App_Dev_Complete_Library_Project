@@ -12,7 +12,7 @@ namespace CompleteLibrary_Project
     /// </summary>
     public class Movie : Media
     {
-        [JsonPropertyName("direction")]
+        [JsonPropertyName("director")]
         public string Director { get; set; }
         [JsonPropertyName("duration")]
         public int Duration { get; set; }
@@ -33,5 +33,19 @@ namespace CompleteLibrary_Project
         public override void RenewLoan() { }
 
         public override void GiveLateFee() { }
+
+        public override string? ToString()
+        {
+            string baseToString = base.ToString();
+
+            return $"MOVIE\n{baseToString}Director:\t\t{Director}\nDuration:\t{Duration}";
+        }
+
+        public override string? ToStringFR()
+        {
+            string baseToString = base.ToStringFR();
+
+            return $"FILM\n{baseToString}Réalisateur(trice):\t{Director}\nLongeur:\t\t{Duration}";
+        }
     }
 }

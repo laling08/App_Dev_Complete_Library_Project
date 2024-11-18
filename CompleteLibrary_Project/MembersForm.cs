@@ -56,14 +56,21 @@ namespace CompleteLibrary_Project
             }
 
 
-            resultsListBox.Items.Clear();
+            resultsRTB.Clear();
 
             string query = titleSearchTB.Text.ToLower();
             List<Media> results = medias.Where(item => item.Title.ToLower().Contains(query)).ToList();
 
             foreach (Media result in results)
             {
-                resultsListBox.Items.Add(result.ToString());
+                if (cultureInfo.Name.Equals("fr-CA"))
+                {
+                    resultsRTB.Text += result.ToStringFR();
+                }
+                else
+                {
+                    resultsRTB.Text += result.ToString();
+                }
             }
         }
 
