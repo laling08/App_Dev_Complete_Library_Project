@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using CompleteLibrary_Project.Model.Enums;
 
-namespace CompleteLibrary_Project
+namespace CompleteLibrary_Project.Model.Medias
 {
     /// <summary>
     /// Model for Book Class.
@@ -39,9 +40,7 @@ namespace CompleteLibrary_Project
 
         public override void ReturnItem() { }
 
-        public override void RenewLoan() { }
 
-        public override void GiveLateFee() { }
 
         public override string? ToString()
         {
@@ -57,6 +56,51 @@ namespace CompleteLibrary_Project
 
             return $"LIVRE\n{baseToString}ISBN:\t\t{ISBN}\nAuteur(e):\t\t{Author}\nMaison d'édition:\t{Publisher}" +
                 $"\nIllustrateur/trice:\t{Illustrator}\nÉdition:\t\t{Edition}";
+        }
+
+        public override int GetAgeRestriction()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override Genre GetGenre()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string GetLanguage()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override int GetMaxCheckoutLength()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string GetMediaInfo()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override int GetPublicationYear()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string GetTitle()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void GiveLateFee()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void RenewLoan()
+        {
+            throw new NotImplementedException();
         }
     }
 }

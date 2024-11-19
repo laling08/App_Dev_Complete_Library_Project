@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CompleteLibrary_Project.Model.Enums;
+using CompleteLibrary_Project.Model.Interfaces;
+using CompleteLibrary_Project.Model.Medias;
 
-namespace CompleteLibrary_Project
+namespace CompleteLibrary_Project.Trash
 {
-    public class AudiobookAdapter : IMediaAdapter 
+    public class AudiobookAdapter : IMediaAdapter
     {
 
         private readonly Audiobook audiobook;

@@ -5,15 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using CompleteLibrary_Project.Model.Enums;
+using CompleteLibrary_Project.Model.Interfaces;
 
-namespace CompleteLibrary_Project
+namespace CompleteLibrary_Project.Model.Medias
 {
     /// <summary>
     /// Model for Media Class.
     /// </summary>
-    public abstract class Media : ILoanable
+    public abstract class Media : ILoanable, IMediaAdapter
     {
-
         private static int count = 18;
         [JsonPropertyName("id")]
         public int Id { get; set; }
@@ -62,9 +63,16 @@ namespace CompleteLibrary_Project
         }
 
         public abstract void Checkout();
-        public abstract void ReturnItem();
-        public abstract void RenewLoan();
+        public abstract int GetAgeRestriction();
+        public abstract Genre GetGenre();
+        public abstract string GetLanguage();
+        public abstract int GetMaxCheckoutLength();
+        public abstract string GetMediaInfo();
+        public abstract int GetPublicationYear();
+        public abstract string GetTitle();
         public abstract void GiveLateFee();
+        public abstract void RenewLoan();
+        public abstract void ReturnItem();
 
         public override string? ToString()
         {

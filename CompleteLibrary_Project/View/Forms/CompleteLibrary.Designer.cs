@@ -1,6 +1,6 @@
 ﻿namespace CompleteLibrary_Project
 {
-    partial class Form1
+    partial class CompleteLibrary
     {
         /// <summary>
         ///  Required designer variable.

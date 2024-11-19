@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CompleteLibrary_Project
+namespace CompleteLibrary_Project.Model.Enums
 {
     /// <summary>
     /// Enum Class for the Genres

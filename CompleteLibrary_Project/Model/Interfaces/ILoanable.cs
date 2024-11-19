@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CompleteLibrary_Project
+namespace CompleteLibrary_Project.Model.Interfaces
 {
     /// <summary>
     /// Interface for loanable media items.

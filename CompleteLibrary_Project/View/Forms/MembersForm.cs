@@ -9,6 +9,8 @@ using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CompleteLibrary_Project.Controller.DataAccessibility;
+using CompleteLibrary_Project.Model.Medias;
 
 namespace CompleteLibrary_Project
 {
