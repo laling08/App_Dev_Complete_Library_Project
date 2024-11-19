@@ -40,6 +40,7 @@ namespace CompleteLibrary_Project.Model.Medias
 
         public override void ReturnItem() { }
 
+        public override void RenewLoan() { }
 
 
         public override string? ToString()

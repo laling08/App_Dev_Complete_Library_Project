@@ -97,5 +97,12 @@ namespace CompleteLibrary_Project.Model.Medias
         {
             throw new NotImplementedException();
         }
+
+        private readonly Audiobook audiobook;
+
+
+        // Code below is the one in its adapter
+
+
     }
 }
