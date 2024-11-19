@@ -1,4 +1,6 @@
-﻿using Microsoft.VisualBasic.Devices;
+﻿using CompleteLibrary_Project.Model.Medias;
+using CompleteLibrary_Project.Model.Users;
+using Microsoft.VisualBasic.Devices;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
@@ -8,7 +10,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace CompleteLibrary_Project
+namespace CompleteLibrary_Project.Controller.DataAccessibility
 {
     public class DataAccess
     {

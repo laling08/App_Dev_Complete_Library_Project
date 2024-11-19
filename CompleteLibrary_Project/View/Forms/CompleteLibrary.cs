@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 
 namespace CompleteLibrary_Project
 {
-    public partial class Form1 : Form
+    public partial class CompleteLibrary : Form
     {
         ResourceManager rm = new ResourceManager("CompleteLibrary_Project.Resources.Resources", typeof(Program).Assembly);
         CultureInfo cultureInfo = new CultureInfo("en-CA");
-        public Form1()
+        public CompleteLibrary()
         {
             InitializeComponent();
         }

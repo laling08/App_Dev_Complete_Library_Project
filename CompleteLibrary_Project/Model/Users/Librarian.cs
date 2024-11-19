@@ -4,11 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CompleteLibrary_Project
+// added media folder and its classes
+using CompleteLibrary_Project.Model.Medias;
+
+namespace CompleteLibrary_Project.Model.Users
 {
     public class Librarian : User
     {
-        public Librarian(string fname, string lname) : base(fname, lname) {}
+        public Librarian(string fname, string lname) : base(fname, lname) { }
 
         public Media ViewMemberHistory(User member)
         {
