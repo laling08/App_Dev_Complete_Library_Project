@@ -62,7 +62,6 @@ namespace CompleteLibrary_Project.Model.Medias
             return DateTime.Now.AddDays(MaxCheckoutLength);
         }
 
-        public abstract void Checkout();
         public abstract int GetAgeRestriction();
         public abstract Genre GetGenre();
         public abstract string GetLanguage();
@@ -70,9 +69,6 @@ namespace CompleteLibrary_Project.Model.Medias
         public abstract string GetMediaInfo();
         public abstract int GetPublicationYear();
         public abstract string GetTitle();
-        public abstract void GiveLateFee();
-        public abstract void RenewLoan();
-        public abstract void ReturnItem();
 
         public override string? ToString()
         {

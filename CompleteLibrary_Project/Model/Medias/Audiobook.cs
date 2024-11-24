@@ -39,14 +39,6 @@ namespace CompleteLibrary_Project.Model.Medias
             MaxCheckoutLength = 14;
         }
 
-        public override void Checkout() { }
-
-        public override void ReturnItem() { }
-
-        public override void RenewLoan() { }
-
-        public override void GiveLateFee() { }
-
         public override string? ToString()
         {
             string baseToString = base.ToString();
@@ -65,44 +57,38 @@ namespace CompleteLibrary_Project.Model.Medias
 
         public override int GetAgeRestriction()
         {
-            throw new NotImplementedException();
+            return AgeRestriction;
         }
 
         public override Genre GetGenre()
         {
-            throw new NotImplementedException();
+            return Genre;
         }
 
         public override string GetLanguage()
         {
-            throw new NotImplementedException();
+            return Language;
         }
 
         public override int GetMaxCheckoutLength()
         {
-            throw new NotImplementedException();
+            return MaxCheckoutLength;
         }
 
         public override string GetMediaInfo()
         {
-            throw new NotImplementedException();
+            return ToString(); // Returns the English description of the AudioBook
         }
 
         public override int GetPublicationYear()
         {
-            throw new NotImplementedException();
+            return PublicationYear;
         }
 
         public override string GetTitle()
         {
-            throw new NotImplementedException();
+            return Title;
         }
-
-        private readonly Audiobook audiobook;
-
-
-        // Code below is the one in its adapter
-
 
     }
 }
