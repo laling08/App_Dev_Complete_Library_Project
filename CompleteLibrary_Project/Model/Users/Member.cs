@@ -8,6 +8,6 @@ namespace CompleteLibrary_Project.Model.Users
 {
     internal class Member : User
     {
-        public Member(string fname, string lname) : base(fname, lname) { }
+        public Member(string fname, string lname, DateTime dob) : base(fname, lname, dob) { }
     }
 }

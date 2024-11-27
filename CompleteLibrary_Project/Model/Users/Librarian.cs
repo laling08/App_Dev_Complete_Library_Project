@@ -11,7 +11,7 @@ namespace CompleteLibrary_Project.Model.Users
 {
     public class Librarian : User
     {
-        public Librarian(string fname, string lname) : base(fname, lname) { }
+        public Librarian(string fname, string lname, DateTime dob) : base(fname, lname, dob) { }
 
         public Media ViewMemberHistory(User member)
         {

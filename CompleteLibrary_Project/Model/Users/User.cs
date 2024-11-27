@@ -24,11 +24,20 @@ namespace CompleteLibrary_Project.Model.Users
         private Media[] _currentCheckouts;
         private Media[] _currentHolds;
 
-        protected User(string fname, string lname)
+        public User(string fname, string lname, DateTime dob)
         {
             FName = fname;
             LName = lname;
+            Dob = dob;
             Id = _count++;
+        }
+
+        public User(int id, string fname, string lname, DateTime dob)
+        {
+            Id = id;
+            FName = fname;
+            LName = lname;
+            Dob = dob;
         }
 
         public bool ReturnMedia(Media media)
