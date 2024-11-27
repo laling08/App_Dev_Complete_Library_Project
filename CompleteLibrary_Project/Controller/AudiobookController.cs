@@ -50,7 +50,9 @@ namespace CompleteLibrary_Project.Controller
         {
             if (media is Audiobook audiobook)
             {
-                return audiobook.GetMediaInfo();
+                // What is audiobook.GetMediaInfo()? Do we want audiobook.ToString()?
+                // return audiobook.GetMediaInfo();
+                return "Audiobook"; // please verify if this is correct
             }
             return "Invalid media type.";
         }

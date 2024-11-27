@@ -9,10 +9,10 @@ namespace CompleteLibrary_Project.Model.Interfaces
 {
     public interface IMediaController
     {
-        void Checkout(Media media);
-        void ReturnItem(Media media);
-        void RenewLoan(Media media);
-        void ApplyLateFee(Media media);
-        string GetMediaInfo(Media media);
+        public void Checkout(Media media);
+        public void ReturnItem(Media media);
+        public void RenewLoan(Media media);
+        public void ApplyLateFee(Media media);
+        public string GetMediaInfo(Media media);
     }
 }
