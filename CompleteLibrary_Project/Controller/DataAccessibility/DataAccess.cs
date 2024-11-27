@@ -146,7 +146,7 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
         /// <typeparam name="Book"></typeparam>
         /// <param name="id">the id of the book to be found</param>
         /// <returns>a book object corresponding to the id</returns>
-        public static Book loadBook(int id)
+        public static Book LoadBook(int id)
         {
             List<Book> books = LoadAllBooks();
 
@@ -159,7 +159,7 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
         /// <typeparam name="Movie"></typeparam>
         /// <param name="id">the id of the movie to be found</param>
         /// <returns>a movie object from the json file with the corresponding id</returns>
-        public static Movie loadMovie(int id)
+        public static Movie LoadMovie(int id)
         {
             List<Movie> movies = LoadAllMovies();
 
@@ -172,7 +172,7 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
         /// <typeparam name="Audiobook"></typeparam>
         /// <param name="id">the id of the audiobook to be found</param>
         /// <returns>an audiobook object from the json file with the corresponding id</returns>
-        public static Audiobook loadAudiobook(int id)
+        public static Audiobook LoadAudiobook(int id)
         {
             List<Audiobook> audiobooks = LoadAllAudiobooks();
 
@@ -185,7 +185,7 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
         /// <typeparam name="Magazine"></typeparam>
         /// <param name="id">the id of the magazine to be found</param>
         /// <returns>a magazine object from the json file with the corresponding id</returns>
-        public static Magazine loadMagazine(int id)
+        public static Magazine LoadMagazine(int id)
         {
             List<Magazine> magazines = LoadAllMagazines();
 
@@ -288,7 +288,7 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
         /// Appends a serialized loan to the loans file
         /// </summary>
         /// <param name="loan"></param>
-        public static void SaveLoanToFilee(Loan loan)
+        public static void SaveLoanToFile(Loan loan)
         {
             string filePath = Path.Combine(basePath, "loans.json");
             string jsonString = File.ReadAllText(filePath);
@@ -324,14 +324,14 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
             return JsonSerializer.Deserialize<List<Loan>>(jsonString);
         }
 
-        public static User loadUser(int id)
+        public static User LoadUser(int id)
         {
             List<User> users = LoadAllUsers();
 
             return users?.FirstOrDefault(user => user.Id == id);
         }
 
-        public static Loan loadLoan(int userId, int mediaId)
+        public static Loan LoadLoan(int userId, int mediaId)
         {
             List<Loan> loans = LoadAllLoans();
 
