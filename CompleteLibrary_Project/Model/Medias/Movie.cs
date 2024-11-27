@@ -36,6 +36,11 @@ namespace CompleteLibrary_Project.Model.Medias
             MaxCheckoutLength = 7;
         }
 
+        public Movie()
+        {
+            // empty constructor required for deserialization
+        }
+
         public override void Checkout() { }
 
         public override void ReturnItem() { }
@@ -55,7 +60,7 @@ namespace CompleteLibrary_Project.Model.Medias
         {
             string baseToString = base.ToStringFR();
 
-            return $"FILM\n{baseToString}Réalisateur(trice):\t{Director}\nLongeur:\t\t{Duration}";
+            return $"FILM\n{baseToString}Réalisateur(trice):\t{Director}\nLongeur:\t\t{Duration}\n";
         }
     }
 }

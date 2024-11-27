@@ -1,4 +1,3 @@
-C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.Form1.resources
 C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.csproj.GenerateResource.cache
 C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.AssemblyInfoInputs.cache
@@ -57,3 +56,4 @@ C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Pro
 C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.sourcelink.json
 C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.dll
 C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\refint\CompleteLibrary_Project.dll
+C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.CompleteLibrary.resources

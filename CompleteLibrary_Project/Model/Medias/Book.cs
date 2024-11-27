@@ -48,6 +48,11 @@ namespace CompleteLibrary_Project.Model.Medias
             MaxCheckoutLength = 21;
         }
 
+        public Book()
+        {
+            // empty constructor required for deserialization
+        }
+
         public override void Checkout() { }
 
         public override void ReturnItem() { }
@@ -65,15 +70,15 @@ namespace CompleteLibrary_Project.Model.Medias
             string baseToString = base.ToString();
 
             return $"BOOK\n{baseToString}ISBN:\t\t{ISBN}\nAuthor:\t\t{Author}\nPublisher:\t{Publisher}" +
-                $"\nIllustrator:\t{Illustrator}\nEdition:\t\t{Edition}";
+                $"\nIllustrator:\t{Illustrator}\nEdition:\t\t{Edition}\n";
         }
 
         public override string? ToStringFR()
         {
             string baseToString = base.ToStringFR();
 
-            return $"LIVRE\n{baseToString}ISBN:\t\t{ISBN}\nAuteur(e):\t\t{Author}\nMaison d'édition:\t{Publisher}" +
-                $"\nIllustrateur/trice:\t{Illustrator}\nÉdition:\t\t{Edition}";
+            return $"LIVRE\n{baseToString}ISBN:\t\t{ISBN}\nAuteur(e):\t{Author}\nMaison d'édition:\t{Publisher}" +
+                $"\nIllustrateur/trice:\t{Illustrator}\nÉdition:\t\t{Edition}\n";
         }
     }
 }

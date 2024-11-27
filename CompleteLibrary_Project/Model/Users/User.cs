@@ -40,6 +40,11 @@ namespace CompleteLibrary_Project.Model.Users
             Dob = dob;
         }
 
+        public User()
+        {
+
+        }
+
         public bool ReturnMedia(Media media)
         {
             return true;

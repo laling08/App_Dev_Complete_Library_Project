@@ -23,30 +23,29 @@ namespace CompleteLibrary_Project
             InitializeComponent();
             cultureInfo = culture;
             SetText();
+            typeSearchCB.Items.AddRange(new object[] { rm.GetString("book"), rm.GetString("audiobook"), rm.GetString("movie"), rm.GetString("magazine") });
+            titleSearchTB.PlaceholderText = rm.GetString("title");
         }
 
         private void searchBT_Click(object sender, EventArgs e)
         {
             List<Media> medias = new List<Media>();
-            if (typeSearchTB.Text.Equals("book", StringComparison.InvariantCultureIgnoreCase) ||
-                typeSearchTB.Text.Equals("livre", StringComparison.InvariantCultureIgnoreCase))
+            if (typeSearchCB.Text.Equals("Book") || typeSearchCB.Text.Equals("Livre"))
             {
                 List<Book> books = DataAccess.LoadAllBooks();
                 medias.AddRange(books);
             }
-            else if (typeSearchTB.Text.Equals("movie", StringComparison.InvariantCultureIgnoreCase) ||
-                typeSearchTB.Text.Equals("film", StringComparison.InvariantCultureIgnoreCase))
+            else if (typeSearchCB.Text.Equals("Movie") || typeSearchCB.Text.Equals("Film"))
             {
                 List<Movie> movies = DataAccess.LoadAllMovies();
                 medias.AddRange(movies);
             }
-            else if (typeSearchTB.Text.Equals("audiobook", StringComparison.InvariantCultureIgnoreCase) ||
-                typeSearchTB.Text.Equals("audiolivre", StringComparison.InvariantCultureIgnoreCase))
+            else if (typeSearchCB.Text.Equals("Audiobook") || typeSearchCB.Text.Equals("Livre audio"))
             {
                 List<Audiobook> audiobooks = DataAccess.LoadAllAudiobooks();
                 medias.AddRange(audiobooks);
             }
-            else if (typeSearchTB.Text.Equals("magazine", StringComparison.InvariantCultureIgnoreCase))
+            else if (typeSearchCB.Text.Equals("Magazine"))
             {
                 List<Magazine> magazines = DataAccess.LoadAllMagazines();
                 medias.AddRange(magazines);

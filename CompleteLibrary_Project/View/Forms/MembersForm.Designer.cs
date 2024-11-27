@@ -33,8 +33,8 @@ namespace CompleteLibrary_Project
             label1 = new Label();
             titleSearchTB = new TextBox();
             searchBT = new Button();
-            typeSearchTB = new TextBox();
             resultsRTB = new RichTextBox();
+            typeSearchCB = new ComboBox();
             SuspendLayout();
             // 
             // label1
@@ -48,27 +48,20 @@ namespace CompleteLibrary_Project
             // 
             // titleSearchTB
             // 
-            titleSearchTB.Location = new Point(12, 37);
+            titleSearchTB.Location = new Point(12, 40);
             titleSearchTB.Name = "titleSearchTB";
             titleSearchTB.Size = new Size(251, 31);
-            titleSearchTB.TabIndex = 1;
+            titleSearchTB.TabIndex = 7;
             // 
             // searchBT
             // 
-            searchBT.Location = new Point(425, 35);
+            searchBT.Location = new Point(457, 40);
             searchBT.Name = "searchBT";
             searchBT.Size = new Size(112, 34);
             searchBT.TabIndex = 2;
             searchBT.Text = "Search";
             searchBT.UseVisualStyleBackColor = true;
             searchBT.Click += searchBT_Click;
-            // 
-            // typeSearchTB
-            // 
-            typeSearchTB.Location = new Point(269, 37);
-            typeSearchTB.Name = "typeSearchTB";
-            typeSearchTB.Size = new Size(150, 31);
-            typeSearchTB.TabIndex = 3;
             // 
             // resultsRTB
             // 
@@ -78,12 +71,21 @@ namespace CompleteLibrary_Project
             resultsRTB.TabIndex = 5;
             resultsRTB.Text = "";
             // 
+            // typeSearchCB
+            // 
+            typeSearchCB.FormattingEnabled = true;
+            typeSearchCB.Location = new Point(269, 40);
+            typeSearchCB.Name = "typeSearchCB";
+            typeSearchCB.Size = new Size(182, 33);
+            typeSearchCB.TabIndex = 6;
+            typeSearchCB.Text = "Type";
+            // 
             // MembersForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(typeSearchTB);
+            Controls.Add(typeSearchCB);
             Controls.Add(searchBT);
             Controls.Add(titleSearchTB);
             Controls.Add(label1);
@@ -99,7 +101,7 @@ namespace CompleteLibrary_Project
         private Label label1;
         private TextBox titleSearchTB;
         private Button searchBT;
-        private TextBox typeSearchTB;
         private RichTextBox resultsRTB;
+        private ComboBox typeSearchCB;
     }
 }

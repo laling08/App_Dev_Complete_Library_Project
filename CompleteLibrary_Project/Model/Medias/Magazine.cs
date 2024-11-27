@@ -40,6 +40,11 @@ namespace CompleteLibrary_Project.Model.Medias
             MaxCheckoutLength = 7;
         }
 
+        public Magazine()
+        {
+            // empty constructor required for deserialization
+        }
+
         public override void Checkout() { }
 
         public override void ReturnItem() { }
@@ -55,7 +60,7 @@ namespace CompleteLibrary_Project.Model.Medias
 
         public override string? ToStringFR()
         {
-            return $"MAGAZINE\n{base.ToString()}ISSN:\t\t{ISSN}\nMaison d'édition:\t{Publisher}\nAnnée:\t\t{PublicationYear}"; ;
+            return $"MAGAZINE\n{base.ToString()}ISSN:\t\t{ISSN}\nMaison d'édition:\t{Publisher}\nAnnée:\t\t{PublicationYear}\n"; ;
         }
     }
 }

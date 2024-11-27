@@ -27,5 +27,10 @@ namespace CompleteLibrary_Project.Model.Medias
             CheckoutDate = DateTime.Now;
             ExpectedReturnDate = CheckoutDate.AddDays(mediaType.MaxCheckoutLength);
         }
+
+        public Loan()
+        {
+            // empty constructor required for deserialization
+        }
     }
 }

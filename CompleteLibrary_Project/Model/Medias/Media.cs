@@ -53,6 +53,11 @@ namespace CompleteLibrary_Project.Model.Medias
             Status = "Available";
         }
 
+        public Media()
+        {
+
+        }
+
         /// <summary>
         /// Calculates the date by which the borrowed media must be returned.
         /// </summary>

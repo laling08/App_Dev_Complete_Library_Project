@@ -52,20 +52,25 @@ namespace CompleteLibrary_Project.Model.Medias
             MaxCheckoutLength = 14;
         }
 
+        public Audiobook()
+        {
+            // empty constructor required for deserialization
+        }
+
         public override string? ToString()
         {
             string baseToString = base.ToString();
 
             return $"AUDIOBOOK\n{baseToString}ISBN:\t\t{ISBN}\nAuthor:\t\t{Author}\nPublisher:\t{Publisher}" +
-                $"\nNarrator:\t\t{Narrator}\nEdition:\t\t{Edition}\nDuration:\t{Duration}";
+                $"\nNarrator:\t\t{Narrator}\nEdition:\t\t{Edition}\nDuration:\t{Duration}\n";
         }
 
         public override string? ToStringFR()
         {
             string baseToString = base.ToStringFR();
 
-            return $"LIVREAUDIO\n{baseToString}ISBN:\t\t{ISBN}\nAuteur(e):\t\t{Author}\nMaison d'édition:\t{Publisher}" +
-                $"\nNarrateur(e):\t{Narrator}\nÉdition:\t\t{Edition}\nLongueur:\t\t{Duration}";
+            return $"LIVREAUDIO\n{baseToString}ISBN:\t\t{ISBN}\nAuteur(e):\t{Author}\nMaison d'édition:\t{Publisher}" +
+                $"\nNarrateur(e):\t{Narrator}\nÉdition:\t\t{Edition}\nLongueur:\t{Duration}\n";
         }
 
         public override void Checkout()

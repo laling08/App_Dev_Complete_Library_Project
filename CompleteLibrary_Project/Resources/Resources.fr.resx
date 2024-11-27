@@ -135,4 +135,19 @@
   <data name="language" xml:space="preserve">
     <value>English</value>
   </data>
+  <data name="book" xml:space="preserve">
+    <value>Livre</value>
+  </data>
+  <data name="audiobook" xml:space="preserve">
+    <value>Livre audio</value>
+  </data>
+  <data name="movie" xml:space="preserve">
+    <value>Film</value>
+  </data>
+  <data name="magazine" xml:space="preserve">
+    <value>Magazine</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Titre</value>
+  </data>
 </root>
