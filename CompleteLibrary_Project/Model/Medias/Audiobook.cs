@@ -39,6 +39,19 @@ namespace CompleteLibrary_Project.Model.Medias
             MaxCheckoutLength = 14;
         }
 
+        public Audiobook(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction,
+                 string isbn, string author, string publisher, string narrator, int edition, int duration)
+            : base(title, language, genre, publicationYear, ageRestriction)
+        {
+            ISBN = isbn;
+            Author = author;
+            Publisher = publisher;
+            Narrator = narrator;
+            Edition = edition;
+            Duration = duration;
+            MaxCheckoutLength = 14;
+        }
+
         public override string? ToString()
         {
             string baseToString = base.ToString();
@@ -55,40 +68,24 @@ namespace CompleteLibrary_Project.Model.Medias
                 $"\nNarrateur(e):\t{Narrator}\nÉdition:\t\t{Edition}\nLongueur:\t\t{Duration}";
         }
 
-        public override int GetAgeRestriction()
+        public override void Checkout()
         {
-            return AgeRestriction;
+            throw new NotImplementedException();
         }
 
-        public override Genre GetGenre()
+        public override void ReturnItem()
         {
-            return Genre;
+            throw new NotImplementedException();
         }
 
-        public override string GetLanguage()
+        public override void RenewLoan()
         {
-            return Language;
+            throw new NotImplementedException();
         }
 
-        public override int GetMaxCheckoutLength()
+        public override void GiveLateFee()
         {
-            return MaxCheckoutLength;
+            throw new NotImplementedException();
         }
-
-        public override string GetMediaInfo()
-        {
-            return ToString(); // Returns the English description of the AudioBook
-        }
-
-        public override int GetPublicationYear()
-        {
-            return PublicationYear;
-        }
-
-        public override string GetTitle()
-        {
-            return Title;
-        }
-
     }
 }

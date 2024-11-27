@@ -36,11 +36,28 @@ namespace CompleteLibrary_Project.Model.Medias
             MaxCheckoutLength = 21;
         }
 
+        public Book(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction,
+                    string isbn, string author, string publisher, string illustrator, int edition)
+            : base(title, language, genre, publicationYear, ageRestriction)
+        {
+            ISBN = isbn;
+            Author = author;
+            Publisher = publisher;
+            Illustrator = illustrator;
+            Edition = edition;
+            MaxCheckoutLength = 21;
+        }
+
         public override void Checkout() { }
 
         public override void ReturnItem() { }
 
         public override void RenewLoan() { }
+
+        public override void GiveLateFee()
+        {
+            throw new NotImplementedException();
+        }
 
 
         public override string? ToString()
@@ -57,51 +74,6 @@ namespace CompleteLibrary_Project.Model.Medias
 
             return $"LIVRE\n{baseToString}ISBN:\t\t{ISBN}\nAuteur(e):\t\t{Author}\nMaison d'édition:\t{Publisher}" +
                 $"\nIllustrateur/trice:\t{Illustrator}\nÉdition:\t\t{Edition}";
-        }
-
-        public override int GetAgeRestriction()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override Genre GetGenre()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override string GetLanguage()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override int GetMaxCheckoutLength()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override string GetMediaInfo()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override int GetPublicationYear()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override string GetTitle()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void GiveLateFee()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void RenewLoan()
-        {
-            throw new NotImplementedException();
         }
     }
 }

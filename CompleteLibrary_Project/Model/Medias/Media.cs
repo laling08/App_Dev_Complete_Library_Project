@@ -13,7 +13,7 @@ namespace CompleteLibrary_Project.Model.Medias
     /// <summary>
     /// Model for Media Class.
     /// </summary>
-    public abstract class Media : ILoanable, IMediaAdapter
+    public abstract class Media : ILoanable
     {
         private static int count = 18;
         [JsonPropertyName("id")]
@@ -62,14 +62,6 @@ namespace CompleteLibrary_Project.Model.Medias
             return DateTime.Now.AddDays(MaxCheckoutLength);
         }
 
-        public abstract int GetAgeRestriction();
-        public abstract Genre GetGenre();
-        public abstract string GetLanguage();
-        public abstract int GetMaxCheckoutLength();
-        public abstract string GetMediaInfo();
-        public abstract int GetPublicationYear();
-        public abstract string GetTitle();
-
         public override string? ToString()
         {
             return $"Title:\t\t{Title}\nLanguage:\t{Language}\nGenre:\t\t{Genre.ToString()}" +
@@ -81,6 +73,11 @@ namespace CompleteLibrary_Project.Model.Medias
             return $"Titre:\t\t{Title}\nLangue:\t\t{Language}\nGenre:\t\t{Genre.ToString()}" +
                 $"\nAnnée:\t\t{PublicationYear}\nStatut:\t\t{Status}\n";
         }
+
+        public abstract void Checkout();
+        public abstract void ReturnItem();
+        public abstract void RenewLoan();
+        public abstract void GiveLateFee();
     }
 
 }

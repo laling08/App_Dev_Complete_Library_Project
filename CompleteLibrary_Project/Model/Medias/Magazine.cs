@@ -30,6 +30,16 @@ namespace CompleteLibrary_Project.Model.Medias
             MaxCheckoutLength = 7;
         }
 
+        public Magazine(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction,
+                        string issn, string publisher, string publicationMonth)
+            : base(title, language, genre, publicationYear, ageRestriction)
+        {
+            ISSN = issn;
+            Publisher = publisher;
+            PublicationMonth = publicationMonth;
+            MaxCheckoutLength = 7;
+        }
+
         public override void Checkout() { }
 
         public override void ReturnItem() { }
@@ -46,41 +56,6 @@ namespace CompleteLibrary_Project.Model.Medias
         public override string? ToStringFR()
         {
             return $"MAGAZINE\n{base.ToString()}ISSN:\t\t{ISSN}\nMaison d'édition:\t{Publisher}\nAnnée:\t\t{PublicationYear}"; ;
-        }
-
-        public override int GetAgeRestriction()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override Genre GetGenre()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override string GetLanguage()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override int GetMaxCheckoutLength()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override string GetMediaInfo()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override int GetPublicationYear()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override string GetTitle()
-        {
-            throw new NotImplementedException();
         }
     }
 }

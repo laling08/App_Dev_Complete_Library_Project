@@ -27,6 +27,15 @@ namespace CompleteLibrary_Project.Model.Medias
             MaxCheckoutLength = 7;
         }
 
+        public Movie(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction,
+                     string director, int duration)
+            : base(id, title, language, genre, publicationYear, ageRestriction)
+        {
+            Director = director;
+            Duration = duration;
+            MaxCheckoutLength = 7;
+        }
+
         public override void Checkout() { }
 
         public override void ReturnItem() { }
@@ -47,41 +56,6 @@ namespace CompleteLibrary_Project.Model.Medias
             string baseToString = base.ToStringFR();
 
             return $"FILM\n{baseToString}Réalisateur(trice):\t{Director}\nLongeur:\t\t{Duration}";
-        }
-
-        public override int GetAgeRestriction()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override Genre GetGenre()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override string GetLanguage()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override int GetMaxCheckoutLength()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override string GetMediaInfo()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override int GetPublicationYear()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override string GetTitle()
-        {
-            throw new NotImplementedException();
         }
     }
 }
