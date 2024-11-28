@@ -7,7 +7,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace CompleteLibrary_Project
+namespace CompleteLibrary_Project.Controller.DataAccessibility
 {
     public class UserConverter : JsonConverter<User>
     {
@@ -23,7 +23,8 @@ namespace CompleteLibrary_Project
                 if (type.Equals("Member"))
                 {
                     user = JsonSerializer.Deserialize<Member>(root.GetRawText(), options);
-                } else
+                }
+                else
                 {
                     user = JsonSerializer.Deserialize<Librarian>(root.GetRawText(), options);
                 }
@@ -34,7 +35,7 @@ namespace CompleteLibrary_Project
 
         public override void Write(Utf8JsonWriter writer, User value, JsonSerializerOptions options)
         {
-            JsonSerializer.Serialize(writer, (object) value, value.GetType(), options);
+            JsonSerializer.Serialize(writer, value, value.GetType(), options);
         }
     }
 }

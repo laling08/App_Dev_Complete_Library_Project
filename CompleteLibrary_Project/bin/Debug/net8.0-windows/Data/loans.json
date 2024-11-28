@@ -54,5 +54,45 @@
   "media_id": 44115416,
   "checkout_date": "2024-11-28T15:41:19.8865258-05:00",
   "expected_return_date": "2024-11-28T15:41:19.8865258-05:00"
+},
+{
+  "media_type": "CompleteLibrary_Project.Model.Medias.Audiobook",
+  "title": "Harry Potter and the Philosopher\u0027s Stone",
+  "user_id": 4,
+  "media_id": 44115416,
+  "checkout_date": "2024-11-28T18:21:51.2659528-05:00",
+  "expected_return_date": "2024-11-28T18:21:51.2659528-05:00"
+},
+{
+  "media_type": "CompleteLibrary_Project.Model.Medias.Audiobook",
+  "title": "Harry Potter and the Philosopher\u0027s Stone",
+  "user_id": 4,
+  "media_id": 41421720,
+  "checkout_date": "2024-11-28T18:32:59.3497839-05:00",
+  "expected_return_date": "2024-11-28T18:32:59.3497839-05:00"
+},
+{
+  "media_type": "CompleteLibrary_Project.Model.Medias.Audiobook",
+  "title": "Harry Potter and the Philosopher\u0027s Stone",
+  "user_id": 4,
+  "media_id": 41421720,
+  "checkout_date": "2024-11-28T18:38:59.3403165-05:00",
+  "expected_return_date": "2024-11-28T18:38:59.3403165-05:00"
+},
+{
+  "media_type": "CompleteLibrary_Project.Model.Medias.Audiobook",
+  "title": "Harry Potter and the Philosopher\u0027s Stone",
+  "user_id": 3,
+  "media_id": 41421720,
+  "checkout_date": "2024-11-28T18:41:11.1246227-05:00",
+  "expected_return_date": "2024-11-28T18:41:11.1246227-05:00"
+},
+{
+  "media_type": "CompleteLibrary_Project.Model.Medias.Audiobook",
+  "title": "Harry Potter and the Philosopher\u0027s Stone",
+  "user_id": 3,
+  "media_id": 37251161,
+  "checkout_date": "2024-11-28T18:44:09.5951813-05:00",
+  "expected_return_date": "2024-11-28T18:44:09.5951813-05:00"
 }
 ]

@@ -144,6 +144,8 @@ namespace CompleteLibrary_Project
                     
                 }
             }
+
+            Console.WriteLine(DataAccess.LoadAudiobook(9).Status);
         }
 
         private void holdButton_Click(object sender, EventArgs e)

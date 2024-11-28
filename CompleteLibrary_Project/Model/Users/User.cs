@@ -75,7 +75,7 @@ namespace CompleteLibrary_Project.Model.Users
 
             if (media.Status.Equals("Checkout Out"))
             {
-                switch (media.GetType().ToString())
+                switch (media.GetType().Name)
                 {
                     case "Book":
                         DataAccess.UpdateBookStatus(media.Id, "Available");
@@ -109,7 +109,7 @@ namespace CompleteLibrary_Project.Model.Users
                 // set the media's status to "Checked Out and Reserved"
                 if (holdCount > 1)
                 {
-                    switch (media.GetType().ToString())
+                    switch (media.GetType().Name)
                     {
                         case "Book":
                             DataAccess.UpdateBookStatus(media.Id, "Checked Out and Reserved");
@@ -129,7 +129,7 @@ namespace CompleteLibrary_Project.Model.Users
                 }
                 else
                 {
-                    switch (media.GetType().ToString())
+                    switch (media.GetType().Name)
                     {
                         case "Book":
                             DataAccess.UpdateBookStatus(media.Id, "Reserved");
@@ -206,7 +206,7 @@ namespace CompleteLibrary_Project.Model.Users
                 CurrentHolds.Add(media.Id, DateTime.Now);
                 
                 // update status depending on media type
-                switch (media.GetType().ToString())
+                switch (media.GetType().Name)
                 {
                     case "Book":
                         DataAccess.UpdateBookStatus(media.Id, "Checked Out and Reserved");
@@ -249,7 +249,7 @@ namespace CompleteLibrary_Project.Model.Users
             }
 
             CurrentCheckouts.Add(media.Id);
-            switch (media.GetType().ToString())
+            switch (media.GetType().Name)
             {
                 case "Book":
                     DataAccess.UpdateBookStatus(media.Id, "Checked Out");

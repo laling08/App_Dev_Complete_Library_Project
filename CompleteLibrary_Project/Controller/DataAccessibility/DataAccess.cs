@@ -240,10 +240,11 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
             Audiobook audiobookToUpdate = audiobooks.First(audiobook => audiobook.Id == audiobookId);
             audiobookToUpdate.Status = status;
 
-            foreach (Audiobook audiobook in audiobooks)
-            {
-                SaveAudiobookToFile(audiobook);
-            }
+            string filePath = Path.Combine(basePath, "audiobooks.json");
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            string jsonString = JsonSerializer.Serialize(audiobooks, options);
+            File.WriteAllText(filePath, jsonString);
+            Console.WriteLine(jsonString);
         }
 
         /// <summary>
@@ -277,9 +278,12 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
 
             // Remove the closing bracket in order to add another object
             jsonString = jsonString.TrimEnd(']', ' ', '\n', '\r');
-            var bookJsonString = JsonSerializer.Serialize(user, new JsonSerializerOptions { WriteIndented = true });
 
-            jsonString += ",\n" + bookJsonString + "\n]";
+            var userType = user.GetType().Name;
+            var userProperties = JsonSerializer.Serialize(user, new JsonSerializerOptions { WriteIndented = true });
+
+            string userJsonString = $"{{\n \"type\": \"{userType}\",\n {userProperties}\n}}";
+            jsonString += ",\n" + userJsonString + "\n]";
 
             File.WriteAllText(filePath, jsonString);
         }
@@ -293,7 +297,17 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
             string filePath = Path.Combine(basePath, "users.json");
             var options = new JsonSerializerOptions { WriteIndented = true };
 
-            string jsonString = JsonSerializer.Serialize(users, options);
+            List<string> userJsonStrings = new List<string>();
+            foreach (var user in users)
+            { 
+                string userType = user.GetType().Name;
+                string userProperties = JsonSerializer.Serialize(user, new JsonSerializerOptions { WriteIndented = true });
+                userProperties = userProperties.TrimStart('{').TrimEnd('}');
+                string userJsonString = $"{{\n \"type\": \"{userType}\",\n {userProperties}\n}}";
+                userJsonStrings.Add(userJsonString);
+            }
+
+            string jsonString = "[\n" + string.Join(",\n", userJsonStrings) + "\n]";
             File.WriteAllText(filePath, jsonString);
         }
 
