@@ -79,6 +79,10 @@ namespace CompleteLibrary_Project
             {
                 continueButton.Enabled = true;
             }
+            else
+            {
+                resultsRTB.Text += rm.GetString("null_search");
+            }
         }
 
         private void SetText()

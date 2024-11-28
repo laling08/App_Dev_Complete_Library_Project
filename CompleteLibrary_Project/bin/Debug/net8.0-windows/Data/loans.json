@@ -46,5 +46,13 @@
         "title": "The Great Gatsby",
         "checkout_date": "2024-11-28T08:00:00",
         "expected_return_date": "2024-12-28T08:00:00"
-    }
+    },
+{
+  "media_type": "CompleteLibrary_Project.Model.Medias.Audiobook",
+  "title": "Harry Potter and the Philosopher\u0027s Stone",
+  "user_id": 4,
+  "media_id": 44115416,
+  "checkout_date": "2024-11-28T15:41:19.8865258-05:00",
+  "expected_return_date": "2024-11-28T15:41:19.8865258-05:00"
+}
 ]

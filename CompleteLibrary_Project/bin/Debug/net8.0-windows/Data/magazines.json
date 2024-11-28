@@ -8,7 +8,8 @@
       "ageRestriction": 0,
       "issn": "0027-9358",
       "publisher": "National Geographic Partners",
-      "publicationMonth": "January"
+      "publicationMonth": "January",
+      "status": "Available"
     },
     {
       "id": 14,
@@ -19,7 +20,8 @@
       "ageRestriction": 10,
       "issn": "0042-8000",
       "publisher": "Condé Nast",
-      "publicationMonth": "February"
+      "publicationMonth": "February",
+      "status": "Available"
     },
     {
       "id": 15,
@@ -30,7 +32,8 @@
       "ageRestriction": 12,
       "issn": "0040-781X",
       "publisher": "Time USA, LLC",
-      "publicationMonth": "March"
+      "publicationMonth": "March",
+      "status": "Available"
     },
     {
       "id": 16,
@@ -41,7 +44,8 @@
       "ageRestriction": 0,
       "issn": "0036-8733",
       "publisher": "Springer Nature",
-      "publicationMonth": "April"
+      "publicationMonth": "April",
+      "status": "Available"
     },
     {
       "id": 17,
@@ -52,7 +56,8 @@
       "ageRestriction": 12,
       "issn": "0015-6914",
       "publisher": "Forbes Media",
-      "publicationMonth": "May"
+      "publicationMonth": "May",
+      "status": "Available"
     }
   ]
   

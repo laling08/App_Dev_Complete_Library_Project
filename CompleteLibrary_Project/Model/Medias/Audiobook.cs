@@ -40,8 +40,8 @@ namespace CompleteLibrary_Project.Model.Medias
         }
 
         public Audiobook(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction,
-                 string isbn, string author, string publisher, string narrator, int edition, int duration)
-            : base(title, language, genre, publicationYear, ageRestriction)
+                 string isbn, string author, string publisher, string narrator, int edition, int duration, string status)
+            : base(id, title, language, genre, publicationYear, ageRestriction, status)
         {
             ISBN = isbn;
             Author = author;

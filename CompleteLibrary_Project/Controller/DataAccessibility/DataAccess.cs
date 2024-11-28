@@ -283,6 +283,19 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
 
             File.WriteAllText(filePath, jsonString);
         }
+        
+        /// <summary>
+        /// Saves an entire list of users, overwriting what already exists in the file
+        /// </summary>
+        /// <param name="users">List of users to serialize</param>
+        public static void SaveUsersToFile(List<User> users)
+        {
+            string filePath = Path.Combine(basePath, "users.json");
+            var options = new JsonSerializerOptions { WriteIndented = true };
+
+            string jsonString = JsonSerializer.Serialize(users, options);
+            File.WriteAllText(filePath, jsonString);
+        }
 
         /// <summary>
         /// Appends a serialized loan to the loans file
@@ -299,6 +312,43 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
 
             jsonString += ",\n" + bookJsonString + "\n]";
 
+            File.WriteAllText(filePath, jsonString);
+        }
+
+        /// <summary>
+        /// Removes a loan from the loans file for once the item is returned
+        /// </summary>
+        /// <param name="userId">The loan can be identified using a combined 
+        /// key of the user's id and the media's id</param>
+        /// <param name="mediaId"></param>
+        public static void RemoveLoanFromFile(int userId, int mediaId)
+        {
+            string filePath = Path.Combine(basePath, "loans.json");
+
+            List<Loan> loans = LoadAllLoans();
+
+            Loan loanToRemove = loans.FirstOrDefault(loan => loan.UserId == userId && loan.MediaId == mediaId);
+            
+            if (loanToRemove != null)
+            {
+                loans.Remove(loanToRemove);
+
+                string updatedJsonString = JsonSerializer.Serialize(loans, new JsonSerializerOptions { WriteIndented = true });
+                File.WriteAllText(filePath, updatedJsonString);
+            }
+        }
+
+
+        /// <summary>
+        /// Saves an entire list of loans, overwriting what already exists in the file
+        /// </summary>
+        /// <param name="loans">List of loans to serialize</param>
+        public static void SaveLoansToFile(List<Loan> loans)
+        {
+            string filePath = Path.Combine(basePath, "loans.json");
+            var options = new JsonSerializerOptions { WriteIndented = true };
+
+            string jsonString = JsonSerializer.Serialize(loans, options);
             File.WriteAllText(filePath, jsonString);
         }
 

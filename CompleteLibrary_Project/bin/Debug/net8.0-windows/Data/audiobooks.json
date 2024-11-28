@@ -11,7 +11,8 @@
       "publisher": "Scribner",
       "narrator": "Frank Muller",
       "edition": 1,
-      "duration": 320
+      "duration": 320,
+      "status": "Checked Out"
     },
     {
       "id": 9,
@@ -25,7 +26,8 @@
       "publisher": "Bloomsbury",
       "narrator": "Stephen Fry",
       "edition": 1,
-      "duration": 534
+      "duration": 534,
+      "status": "Available"
     },
     {
       "id": 18,
@@ -39,7 +41,8 @@
       "publisher": "Bloomsbury",
       "narrator": "Jim Dale",
       "edition": 1,
-      "duration": 784
+      "duration": 784,
+      "status": "Available"
     },
     {
       "id": 10,
@@ -53,7 +56,8 @@
       "publisher": "Reynal & Hitchcock",
       "narrator": "Antoine de Saint-Exupéry",
       "edition": 1,
-      "duration": 120
+      "duration": 120,
+      "status": "Checked Out"
     },
     {
       "id": 11,
@@ -67,7 +71,8 @@
       "publisher": "George Allen & Unwin",
       "narrator": "Rob Inglis",
       "edition": 2,
-      "duration": 680
+      "duration": 680,
+      "status": "Available"
     },
     {
       "id": 12,
@@ -81,7 +86,8 @@
       "publisher": "J.B. Lippincott & Co.",
       "narrator": "Sissy Spacek",
       "edition": 2,
-      "duration": 723
+      "duration": 723,
+      "status": "Available"
     }
   ]
   

@@ -178,6 +178,15 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sorry! Your search has not yielded any results. Make sure your title is spelt correctly and the correct type is selected..
+        /// </summary>
+        internal static string null_search {
+            get {
+                return ResourceManager.GetString("null_search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Search.
         /// </summary>
         internal static string search {
@@ -214,11 +223,47 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You have now checked out {0}!\nYou have this item for {1} days..
+        /// </summary>
+        internal static string successful_checkout {
+            get {
+                return ResourceManager.GetString("successful_checkout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You have now placed {0} on hold!.
+        /// </summary>
+        internal static string successful_hold {
+            get {
+                return ResourceManager.GetString("successful_hold", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Title.
         /// </summary>
         internal static string title {
             get {
                 return ResourceManager.GetString("title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You are too young to borrow this item..
+        /// </summary>
+        internal static string too_young_exception {
+            get {
+                return ResourceManager.GetString("too_young_exception", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is unavailable to you for checkout..
+        /// </summary>
+        internal static string unsuccessful_checkout {
+            get {
+                return ResourceManager.GetString("unsuccessful_checkout", resourceCulture);
             }
         }
         

@@ -30,6 +30,7 @@ namespace CompleteLibrary_Project.Model.Medias
         [JsonPropertyName("age_restriction")]
         public int AgeRestriction { get; set; }
         public int MaxCheckoutLength { get; set; }
+        [JsonPropertyName("status")]
         public string Status { get; set; } = "Available";
 
         public Media(string title, string language, Genre genre, int publicationYear, int ageRestriction)
@@ -42,7 +43,7 @@ namespace CompleteLibrary_Project.Model.Medias
             Id = count++;
         }
 
-        public Media(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction)
+        public Media(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction, string status)
         {
             Id = id;
             Title = title;
@@ -50,7 +51,7 @@ namespace CompleteLibrary_Project.Model.Medias
             Genre = genre;
             PublicationYear = publicationYear;
             AgeRestriction = ageRestriction;
-            Status = "Available";
+            Status = status;
         }
 
         public Media()

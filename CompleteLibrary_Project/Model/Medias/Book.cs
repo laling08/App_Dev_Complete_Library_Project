@@ -37,8 +37,8 @@ namespace CompleteLibrary_Project.Model.Medias
         }
 
         public Book(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction,
-                    string isbn, string author, string publisher, string illustrator, int edition)
-            : base(title, language, genre, publicationYear, ageRestriction)
+                    string isbn, string author, string publisher, string illustrator, int edition, string status)
+            : base(id, title, language, genre, publicationYear, ageRestriction, status)
         {
             ISBN = isbn;
             Author = author;

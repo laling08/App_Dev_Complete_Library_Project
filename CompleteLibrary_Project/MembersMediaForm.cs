@@ -1,4 +1,5 @@
 ﻿using CompleteLibrary_Project.Controller.DataAccessibility;
+using CompleteLibrary_Project.Model.Exceptions;
 using CompleteLibrary_Project.Model.Medias;
 using CompleteLibrary_Project.Model.Users;
 using System;
@@ -93,6 +94,11 @@ namespace CompleteLibrary_Project
         private void queriedMediaLV_SelectedIndexChanged(object sender, EventArgs e)
         {
             bool validUserFound = member != null;
+            //item = (Media)queriedMediaLV.SelectedItems[0].Tag;
+            int selectedIndex = queriedMediaLV.SelectedItems[0].Index;
+            Media selectedMedia = queriedMedia[selectedIndex];
+            item = selectedMedia;
+
             UpdateButtonStates(validUserFound);
         }
 
@@ -112,7 +118,61 @@ namespace CompleteLibrary_Project
 
         private void borrowButton_Click(object sender, EventArgs e)
         {
+            List<User> users = DataAccess.LoadAllUsers();
+            foreach (User user in users)
+            {
+                if (user.Id == member.Id)
+                {
+                    try
+                    {
+                        if (user.Checkout(item))
+                        {
+                            DataAccess.SaveUsersToFile(users);
+                            completedLabel.Visible = true;
+                            completedLabel.Text = string.Format(rm.GetString("successful_checkout"), item.Title, item.MaxCheckoutLength);
+                        }
+                        else
+                        {
+                            completedLabel.Visible = true;
+                            completedLabel.Text = string.Format(rm.GetString("unsuccessful_checkout"), item.Title);
+                        }
+                    } catch (TooYoungException tye)
+                    {
+                        completedLabel.Visible = true;
+                        completedLabel.Text = rm.GetString("too_young_exception");
+                    }
+                    
+                }
+            }
+        }
 
+        private void holdButton_Click(object sender, EventArgs e)
+        {
+            List<User> users = DataAccess.LoadAllUsers();
+            foreach (User user in users)
+            {
+                if (user.Id == member.Id)
+                {
+                    try
+                    {
+                        if (user.PlaceHold(item))
+                        {
+                            DataAccess.SaveUsersToFile(users);
+                            completedLabel.Visible = true;
+                            completedLabel.Text = string.Format(rm.GetString("successfule_hold"), item.Title);
+                        }
+                        else
+                        {
+                            completedLabel.Visible = true;
+                            completedLabel.Text = string.Format(rm.GetString("unsuccessful_checkout"), item.Title);
+                        }
+                    } catch (TooYoungException tye)
+                    {
+                        completedLabel.Visible = true;
+                        completedLabel.Text = rm.GetString("too_young_exception");
+                    }
+                }
+            }
         }
     }
 }

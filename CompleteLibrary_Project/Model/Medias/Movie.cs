@@ -28,8 +28,8 @@ namespace CompleteLibrary_Project.Model.Medias
         }
 
         public Movie(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction,
-                     string director, int duration)
-            : base(id, title, language, genre, publicationYear, ageRestriction)
+                     string director, int duration, string status)
+            : base(id, title, language, genre, publicationYear, ageRestriction, status)
         {
             Director = director;
             Duration = duration;

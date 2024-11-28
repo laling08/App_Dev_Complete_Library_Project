@@ -1,63 +1,68 @@
 [
-    {
-        "type": "Librarian",
-        "id": 1,
-        "firstName": "Lainey",
-        "lastName": "Wilson",
-        "dateOfBirth": "1985-03-25T00:00:00",
-        "current_checkouts": [10, 1],
-        "current_holds": {
-            "3": "2024-11-26T10:00:00",
-            "2": "2024-11-28T15:30:00"
-        }
-    },
-    {
-        "type": "Member",
-        "id": 2,
-        "firstName": "Jane",
-        "lastName": "Paterson",
-        "dateOfBirth": "1990-07-14T00:00:00",
-        "current_checkouts": [],
-        "current_holds": {
-            "1": "2024-11-16T08:45:00"
-        }
-    },
-    {
-        "type": "Librarian",
-        "id": 3,
-        "firstName": "Michael",
-        "lastName": "Johnson",
-        "dateOfBirth": "1978-11-02T00:00:00",
-        "current_checkouts": [3],
-        "current_holds": {}
-    },
-    {
-        "type": "Member",
-        "id": 4,
-        "firstName": "Tristan",
-        "lastName": "Wang",
-        "dateOfBirth": "1995-01-30T00:00:00",
-        "current_checkouts": [7, 2],
-        "current_holds": {}
-    },
-    {
-        "type": "Member",
-        "id": 5,
-        "firstName": "Stephanie",
-        "lastName": "Gilmore",
-        "dateOfBirth": "1990-01-16T00:00:00",
-        "current_checkouts": [8],
-        "current_holds": {
-            "2": "2024-11-28T11:00:00"
-        }
-    },
-    {
-        "type": "Member",
-        "id": 6,
-        "firstName": "Benjamin",
-        "lastName": "Tolnai",
-        "dateOfBirth": "2020-04-02T00:00:00",
-        "current_checkouts": [],
-        "current_holds": {}
+  {
+    "firstName": "Lainey",
+    "lastName": "Wilson",
+    "id": 1,
+    "dateOfBirth": "1985-03-25T00:00:00",
+    "current_checkouts": [
+      10,
+      1
+    ],
+    "current_holds": {
+      "3": "2024-11-26T10:00:00",
+      "2": "2024-11-28T15:30:00"
     }
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Paterson",
+    "id": 2,
+    "dateOfBirth": "1990-07-14T00:00:00",
+    "current_checkouts": [],
+    "current_holds": {
+      "1": "2024-11-16T08:45:00"
+    }
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Johnson",
+    "id": 3,
+    "dateOfBirth": "1978-11-02T00:00:00",
+    "current_checkouts": [
+      3
+    ],
+    "current_holds": {}
+  },
+  {
+    "firstName": "Tristan",
+    "lastName": "Wang",
+    "id": 4,
+    "dateOfBirth": "1995-01-30T00:00:00",
+    "current_checkouts": [
+      7,
+      2,
+      9
+    ],
+    "current_holds": {}
+  },
+  {
+    "firstName": "Stephanie",
+    "lastName": "Gilmore",
+    "id": 5,
+    "dateOfBirth": "1990-01-16T00:00:00",
+    "current_checkouts": [
+      8
+    ],
+    "current_holds": {
+      "2": "2024-11-28T11:00:00"
+    }
+  },
+  {
+    "firstName": "Benjamin",
+    "lastName": "Tolnai",
+    "id": 6,
+    "dateOfBirth": "2020-04-02T00:00:00",
+    "current_checkouts": [],
+    "current_holds": {}
+  }
 ]

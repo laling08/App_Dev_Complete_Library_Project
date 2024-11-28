@@ -39,6 +39,7 @@
             idErrorLabel = new Label();
             borrowButton = new Button();
             holdButton = new Button();
+            completedLabel = new Label();
             SuspendLayout();
             // 
             // queriedMediaLV
@@ -129,12 +130,24 @@
             holdButton.TabIndex = 6;
             holdButton.Text = "Place Hold";
             holdButton.UseVisualStyleBackColor = true;
+            holdButton.Click += holdButton_Click;
+            // 
+            // completedLabel
+            // 
+            completedLabel.AutoSize = true;
+            completedLabel.Location = new Point(60, 387);
+            completedLabel.Name = "completedLabel";
+            completedLabel.Size = new Size(59, 25);
+            completedLabel.TabIndex = 7;
+            completedLabel.Text = "label1";
+            completedLabel.Visible = false;
             // 
             // MembersMediaForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(completedLabel);
             Controls.Add(holdButton);
             Controls.Add(borrowButton);
             Controls.Add(idErrorLabel);
@@ -161,5 +174,6 @@
         private ColumnHeader statusColumn;
         private ColumnHeader languageColumn;
         private ColumnHeader idColumn;
+        private Label completedLabel;
     }
 }

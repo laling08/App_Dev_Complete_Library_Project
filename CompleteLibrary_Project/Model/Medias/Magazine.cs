@@ -31,8 +31,8 @@ namespace CompleteLibrary_Project.Model.Medias
         }
 
         public Magazine(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction,
-                        string issn, string publisher, string publicationMonth)
-            : base(title, language, genre, publicationYear, ageRestriction)
+                        string issn, string publisher, string publicationMonth, string status)
+            : base(id, title, language, genre, publicationYear, ageRestriction, status)
         {
             ISSN = issn;
             Publisher = publisher;

@@ -174,4 +174,19 @@
   <data name="language1" xml:space="preserve">
     <value>Language</value>
   </data>
+  <data name="null_search" xml:space="preserve">
+    <value>Sorry! Your search has not yielded any results. Make sure your title is spelt correctly and the correct type is selected.</value>
+  </data>
+  <data name="successful_checkout" xml:space="preserve">
+    <value>You have now checked out {0}!\nYou have this item for {1} days.</value>
+  </data>
+  <data name="unsuccessful_checkout" xml:space="preserve">
+    <value>{0} is unavailable to you for checkout.</value>
+  </data>
+  <data name="too_young_exception" xml:space="preserve">
+    <value>You are too young to borrow this item.</value>
+  </data>
+  <data name="successful_hold" xml:space="preserve">
+    <value>You have now placed {0} on hold!</value>
+  </data>
 </root>
