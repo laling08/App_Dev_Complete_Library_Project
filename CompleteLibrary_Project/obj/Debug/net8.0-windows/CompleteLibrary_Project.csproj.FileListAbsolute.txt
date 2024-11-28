@@ -45,7 +45,6 @@ C:\Users\2242125\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_P
 C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.Resources.Resources.resources
 C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.CompleteLibrary.resources
 C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.LibrariansForm.resources
-C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.MembersForm.resources
 C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.Resources.Resources.fr.resources
 C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.csproj.GenerateResource.cache
 C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.GeneratedMSBuildEditorConfig.editorconfig
@@ -58,3 +57,15 @@ C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Pro
 C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.CompleteLibrary.resources
 C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.MembersSearchForm.resources
 C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.MembersMediaForm.resources
+C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\bin\Debug\net8.0-windows\CompleteLibrary_Project.exe
+C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\bin\Debug\net8.0-windows\CompleteLibrary_Project.deps.json
+C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\bin\Debug\net8.0-windows\CompleteLibrary_Project.runtimeconfig.json
+C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\bin\Debug\net8.0-windows\CompleteLibrary_Project.dll
+C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\bin\Debug\net8.0-windows\CompleteLibrary_Project.pdb
+C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\bin\Debug\net8.0-windows\fr\CompleteLibrary_Project.resources.dll
+C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.MembersSearchForm.resources
+C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.MembersMediaForm.resources
+C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\fr\CompleteLibrary_Project.resources.dll
+C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.pdb
+C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.genruntimeconfig.cache
+C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\ref\CompleteLibrary_Project.dll

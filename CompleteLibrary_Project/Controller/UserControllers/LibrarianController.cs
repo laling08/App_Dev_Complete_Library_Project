@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CompleteLibrary_Project.Controller
+namespace CompleteLibrary_Project.Controller.UserControllers
 {
     /// <summary>
     /// Controller for managing librarian operations.
