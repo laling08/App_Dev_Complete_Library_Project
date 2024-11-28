@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace CompleteLibrary_Project.Controller
 {
     /// <summary>
-    /// Controller for managig audiobook operations.
+    /// Controller for managing audiobook operations.
     /// </summary>
     public class AudiobookController : IMediaController
     {

@@ -9,27 +9,27 @@ using System.Threading.Tasks;
 namespace CompleteLibrary_Project.Controller
 {
     /// <summary>
-    /// Controller for managing book operations.
+    /// Controller for managing movie operations
     /// </summary>
-    public class BookController : IMediaController
+    public class MovieController : IMediaController
     {
         /// <summary>
-        /// Attempts to cast a media object to a book.
+        /// Attempts to cast a media object to a movie.
         /// </summary>
         /// <param name="media">The media item to cast.</param>
-        /// <returns>The book instance, or null if the cast fails.</returns>
-        private Book? GetBook(Media media)
+        /// <returns>The movie instance, or null if the cast fails.</returns>
+        private Movie? GetMovie(Media media)
         {
-            return media as Book;
+            return media as Movie;
         }
 
         public void Checkout(Media media)
         {
-            var book = GetBook(media);
-            if (book != null)
+            var movie = GetMovie(media);
+            if (movie != null)
             {
-                book.Checkout();
-                Console.WriteLine($"Book '{book.Title}' checked out successfully.");
+                movie.Checkout();
+                Console.WriteLine($"Movie '{movie.Title}' checked out successfully.");
             }
             else
             {
@@ -39,11 +39,11 @@ namespace CompleteLibrary_Project.Controller
 
         public void ReturnItem(Media media)
         {
-            var book = GetBook(media);
-            if (book != null)
+            var movie = GetMovie(media);
+            if (movie != null)
             {
-                book.ReturnItem();
-                Console.WriteLine($"Book '{book.Title}' returned successfully.");
+                movie.ReturnItem();
+                Console.WriteLine($"Movie '{movie.Title}' returned successfully.");
             }
             else
             {
@@ -53,11 +53,11 @@ namespace CompleteLibrary_Project.Controller
 
         public void RenewLoan(Media media)
         {
-            var book = GetBook(media);
-            if (book != null)
+            var movie = GetMovie(media);
+            if (movie != null)
             {
-                book.RenewLoan();
-                Console.WriteLine($"Loan for book '{book.Title}' renewed successfully.");
+                movie.RenewLoan();
+                Console.WriteLine($"Loan for movie '{movie.Title}' renewed successfully.");
             }
             else
             {
@@ -67,11 +67,11 @@ namespace CompleteLibrary_Project.Controller
 
         public void ApplyLateFee(Media media)
         {
-            var book = GetBook(media);
-            if (book != null)
+            var movie = GetMovie(media);
+            if (movie != null)
             {
-                book.GiveLateFee();
-                Console.WriteLine($"Late fee applied for book '{book.Title}'.");
+                movie.GiveLateFee();
+                Console.WriteLine($"Late fee applied for movie '{movie.Title}'.");
             }
             else
             {
@@ -81,8 +81,8 @@ namespace CompleteLibrary_Project.Controller
 
         public string GetMediaInfo(Media media)
         {
-            var book = GetBook(media);
-            return book != null ? book.GetMediaInfo() : "Invalid media type.";
+            var movie = GetMovie(media);
+            return movie != null ? movie.GetMediaInfo() : "Invalid media type.";
         }
     }
 }
