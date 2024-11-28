@@ -13,7 +13,7 @@ namespace CompleteLibrary_Project.Model.Users
     {
         public Librarian(string fname, string lname, DateTime dob) : base(fname, lname, dob) { }
 
-        public Librarian(int id, string fname, string lname, DateTime dob) : base(id, fname, lname, dob) { }
+        public Librarian(int id, string fname, string lname, DateTime dob, List<int> checkouts, Dictionary<int, DateTime> holds) : base(id, fname, lname, dob, checkouts, holds) { }
         public Librarian() { }
 
         public Media ViewMemberHistory(User member)

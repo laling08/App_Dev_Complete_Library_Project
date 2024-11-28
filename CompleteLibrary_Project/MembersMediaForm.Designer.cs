@@ -118,6 +118,7 @@
             borrowButton.TabIndex = 5;
             borrowButton.Text = "Borrow";
             borrowButton.UseVisualStyleBackColor = true;
+            borrowButton.Click += borrowButton_Click;
             // 
             // holdButton
             // 

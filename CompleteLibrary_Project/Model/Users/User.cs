@@ -25,9 +25,12 @@ namespace CompleteLibrary_Project.Model.Users
         public DateTime Dob { get; set; }
         private static int _count = 1;
 
-        //private Book[] _books;
-        private Media[] _currentCheckouts;
-        private Media[] _currentHolds;
+        //private Media[] _currentCheckouts;
+        //private Media[] _currentHolds;
+        [JsonPropertyName("current_checkouts")]
+        public List<int> CurrentCheckouts { get; set; }
+        [JsonPropertyName("current_holds")]
+        public Dictionary<int, DateTime> CurrentHolds { get; set; }
 
         public User(string fname, string lname, DateTime dob)
         {
@@ -35,15 +38,19 @@ namespace CompleteLibrary_Project.Model.Users
             LName = lname;
             Dob = dob;
             Id = _count++;
+            CurrentCheckouts = new List<int>();
+            CurrentHolds = new Dictionary<int, DateTime>();
         }
 
         [JsonConstructorAttribute]
-        public User(int id, string fname, string lname, DateTime dob)
+        public User(int id, string fname, string lname, DateTime dob, List<int> checkouts, Dictionary<int, DateTime> holds)
         {
             Id = id;
             FName = fname;
             LName = lname;
             Dob = dob;
+            CurrentCheckouts = checkouts;
+            CurrentHolds = holds;
         }
 
         public User()

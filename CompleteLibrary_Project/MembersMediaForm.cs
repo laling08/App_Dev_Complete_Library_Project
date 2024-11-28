@@ -109,5 +109,10 @@ namespace CompleteLibrary_Project
                 borrowButton.Enabled = false;
             }
         }
+
+        private void borrowButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

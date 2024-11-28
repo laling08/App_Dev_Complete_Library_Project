@@ -10,7 +10,7 @@ namespace CompleteLibrary_Project.Model.Users
     {
         public Member(string fname, string lname, DateTime dob) : base(fname, lname, dob) { }
 
-        public Member(int id, string fname, string lname, DateTime dob) : base(id, fname, lname, dob) { }
+        public Member(int id, string fname, string lname, DateTime dob, List<int> checkouts, Dictionary<int, DateTime> holds) : base(id, fname, lname, dob, checkouts, holds) { }
         public Member() { }
     }
 }

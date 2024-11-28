@@ -4,31 +4,47 @@
         "media_id": 1,
         "media_type": "Book",
         "title": "The Great Gatsby",
-        "checkout_date": "2023-11-25T10:00:00",
-        "expected_return_date": "2023-12-25T10:00:00"
+        "checkout_date": "2024-11-15T10:00:00",
+        "expected_return_date": "2024-12-15T10:00:00"
     },
     {
-        "user_id": 2,
-        "media_id": 4,
-        "media_type": "Movie",
-        "title": "Inception",
-        "checkout_date": "2023-11-26T14:30:00",
-        "expected_return_date": "2023-12-26T14:30:00"
-    },
-    {
-        "user_id": 5,
-        "media_id": 13,
-        "media_type": "Magazine",
-        "title": "National Geographic",
-        "checkout_date": "2023-11-27T09:15:00",
-        "expected_return_date": "2023-12-27T09:15:00"
-    },
-    {
-        "user_id": 5,
-        "media_id": 9,
+        "user_id": 1,
+        "media_id": 10,
         "media_type": "Audiobook",
+        "title": "Le petit prince",
+        "checkout_date": "2024-11-25T10:00:00",
+        "expected_return_date": "2024-12-25T10:00:00"
+    },
+    {
+        "user_id": 3,
+        "media_id": 3,
+        "media_type": "Book",
+        "title": "Le petit prince",
+        "checkout_date": "2024-11-25T10:00:00",
+        "expected_return_date": "2024-12-25T10:00:00"
+    },
+    {
+        "user_id": 4,
+        "media_id": 7,
+        "media_type": "Movie",
+        "title": "Schindler's List",
+        "checkout_date": "2024-11-26T14:30:00",
+        "expected_return_date": "2024-12-02T14:30:00"
+    },
+    {
+        "user_id": 4,
+        "media_id": 2,
+        "media_type": "Book",
         "title": "Harry Potter and the Philosopher's Stone",
-        "checkout_date": "2023-11-28T08:00:00",
-        "expected_return_date": "2023-12-28T08:00:00"
+        "checkout_date": "2024-11-27T09:15:00",
+        "expected_return_date": "2024-12-27T09:15:00"
+    },
+    {
+        "user_id": 5,
+        "media_id": 8,
+        "media_type": "Audiobook",
+        "title": "The Great Gatsby",
+        "checkout_date": "2024-11-28T08:00:00",
+        "expected_return_date": "2024-12-28T08:00:00"
     }
 ]
