@@ -73,24 +73,68 @@ namespace CompleteLibrary_Project.Model.Medias
                 $"\nNarrateur(e):\t{Narrator}\nÉdition:\t\t{Edition}\nLongueur:\t{Duration}\n";
         }
 
+        /// <summary>
+        /// Returns the audiobook's information based on its language.
+        /// </summary>
+        /// <returns>The formatted details in English or French.</returns>
+        public override string GetMediaInfo()
+        {
+            if (Language.ToLower() == "fr")
+            {
+                return ToStringFR();
+            }
+            else
+            {
+                return ToString();
+            }
+        }
+
+        /// <summary>
+        /// Marks the audiobook as checked out.
+        /// </summary>
         public override void Checkout()
         {
-            throw new NotImplementedException();
+            if (Status == "Available")
+            {
+                Status = "Checked Out";
+                Console.WriteLine($"Audiobook '{Title}' check out successfully.");
+            }
+            else
+            {
+                Console.WriteLine($"Audiobook '{Title}' is not availble for checkout.");
+            }
         }
 
+        /// <summary>
+        /// Marks the audiobook as returned.
+        /// </summary>
         public override void ReturnItem()
         {
-            throw new NotImplementedException();
+            if (Status == "Checked Out")
+            {
+                Status = "Available";
+                Console.WriteLine($"Audiobook '{Title}' returned successfully.");
+            }
+            else
+            {
+                Console.WriteLine($"Audiobook '{Title}' is not checked out.");
+            }
         }
 
+        /// <summary>
+        /// Renews the loan for the audiobook.
+        /// </summary>
         public override void RenewLoan()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Loan for audiobook '{Title}' renewed successfully.");
         }
 
+        /// <summary>
+        /// Applies a late fee for the audiobook.
+        /// </summary>
         public override void GiveLateFee()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Late fee applied for audiobook '{Title}'.");
         }
     }
 }

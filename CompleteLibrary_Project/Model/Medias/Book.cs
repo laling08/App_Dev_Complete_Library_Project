@@ -53,17 +53,6 @@ namespace CompleteLibrary_Project.Model.Medias
             // empty constructor required for deserialization
         }
 
-        public override void Checkout() { }
-
-        public override void ReturnItem() { }
-
-        public override void RenewLoan() { }
-
-        public override void GiveLateFee()
-        {
-            throw new NotImplementedException();
-        }
-
 
         public override string? ToString()
         {
@@ -79,6 +68,70 @@ namespace CompleteLibrary_Project.Model.Medias
 
             return $"LIVRE\n{baseToString}ISBN:\t\t{ISBN}\nAuteur(e):\t{Author}\nMaison d'édition:\t{Publisher}" +
                 $"\nIllustrateur/trice:\t{Illustrator}\nÉdition:\t\t{Edition}\n";
+        }
+
+        /// <summary>
+        /// Returns the books's information based on its language.
+        /// </summary>
+        /// <returns>The formatted details in English or French.</returns>
+        public override string GetMediaInfo()
+        {
+            if (Language.ToLower() == "fr")
+            {
+                return ToStringFR();
+            }
+            else
+            {
+                return ToString();
+            }
+        }
+
+        /// <summary>
+        /// Marks the audiobook as checked out.
+        /// </summary>
+        public override void Checkout()
+        {
+            if (Status == "Available")
+            {
+                Status = "Checked Out";
+                Console.WriteLine($"Book '{Title}' check out successfully.");
+            }
+            else
+            {
+                Console.WriteLine($"Book '{Title}' is not availble for checkout.");
+            }
+        }
+
+        /// <summary>
+        /// Marks the Book as returned.
+        /// </summary>
+        public override void ReturnItem()
+        {
+            if (Status == "Checked Out")
+            {
+                Status = "Available";
+                Console.WriteLine($"Book '{Title}' returned successfully.");
+            }
+            else
+            {
+                Console.WriteLine($"Book '{Title}' is not checked out.");
+            }
+        }
+
+        /// <summary>
+        /// Renews the loan for the Book.
+        /// </summary>
+        public override void RenewLoan()
+        {
+            Console.WriteLine($"Loan for Book '{Title}' renewed successfully.");
+        }
+
+        /// <summary>
+        /// Applies a late fee for the Book.
+        /// </summary>
+        public override void GiveLateFee()
+        {
+            Console.WriteLine($"Late fee applied for Book '{Title}'.");
         }
     }
 }

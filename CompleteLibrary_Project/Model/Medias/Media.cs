@@ -79,6 +79,7 @@ namespace CompleteLibrary_Project.Model.Medias
                 $"\nAnnée:\t\t{PublicationYear}\nStatut:\t\t{Status}\n";
         }
 
+        public abstract String GetMediaInfo();
         public abstract void Checkout();
         public abstract void ReturnItem();
         public abstract void RenewLoan();
