@@ -8,53 +8,102 @@ using System.Threading.Tasks;
 
 namespace CompleteLibrary_Project.Controller
 {
+    /// <summary>
+    /// Controller for managig audiobook operations.
+    /// </summary>
     public class AudiobookController : IMediaController
     {
+        /// <summary>
+        /// Attempts to cast a medio object to an audiobook
+        /// </summary>
+        /// <param name="media">The media item to cast</param>
+        /// <returns>The audiobook instance, or null if cast fails.</returns>
+        private Audiobook? GetAudiobook(Media media)
+        {
+            return media as Audiobook;
+        }
+
+        /// <summary>
+        /// Checks out the specified audiobook
+        /// </summary>
+        /// <param name="media">The audiobook to checkout.</param>
         public void Checkout(Media media)
         {
-            if (media is Audiobook audiobook)
+            var audiobook = GetAudiobook(media);
+            if (audiobook != null)
             {
                 audiobook.Checkout();
-                Console.WriteLine("Audiobook successfully checked out.");
+                Console.WriteLine($"Audiobook '{audiobook.Title}' checked out successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Invalid media type.");
             }
         }
 
+        /// <summary>
+        /// Returns the specified audiobook
+        /// </summary>
+        /// <param name="media">The audiobook to return</param>
         public void ReturnItem(Media media)
         {
-            if (media is Audiobook audiobook)
+            var audiobook = GetAudiobook(media);
+            if (audiobook != null)
             {
                 audiobook.ReturnItem();
-                Console.WriteLine("Audiobook successfully returned.");
+                Console.WriteLine($"Audiobook '{audiobook.Title}' returned successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Invalid media type.");
             }
         }
 
+        /// <summary>
+        /// Renews the loan for the specified audiobook.
+        /// </summary>
+        /// <param name="media">The audiobook to renew.</param>
         public void RenewLoan(Media media)
         {
-            if (media is Audiobook audiobook)
+            var audiobook = GetAudiobook(media);
+            if (audiobook != null)
             {
                 audiobook.RenewLoan();
-                Console.WriteLine("Audiobook loan renewed.");
+                Console.WriteLine($"Audiobook '{audiobook.Title}' renewed successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Invalid media type.");
             }
         }
 
+        /// <summary>
+        /// Applies a late fee to the specified audiobook.
+        /// </summary>
+        /// <param name="media">The audiobook to penalize.</param>
         public void ApplyLateFee(Media media)
         {
-            if (media is Audiobook audiobook)
+            var audiobook = GetAudiobook(media);
+            if (audiobook != null)
             {
                 audiobook.GiveLateFee();
-                Console.WriteLine("Late fee applied to audiobook.");
+                Console.WriteLine($"Late fee applied for audiobook '{audiobook.Title}'.");
+            }
+            else
+            {
+                Console.WriteLine("Invalid media type.");
             }
         }
 
+        /// <summary>
+        /// Gets information about the specifies audiobook.
+        /// </summary>
+        /// <param name="media">The audiobook to retrieve information for.</param>
+        /// <returns>A string containing the audiobooks's information, or an error message.</returns>
         public string GetMediaInfo(Media media)
         {
-            if (media is Audiobook audiobook)
-            {
-                // What is audiobook.GetMediaInfo()? Do we want audiobook.ToString()?
-                // return audiobook.GetMediaInfo();
-                return "Audiobook"; // please verify if this is correct
-            }
-            return "Invalid media type.";
+            var audiobook = GetAudiobook(media);
+            return audiobook != null ? audiobook.GetMediaInfo() : "Invalid media type.";
         }
     }
 
