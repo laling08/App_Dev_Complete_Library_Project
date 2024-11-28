@@ -58,32 +58,55 @@ namespace CompleteLibrary_Project
         private void userIdTB_TextChanged(object sender, EventArgs e)
         {
             string id = userIdTB.Text;
+            bool validUserFound = false;
 
             if (!id.All(char.IsDigit))
             {
-                idErrorLabel.Enabled = true;
+                idErrorLabel.Visible = true;
             }
             else
             {
                 List<User> users = DataAccess.LoadAllUsers();
                 foreach (User user in users)
                 {
-                    if (user.Id.ToString() == id)
+                    if (user.Id.ToString() == id.ToString())
                     {
                         member = user;
-                        return;
-                    }
-                    else
-                    {
-                        idErrorLabel.Enabled = true;
+                        validUserFound = true;
+                        break;
                     }
                 }
+
+                if (validUserFound)
+                {
+                    idErrorLabel.Visible = false;
+                }
+                else
+                {
+                    idErrorLabel.Visible = true;
+                }
             }
-            if (queriedMediaLV.SelectedItems.Count == 1 && member != null)
+
+            UpdateButtonStates(validUserFound);
+        }
+
+        private void queriedMediaLV_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            bool validUserFound = member != null;
+            UpdateButtonStates(validUserFound);
+        }
+
+        private void UpdateButtonStates(bool validUserFound)
+        {
+            if (queriedMediaLV.SelectedItems.Count > 0 && validUserFound)
             {
-                idErrorLabel.Enabled = false;
                 holdButton.Enabled = true;
                 borrowButton.Enabled = true;
+            }
+            else
+            {
+                holdButton.Enabled = false;
+                borrowButton.Enabled = false;
             }
         }
     }

@@ -51,6 +51,7 @@
             queriedMediaLV.TabIndex = 0;
             queriedMediaLV.UseCompatibleStateImageBehavior = false;
             queriedMediaLV.View = View.Details;
+            queriedMediaLV.SelectedIndexChanged += queriedMediaLV_SelectedIndexChanged;
             // 
             // titleColumn
             // 

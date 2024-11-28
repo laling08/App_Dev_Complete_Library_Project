@@ -20,7 +20,7 @@ namespace CompleteLibrary_Project.Model.Users
         [JsonPropertyName("lastName")]
         public string LName { get; set; }
         [JsonPropertyName("id")]
-        public int Id { get; private set; }
+        public int Id { get; set; }
         [JsonPropertyName("dateOfBirth")]
         public DateTime Dob { get; set; }
         private static int _count = 1;
