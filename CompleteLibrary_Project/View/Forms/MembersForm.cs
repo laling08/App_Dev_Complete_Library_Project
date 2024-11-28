@@ -14,11 +14,11 @@ using CompleteLibrary_Project.Model.Medias;
 
 namespace CompleteLibrary_Project
 {
-    public partial class MembersForm : Form
+    public partial class MembersSearchForm : Form
     {
         ResourceManager rm = new ResourceManager("CompleteLibrary_Project.Resources.Resources", typeof(Program).Assembly);
         CultureInfo cultureInfo;
-        public MembersForm(CultureInfo culture)
+        public MembersSearchForm(CultureInfo culture)
         {
             InitializeComponent();
             cultureInfo = culture;
@@ -73,6 +73,11 @@ namespace CompleteLibrary_Project
                     resultsRTB.Text += result.ToString();
                 }
             }
+
+            if (resultsRTB != null)
+            {
+                continueButton.Enabled = true;
+            }
         }
 
         private void SetText()
@@ -82,6 +87,13 @@ namespace CompleteLibrary_Project
 
             label1.Text = rm.GetString("search_message");
             searchBT.Text = rm.GetString("search");
+            continueButton.Text = rm.GetString("checkout_item");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MembersMediaForm form = new MembersMediaForm(cultureInfo);
+            form.Show();
         }
     }
 }

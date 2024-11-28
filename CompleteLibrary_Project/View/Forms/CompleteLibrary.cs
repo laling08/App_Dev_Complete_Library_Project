@@ -1,3 +1,4 @@
+
 using System.Globalization;
 using System.Resources;
 using System.Runtime.InteropServices;
@@ -15,7 +16,7 @@ namespace CompleteLibrary_Project
 
         private void membersButton_Click(object sender, EventArgs e)
         {
-            MembersForm form = new MembersForm(cultureInfo);
+            MembersSearchForm form = new MembersSearchForm(cultureInfo);
             form.Show();
         }
 

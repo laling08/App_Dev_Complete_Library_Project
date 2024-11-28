@@ -61,6 +61,69 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Audiobook.
+        /// </summary>
+        internal static string audiobook {
+            get {
+                return ResourceManager.GetString("audiobook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Book.
+        /// </summary>
+        internal static string book {
+            get {
+                return ResourceManager.GetString("book", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Borrow.
+        /// </summary>
+        internal static string borrow {
+            get {
+                return ResourceManager.GetString("borrow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Checkout one of these items.
+        /// </summary>
+        internal static string checkout_item {
+            get {
+                return ResourceManager.GetString("checkout_item", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter ID Number:.
+        /// </summary>
+        internal static string enter_id {
+            get {
+                return ResourceManager.GetString("enter_id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Place Hold.
+        /// </summary>
+        internal static string hold {
+            get {
+                return ResourceManager.GetString("hold", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is an invalid ID!.
+        /// </summary>
+        internal static string id_error {
+            get {
+                return ResourceManager.GetString("id_error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Français.
         /// </summary>
         internal static string language {
@@ -79,11 +142,29 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Magazine.
+        /// </summary>
+        internal static string magazine {
+            get {
+                return ResourceManager.GetString("magazine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Members.
         /// </summary>
         internal static string members {
             get {
                 return ResourceManager.GetString("members", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Movie.
+        /// </summary>
+        internal static string movie {
+            get {
+                return ResourceManager.GetString("movie", resourceCulture);
             }
         }
         
@@ -102,6 +183,24 @@ namespace CompleteLibrary_Project.Resources {
         internal static string search_message {
             get {
                 return ResourceManager.GetString("search_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select one of the following....
+        /// </summary>
+        internal static string select_following {
+            get {
+                return ResourceManager.GetString("select_following", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Title.
+        /// </summary>
+        internal static string title {
+            get {
+                return ResourceManager.GetString("title", resourceCulture);
             }
         }
         

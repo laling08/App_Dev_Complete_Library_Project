@@ -10,7 +10,6 @@ C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project
 C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\bin\Debug\net8.0-windows\CompleteLibrary_Project.dll
 C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\bin\Debug\net8.0-windows\CompleteLibrary_Project.pdb
 C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.LibrariansForm.resources
-C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.MembersForm.resources
 C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.dll
 C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\refint\CompleteLibrary_Project.dll
 C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.pdb
@@ -57,3 +56,5 @@ C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Pro
 C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.dll
 C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\refint\CompleteLibrary_Project.dll
 C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.CompleteLibrary.resources
+C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.MembersSearchForm.resources
+C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.MembersMediaForm.resources

@@ -2,7 +2,7 @@
 
 namespace CompleteLibrary_Project
 {
-    partial class MembersForm
+    partial class MembersSearchForm
     {
         /// <summary>
         /// Required designer variable.
@@ -35,6 +35,7 @@ namespace CompleteLibrary_Project
             searchBT = new Button();
             resultsRTB = new RichTextBox();
             typeSearchCB = new ComboBox();
+            continueButton = new Button();
             SuspendLayout();
             // 
             // label1
@@ -67,7 +68,7 @@ namespace CompleteLibrary_Project
             // 
             resultsRTB.Location = new Point(50, 108);
             resultsRTB.Name = "resultsRTB";
-            resultsRTB.Size = new Size(709, 307);
+            resultsRTB.Size = new Size(709, 276);
             resultsRTB.TabIndex = 5;
             resultsRTB.Text = "";
             // 
@@ -80,17 +81,29 @@ namespace CompleteLibrary_Project
             typeSearchCB.TabIndex = 6;
             typeSearchCB.Text = "Type";
             // 
-            // MembersForm
+            // continueButton
+            // 
+            continueButton.Enabled = false;
+            continueButton.Location = new Point(500, 404);
+            continueButton.Name = "continueButton";
+            continueButton.Size = new Size(259, 34);
+            continueButton.TabIndex = 8;
+            continueButton.Text = "Checkout one of these items";
+            continueButton.UseVisualStyleBackColor = true;
+            continueButton.Click += button1_Click;
+            // 
+            // MembersSearchForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(continueButton);
             Controls.Add(typeSearchCB);
             Controls.Add(searchBT);
             Controls.Add(titleSearchTB);
             Controls.Add(label1);
             Controls.Add(resultsRTB);
-            Name = "MembersForm";
+            Name = "MembersSearchForm";
             Text = "MembersForm";
             ResumeLayout(false);
             PerformLayout();
@@ -103,5 +116,6 @@ namespace CompleteLibrary_Project
         private Button searchBT;
         private RichTextBox resultsRTB;
         private ComboBox typeSearchCB;
+        private Button continueButton;
     }
 }

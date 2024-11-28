@@ -150,4 +150,22 @@
   <data name="title" xml:space="preserve">
     <value>Titre</value>
   </data>
+  <data name="checkout_item" xml:space="preserve">
+    <value>Réserver l'un de ces ouvrages</value>
+  </data>
+  <data name="hold" xml:space="preserve">
+    <value>Mettre en attente</value>
+  </data>
+  <data name="enter_id" xml:space="preserve">
+    <value>Entrez le numéro d'identification:</value>
+  </data>
+  <data name="select_following" xml:space="preserve">
+    <value>Sélectionnez l'un des éléments suivants...</value>
+  </data>
+  <data name="id_error" xml:space="preserve">
+    <value>Cet identifiant n'est pas valide!</value>
+  </data>
+  <data name="borrow" xml:space="preserve">
+    <value>Réserver</value>
+  </data>
 </root>
