@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             queriedMediaLV = new ListView();
+            titleColumn = new ColumnHeader();
+            statusColumn = new ColumnHeader();
+            languageColumn = new ColumnHeader();
+            idColumn = new ColumnHeader();
             selectLabel = new Label();
             userIdLabel = new Label();
             userIdTB = new TextBox();
@@ -39,11 +43,34 @@
             // 
             // queriedMediaLV
             // 
+            queriedMediaLV.Columns.AddRange(new ColumnHeader[] { titleColumn, statusColumn, languageColumn, idColumn });
             queriedMediaLV.Location = new Point(60, 139);
+            queriedMediaLV.MultiSelect = false;
             queriedMediaLV.Name = "queriedMediaLV";
-            queriedMediaLV.Size = new Size(669, 226);
+            queriedMediaLV.Size = new Size(672, 220);
             queriedMediaLV.TabIndex = 0;
             queriedMediaLV.UseCompatibleStateImageBehavior = false;
+            queriedMediaLV.View = View.Details;
+            // 
+            // titleColumn
+            // 
+            titleColumn.Text = "Title";
+            titleColumn.Width = 336;
+            // 
+            // statusColumn
+            // 
+            statusColumn.Text = "Status";
+            statusColumn.Width = 112;
+            // 
+            // languageColumn
+            // 
+            languageColumn.Text = "Language";
+            languageColumn.Width = 112;
+            // 
+            // idColumn
+            // 
+            idColumn.Text = "ID";
+            idColumn.Width = 112;
             // 
             // selectLabel
             // 
@@ -69,6 +96,7 @@
             userIdTB.Name = "userIdTB";
             userIdTB.Size = new Size(150, 31);
             userIdTB.TabIndex = 3;
+            userIdTB.TextChanged += userIdTB_TextChanged;
             // 
             // idErrorLabel
             // 
@@ -127,5 +155,9 @@
         private Label idErrorLabel;
         private Button borrowButton;
         private Button holdButton;
+        private ColumnHeader titleColumn;
+        private ColumnHeader statusColumn;
+        private ColumnHeader languageColumn;
+        private ColumnHeader idColumn;
     }
 }

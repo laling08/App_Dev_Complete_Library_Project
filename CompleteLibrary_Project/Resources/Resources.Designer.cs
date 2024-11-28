@@ -133,6 +133,15 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string language1 {
+            get {
+                return ResourceManager.GetString("language1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Librarians.
         /// </summary>
         internal static string librarians {
@@ -192,6 +201,15 @@ namespace CompleteLibrary_Project.Resources {
         internal static string select_following {
             get {
                 return ResourceManager.GetString("select_following", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status.
+        /// </summary>
+        internal static string status {
+            get {
+                return ResourceManager.GetString("status", resourceCulture);
             }
         }
         

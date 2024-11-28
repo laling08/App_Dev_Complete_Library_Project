@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CompleteLibrary_Project.Controller.DataAccessibility;
+using CompleteLibrary_Project.Model.Medias;
+using CompleteLibrary_Project.Model.Users;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +12,7 @@ using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CompleteLibrary_Project
 {
@@ -16,10 +20,14 @@ namespace CompleteLibrary_Project
     {
         ResourceManager rm = new ResourceManager("CompleteLibrary_Project.Resources.Resources", typeof(Program).Assembly);
         CultureInfo cultureInfo;
-        public MembersMediaForm(CultureInfo culture)
+        List<Media> queriedMedia;
+        User member;
+        Media item;
+        public MembersMediaForm(CultureInfo culture, List<Media> media)
         {
             InitializeComponent();
             cultureInfo = culture;
+            queriedMedia = media;
             SetText();
         }
 
@@ -33,7 +41,50 @@ namespace CompleteLibrary_Project
             selectLabel.Text = rm.GetString("select_following");
             holdButton.Text = rm.GetString("hold");
             borrowButton.Text = rm.GetString("borrow");
+            queriedMediaLV.Columns[0].Text = rm.GetString("title");
+            queriedMediaLV.Columns[1].Text = rm.GetString("status");
+            queriedMediaLV.Columns[2].Text = rm.GetString("language1");
 
+            foreach (Media media in queriedMedia)
+            {
+                ListViewItem item = new ListViewItem(media.Title);
+                item.SubItems.Add(media.Status);
+                item.SubItems.Add(media.Language);
+                item.SubItems.Add(media.Id + "");
+                queriedMediaLV.Items.Add(item);
+            }
+        }
+
+        private void userIdTB_TextChanged(object sender, EventArgs e)
+        {
+            string id = userIdTB.Text;
+
+            if (!id.All(char.IsDigit))
+            {
+                idErrorLabel.Enabled = true;
+            }
+            else
+            {
+                List<User> users = DataAccess.LoadAllUsers();
+                foreach (User user in users)
+                {
+                    if (user.Id.ToString() == id)
+                    {
+                        member = user;
+                        return;
+                    }
+                    else
+                    {
+                        idErrorLabel.Enabled = true;
+                    }
+                }
+            }
+            if (queriedMediaLV.SelectedItems.Count == 1 && member != null)
+            {
+                idErrorLabel.Enabled = false;
+                holdButton.Enabled = true;
+                borrowButton.Enabled = true;
+            }
         }
     }
 }

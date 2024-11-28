@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using CompleteLibrary_Project.Model.Enums;
 
@@ -14,9 +15,13 @@ namespace CompleteLibrary_Project.Model.Users
 {
     public abstract class User
     {
+        [JsonPropertyName("firstName")]
         public string FName { get; set; }
+        [JsonPropertyName("lastName")]
         public string LName { get; set; }
+        [JsonPropertyName("id")]
         public int Id { get; private set; }
+        [JsonPropertyName("dateOfBirth")]
         public DateTime Dob { get; set; }
         private static int _count = 1;
 
@@ -32,6 +37,7 @@ namespace CompleteLibrary_Project.Model.Users
             Id = _count++;
         }
 
+        [JsonConstructorAttribute]
         public User(int id, string fname, string lname, DateTime dob)
         {
             Id = id;

@@ -168,4 +168,10 @@
   <data name="borrow" xml:space="preserve">
     <value>Réserver</value>
   </data>
+  <data name="status" xml:space="preserve">
+    <value>Statut</value>
+  </data>
+  <data name="language1" xml:space="preserve">
+    <value>Langue</value>
+  </data>
 </root>

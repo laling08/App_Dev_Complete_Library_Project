@@ -18,6 +18,7 @@ namespace CompleteLibrary_Project
     {
         ResourceManager rm = new ResourceManager("CompleteLibrary_Project.Resources.Resources", typeof(Program).Assembly);
         CultureInfo cultureInfo;
+        List<Media> results;
         public MembersSearchForm(CultureInfo culture)
         {
             InitializeComponent();
@@ -60,7 +61,7 @@ namespace CompleteLibrary_Project
             resultsRTB.Clear();
 
             string query = titleSearchTB.Text.ToLower();
-            List<Media> results = medias.Where(item => item.Title.ToLower().Contains(query)).ToList();
+            results = medias.Where(item => item.Title.ToLower().Contains(query)).ToList();
 
             foreach (Media result in results)
             {
@@ -74,7 +75,7 @@ namespace CompleteLibrary_Project
                 }
             }
 
-            if (resultsRTB != null)
+            if (!string.IsNullOrWhiteSpace(resultsRTB.Text))
             {
                 continueButton.Enabled = true;
             }
@@ -92,7 +93,7 @@ namespace CompleteLibrary_Project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MembersMediaForm form = new MembersMediaForm(cultureInfo);
+            MembersMediaForm form = new MembersMediaForm(cultureInfo, results);
             form.Show();
         }
     }

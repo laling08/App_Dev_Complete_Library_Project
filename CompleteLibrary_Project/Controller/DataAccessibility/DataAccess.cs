@@ -310,7 +310,13 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
         {
             string filePath = Path.Combine(basePath, "users.json");
             var jsonString = File.ReadAllText(filePath);
-            return JsonSerializer.Deserialize<List<User>>(jsonString);
+
+            var options = new JsonSerializerOptions
+            {
+                Converters = { new UserConverter() },
+                PropertyNameCaseInsensitive = true
+            };
+            return JsonSerializer.Deserialize<List<User>>(jsonString, options);
         }
 
         /// <summary>

@@ -1,0 +1,34 @@
+[
+    {
+        "user_id": 1,
+        "media_id": 1,
+        "media_type": "Book",
+        "title": "The Great Gatsby",
+        "checkout_date": "2023-11-25T10:00:00",
+        "expected_return_date": "2023-12-25T10:00:00"
+    },
+    {
+        "user_id": 2,
+        "media_id": 4,
+        "media_type": "Movie",
+        "title": "Inception",
+        "checkout_date": "2023-11-26T14:30:00",
+        "expected_return_date": "2023-12-26T14:30:00"
+    },
+    {
+        "user_id": 5,
+        "media_id": 13,
+        "media_type": "Magazine",
+        "title": "National Geographic",
+        "checkout_date": "2023-11-27T09:15:00",
+        "expected_return_date": "2023-12-27T09:15:00"
+    },
+    {
+        "user_id": 5,
+        "media_id": 9,
+        "media_type": "Audiobook",
+        "title": "Harry Potter and the Philosopher's Stone",
+        "checkout_date": "2023-11-28T08:00:00",
+        "expected_return_date": "2023-12-28T08:00:00"
+    }
+]

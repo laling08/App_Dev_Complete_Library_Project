@@ -1,0 +1,44 @@
+[
+    {
+        "type": "Librarian",
+        "id": 1,
+        "firstName": "Lainey",
+        "lastName": "Wilson",
+        "dateOfBirth": "1985-03-25T00:00:00"
+    },
+    {
+        "type": "Member",
+        "id": 2,
+        "firstName": "Jane",
+        "lastName": "Paterson",
+        "dateOfBirth": "1990-07-14T00:00:00"
+    },
+    {
+        "type": "Librarian",
+        "id": 3,
+        "firstName": "Michael",
+        "lastName": "Johnson",
+        "dateOfBirth": "1978-11-02T00:00:00"
+    },
+    {
+        "type": "Member",
+        "id": 4,
+        "firstName": "Tristan",
+        "lastName": "Wang",
+        "dateOfBirth": "1995-01-30T00:00:00"
+    },
+    {
+        "type": "Member",
+        "id": 5,
+        "firstName": "Stephanie",
+        "lastName": "Gilmore",
+        "dateOfBirth": "1990-01-16T00:00:00"
+    },
+    {
+        "type": "Member",
+        "id": 6,
+        "firstName": "Benjamin",
+        "lastName": "Tolnai",
+        "dateOfBirth": "2020-04-02T00:00:00"
+    }
+]
