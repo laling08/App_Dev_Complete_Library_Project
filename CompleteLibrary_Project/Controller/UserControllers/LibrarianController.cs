@@ -1,4 +1,5 @@
-﻿using CompleteLibrary_Project.Model.Medias;
+﻿using CompleteLibrary_Project.Controller.DataAccessibility;
+using CompleteLibrary_Project.Model.Medias;
 using CompleteLibrary_Project.Model.Users;
 using System;
 using System.Collections.Generic;
@@ -158,5 +159,46 @@ namespace CompleteLibrary_Project.Controller.UserControllers
             Console.WriteLine($"Media '{media.Title}' issued to member '{member.FName} {member.LName}'.");
             return true;
         }
+
+        public void GiveLateFee(int memberId)
+        {
+            // Load the member and their loans
+            Member member = DataAccess.LoadAllUsers().OfType<Member>().FirstOrDefault(u => u.Id == memberId);
+
+            if (member == null)
+            {
+                throw new Exception("Member not found.");
+            }
+
+            List<Loan> memberLoans = DataAccess.LoadAllLoans().Where(loan => loan.UserId == memberId).ToList();
+
+            decimal lateFeePerDay = 1.5m; // Example fee
+            DateTime today = DateTime.Now;
+
+            foreach (var loan in memberLoans)
+            {
+                if (loan.ExpectedReturnDate < today)
+                {
+                    int overdueDays = (today - loan.DueDate).Days;
+                    member.LateFees += overdueDays * lateFeePerDay;
+                }
+            }
+
+            DataAccess.SaveUserToFile(member); // Save updated member data
+        }
+
+        public string GetMemberHistory(int memberId)
+        {
+            var loans = DataAccess.LoadAllLoans().Where(loan => loan.UserId == memberId);
+
+            StringBuilder history = new StringBuilder();
+            foreach (var loan in loans)
+            {
+                history.AppendLine($"Media ID: {loan.MediaId}, Loan Date: {loan.CheckoutDate}, Due Date: {loan.ExpectedReturnDate}, Returned: {loan.IsReturned}");
+            }
+
+            return history.ToString();
+        }
     }
 }
+

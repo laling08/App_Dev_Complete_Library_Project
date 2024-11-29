@@ -139,7 +139,7 @@
             completedLabel.Name = "completedLabel";
             completedLabel.Size = new Size(59, 25);
             completedLabel.TabIndex = 7;
-            completedLabel.Text = "label1";
+            completedLabel.Text = "nameLabel";
             completedLabel.Visible = false;
             // 
             // MembersMediaForm

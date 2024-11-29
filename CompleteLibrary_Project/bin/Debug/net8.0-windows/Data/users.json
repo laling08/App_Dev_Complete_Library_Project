@@ -102,5 +102,16 @@
   "current_checkouts": [],
   "current_holds": {}
 
+},
+{
+ "type": "Member",
+ 
+  "firstName": "Ishilia",
+  "lastName": "Labrador",
+  "id": 15,
+  "dateOfBirth": "2005-05-03T00:00:00",
+  "current_checkouts": [],
+  "current_holds": {}
+
 }
 ]

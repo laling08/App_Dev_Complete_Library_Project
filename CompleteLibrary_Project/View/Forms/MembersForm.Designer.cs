@@ -38,11 +38,11 @@ namespace CompleteLibrary_Project
             continueButton = new Button();
             SuspendLayout();
             // 
-            // label1
+            // nameLabel
             // 
             label1.AutoSize = true;
             label1.Location = new Point(12, 9);
-            label1.Name = "label1";
+            label1.Name = "nameLabel";
             label1.Size = new Size(555, 25);
             label1.TabIndex = 0;
             label1.Text = "Search for a book, movie, audiobook, or magazine within the library!";

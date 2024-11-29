@@ -377,7 +377,7 @@
             errorLabel.Name = "errorLabel";
             errorLabel.Size = new Size(59, 25);
             errorLabel.TabIndex = 29;
-            errorLabel.Text = "label1";
+            errorLabel.Text = "nameLabel";
             errorLabel.Visible = false;
             // 
             // LibrarianAddMediaForm

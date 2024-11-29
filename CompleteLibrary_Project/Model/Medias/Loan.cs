@@ -24,6 +24,7 @@ namespace CompleteLibrary_Project.Model.Medias
         public DateTime CheckoutDate { get; set; }
         [JsonPropertyName("expected_return_date")]
         public DateTime ExpectedReturnDate { get; set; }
+        
 
         public Loan(Media mediaType, int userId)
         {

@@ -1,6 +1,7 @@
 ﻿using CompleteLibrary_Project.Controller.DataAccessibility;
 using CompleteLibrary_Project.Model.Medias;
 using CompleteLibrary_Project.Model.Users;
+using CompleteLibrary_Project.View.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -231,6 +232,12 @@ namespace CompleteLibrary_Project
             }
 
             returnErrorLabel.Visible = true;
+        }
+
+        private void manageMemberButton_Click(object sender, EventArgs e)
+        {
+            ManageMemberForm manageMemberForm = new ManageMemberForm(cultureInfo);
+            manageMemberForm.Show();
         }
     }
 }
