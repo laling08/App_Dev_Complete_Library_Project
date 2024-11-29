@@ -61,6 +61,15 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This loan has been successfully returned!.
+        /// </summary>
+        internal static string _return {
+            get {
+                return ResourceManager.GetString("return", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Media.
         /// </summary>
         internal static string add_media {
@@ -165,6 +174,15 @@ namespace CompleteLibrary_Project.Resources {
         internal static string id_error {
             get {
                 return ResourceManager.GetString("id_error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This loan does not exist..
+        /// </summary>
+        internal static string invalid_loan {
+            get {
+                return ResourceManager.GetString("invalid_loan", resourceCulture);
             }
         }
         

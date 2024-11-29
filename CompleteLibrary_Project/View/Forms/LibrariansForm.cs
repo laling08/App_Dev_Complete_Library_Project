@@ -1,4 +1,5 @@
 ﻿using CompleteLibrary_Project.Controller.DataAccessibility;
+using CompleteLibrary_Project.Model.Medias;
 using CompleteLibrary_Project.Model.Users;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Resources;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -85,11 +87,13 @@ namespace CompleteLibrary_Project
 
         private void TextBox_TextChanged(object sender, EventArgs e)
         {
+            userErrorLabel.Visible = false;
             ValidateForm();
         }
 
         private void memberRB_CheckedChanged(object sender, EventArgs e)
         {
+            userErrorLabel.Visible = false;
             ValidateForm();
         }
 
@@ -162,6 +166,71 @@ namespace CompleteLibrary_Project
         private void librarianRB_CheckedChanged(object sender, EventArgs e)
         {
             ValidateForm();
+        }
+
+        private void TB_TextChanged(object sender, EventArgs e)
+        {
+            returnErrorLabel.Visible = false;
+
+            if (!(string.IsNullOrWhiteSpace(userIdTB.Text) && string.IsNullOrWhiteSpace(mediaIdTB.Text)))
+            {
+                try
+                {
+                    List<Loan> loans = DataAccess.LoadAllLoans();
+
+                    bool loanExists = loans.Any(loan => loan.UserId == int.Parse(userIdTB.Text) && loan.MediaId == int.Parse(mediaIdTB.Text));
+
+                    if (loanExists)
+                    {
+                        returnSubmitButton.Enabled = true;
+                    }
+                    else
+                    {
+                        returnErrorLabel.Visible = true;
+                        returnErrorLabel.Text = rm.GetString("invalid_loan");
+                    }
+                }
+                catch (FormatException fe)
+                {
+                    returnErrorLabel.Visible = true;
+                    returnErrorLabel.Text = rm.GetString("invalid_loan");
+                }
+            }
+        }
+
+        private void returnSubmitButton_Click(object sender, EventArgs e)
+        {
+            int mediaId = int.Parse(mediaIdTB.Text);
+            List<User> users = DataAccess.LoadAllUsers();
+            User user = users.FirstOrDefault(u => u.Id == int.Parse(userIdTB.Text));
+
+            List<Loan> loans = DataAccess.LoadAllLoans();
+            Loan loan = loans.FirstOrDefault(l => l.MediaId == mediaId);
+
+            switch (loan.MediaType)
+            {
+                case "CompleteLibrary_Project.Model.Medias.Book":
+                    user.ReturnMedia(DataAccess.LoadBook(mediaId));
+                    returnErrorLabel.Text = rm.GetString("return");
+                    break;
+                case "CompleteLibrary_Project.Model.Medias.Movie":
+                    user.ReturnMedia(DataAccess.LoadMovie(mediaId));
+                    returnErrorLabel.Text = rm.GetString("return");
+                    break;
+                case "CompleteLibrary_Project.Model.Medias.Audiobook":
+                    user.ReturnMedia(DataAccess.LoadAudiobook(mediaId));
+                    returnErrorLabel.Text = rm.GetString("return");
+                    break;
+                case "CompleteLibrary_Project.Model.Medias.Magazine":
+                    user.ReturnMedia(DataAccess.LoadMagazine(mediaId));
+                    returnErrorLabel.Text = rm.GetString("return");
+                    break;
+                default:
+                    returnErrorLabel.Text = rm.GetString("invalid_loan");
+                    break;
+            }
+
+            returnErrorLabel.Visible = true;
         }
     }
 }

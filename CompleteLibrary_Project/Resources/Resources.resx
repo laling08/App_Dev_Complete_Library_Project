@@ -236,4 +236,10 @@ Their ID is {0}.</value>
     <value>A new librarian has been added!
 Their ID is {0}.</value>
   </data>
+  <data name="invalid_loan" xml:space="preserve">
+    <value>This loan does not exist.</value>
+  </data>
+  <data name="return" xml:space="preserve">
+    <value>This loan has been successfully returned!</value>
+  </data>
 </root>

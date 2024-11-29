@@ -237,4 +237,10 @@ Son identifiant est {0}.</value>
     <value>Un nouveau bibliothécaire a été
 ajouté ! Son identifiant est {0}.</value>
   </data>
+  <data name="invalid_loan" xml:space="preserve">
+    <value>Cet enregistrement n'existe pas.</value>
+  </data>
+  <data name="return" xml:space="preserve">
+    <value>Ce prêt a été retourné avec succès!</value>
+  </data>
 </root>

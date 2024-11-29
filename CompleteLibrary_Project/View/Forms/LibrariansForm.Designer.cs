@@ -104,9 +104,9 @@
             // 
             // returnItemButton
             // 
-            returnItemButton.Location = new Point(574, 31);
+            returnItemButton.Location = new Point(554, 31);
             returnItemButton.Name = "returnItemButton";
-            returnItemButton.Size = new Size(126, 34);
+            returnItemButton.Size = new Size(180, 34);
             returnItemButton.TabIndex = 6;
             returnItemButton.Text = "Return Item";
             returnItemButton.UseVisualStyleBackColor = true;
@@ -185,9 +185,9 @@
             // userSubmitButton
             // 
             userSubmitButton.Enabled = false;
-            userSubmitButton.Location = new Point(283, 376);
+            userSubmitButton.Location = new Point(244, 376);
             userSubmitButton.Name = "userSubmitButton";
-            userSubmitButton.Size = new Size(80, 34);
+            userSubmitButton.Size = new Size(119, 34);
             userSubmitButton.TabIndex = 14;
             userSubmitButton.Text = "Submit";
             userSubmitButton.UseVisualStyleBackColor = true;
@@ -246,32 +246,35 @@
             // 
             // userIdTB
             // 
-            userIdTB.Location = new Point(574, 144);
+            userIdTB.Location = new Point(600, 144);
             userIdTB.Name = "userIdTB";
             userIdTB.PlaceholderText = "10";
             userIdTB.Size = new Size(150, 31);
             userIdTB.TabIndex = 27;
             userIdTB.Visible = false;
+            userIdTB.TextChanged += TB_TextChanged;
             // 
             // mediaIdTB
             // 
-            mediaIdTB.Location = new Point(574, 189);
+            mediaIdTB.Location = new Point(600, 189);
             mediaIdTB.Name = "mediaIdTB";
             mediaIdTB.PlaceholderText = "15";
             mediaIdTB.Size = new Size(150, 31);
             mediaIdTB.TabIndex = 28;
             mediaIdTB.Visible = false;
+            mediaIdTB.TextChanged += TB_TextChanged;
             // 
             // returnSubmitButton
             // 
             returnSubmitButton.Enabled = false;
-            returnSubmitButton.Location = new Point(612, 238);
+            returnSubmitButton.Location = new Point(638, 238);
             returnSubmitButton.Name = "returnSubmitButton";
             returnSubmitButton.Size = new Size(112, 34);
             returnSubmitButton.TabIndex = 29;
             returnSubmitButton.Text = "Submit";
             returnSubmitButton.UseVisualStyleBackColor = true;
             returnSubmitButton.Visible = false;
+            returnSubmitButton.Click += returnSubmitButton_Click;
             // 
             // userErrorLabel
             // 

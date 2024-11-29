@@ -77,16 +77,16 @@ namespace CompleteLibrary_Project.Model.Users
             {
                 switch (media.GetType().Name)
                 {
-                    case "Book":
+                    case "CompleteLibrary_Project.Model.Medias.Book":
                         DataAccess.UpdateBookStatus(media.Id, "Available");
                         break;
-                    case "Movie":
+                    case "CompleteLibrary_Project.Model.Medias.Movie":
                         DataAccess.UpdateMovieStatus(media.Id, "Available");
                         break;
-                    case "Audiobook":
+                    case "CompleteLibrary_Project.Model.Medias.Audiobook":
                         DataAccess.UpdateAudiobookStatus(media.Id, "Available");
                         break;
-                    case "Magazine":
+                    case "CompleteLibrary_Project.Model.Medias.Magazine":
                         DataAccess.UpdateMagazineStatus(media.Id, "Available");
                         break;
                     default:
@@ -111,16 +111,16 @@ namespace CompleteLibrary_Project.Model.Users
                 {
                     switch (media.GetType().Name)
                     {
-                        case "Book":
+                        case "CompleteLibrary_Project.Model.Medias.Book":
                             DataAccess.UpdateBookStatus(media.Id, "Checked Out and Reserved");
                             break;
-                        case "Movie":
+                        case "CompleteLibrary_Project.Model.Medias.Movie":
                             DataAccess.UpdateMovieStatus(media.Id, "Checked Out and Reserved");
                             break;
-                        case "Audiobook":
+                        case "CompleteLibrary_Project.Model.Medias.Audiobook":
                             DataAccess.UpdateAudiobookStatus(media.Id, "Checked Out and Reserved");
                             break;
-                        case "Magazine":
+                        case "CompleteLibrary_Project.Model.Medias.Magazine":
                             DataAccess.UpdateMagazineStatus(media.Id, "Checked Out and Reserved");
                             break;
                         default:
@@ -131,16 +131,16 @@ namespace CompleteLibrary_Project.Model.Users
                 {
                     switch (media.GetType().Name)
                     {
-                        case "Book":
+                        case "CompleteLibrary_Project.Model.Medias.Book":
                             DataAccess.UpdateBookStatus(media.Id, "Reserved");
                             break;
-                        case "Movie":
+                        case "CompleteLibrary_Project.Model.Medias.Movie":
                             DataAccess.UpdateMovieStatus(media.Id, "Reserved");
                             break;
-                        case "Audiobook":
+                        case "CompleteLibrary_Project.Model.Medias.Audiobook":
                             DataAccess.UpdateAudiobookStatus(media.Id, "Reserved");
                             break;
-                        case "Magazine":
+                        case "CompleteLibrary_Project.Model.Medias.Magazine":
                             DataAccess.UpdateMagazineStatus(media.Id, "Reserved");
                             break;
                         default:
@@ -204,16 +204,16 @@ namespace CompleteLibrary_Project.Model.Users
                 // update status depending on media type
                 switch (media.GetType().Name)
                 {
-                    case "Book":
+                    case "CompleteLibrary_Project.Model.Medias.Book":
                         DataAccess.UpdateBookStatus(media.Id, "Checked Out and Reserved");
                         break;
-                    case "Movie":
+                    case "CompleteLibrary_Project.Model.Medias.Movie":
                         DataAccess.UpdateMovieStatus(media.Id, "Checked Out and Reserved");
                         break;
-                    case "Audiobook":
+                    case "CompleteLibrary_Project.Model.Medias.Audiobook":
                         DataAccess.UpdateAudiobookStatus(media.Id, "Checked Out and Reserved");
                         break;
-                    case "Magazine":
+                    case "CompleteLibrary_Project.Model.Medias.Magazine":
                         DataAccess.UpdateMagazineStatus(media.Id, "Checked Out and Reserved");
                         break;
                     default:
@@ -247,16 +247,16 @@ namespace CompleteLibrary_Project.Model.Users
             CurrentCheckouts.Add(media.Id);
             switch (media.GetType().Name)
             {
-                case "Book":
+                case "CompleteLibrary_Project.Model.Medias.Book":
                     DataAccess.UpdateBookStatus(media.Id, "Checked Out");
                     break;
-                case "Movie":
+                case "CompleteLibrary_Project.Model.Medias.Movie":
                     DataAccess.UpdateMovieStatus(media.Id, "Checked Out");
                     break;
-                case "Audiobook":
+                case "CompleteLibrary_Project.Model.Medias.Audiobook":
                     DataAccess.UpdateAudiobookStatus(media.Id, "Checked Out");
                     break;
-                case "Magazine":
+                case "CompleteLibrary_Project.Model.Medias.Magazine":
                     DataAccess.UpdateMagazineStatus(media.Id, "Checked Out");
                     break;
                 default:
@@ -268,10 +268,5 @@ namespace CompleteLibrary_Project.Model.Users
 
             return true;
         }
-
-        //public List<Loan> ViewPersonalHistory()
-        //{
-        //    return null;
-        //}
     }
 }
