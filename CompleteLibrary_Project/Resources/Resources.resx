@@ -178,7 +178,8 @@
     <value>Sorry! Your search has not yielded any results. Make sure your title is spelt correctly and the correct type is selected.</value>
   </data>
   <data name="successful_checkout" xml:space="preserve">
-    <value>You have now checked out {0}! You have this item for {1} days.</value>
+    <value>You have now checked out {0}!
+You have this item for {1} days.</value>
   </data>
   <data name="unsuccessful_checkout" xml:space="preserve">
     <value>{0} is unavailable to you for checkout.</value>

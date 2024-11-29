@@ -12,7 +12,8 @@
     "narrator": "Frank Muller",
     "edition": 1,
     "duration": 320,
-    "status": "Checked Out"
+    "status": "Checked Out",
+    "max_checkout_length": 14
   },
   {
     "id": 9,
@@ -27,7 +28,8 @@
     "narrator": "Stephen Fry",
     "edition": 1,
     "duration": 534,
-    "status": "Available"
+    "status": "Available",
+    "max_checkout_length": 14
   },
   {
     "id": 18,
@@ -42,7 +44,8 @@
     "narrator": "Jim Dale",
     "edition": 1,
     "duration": 784,
-    "status": "Available"
+    "status": "Available",
+    "max_checkout_length": 14
   },
   {
     "id": 10,
@@ -57,7 +60,8 @@
     "narrator": "Antoine de Saint-Exupéry",
     "edition": 1,
     "duration": 120,
-    "status": "Checked Out"
+    "status": "Checked Out",
+    "max_checkout_length": 14
   },
   {
     "id": 11,
@@ -72,7 +76,8 @@
     "narrator": "Rob Inglis",
     "edition": 2,
     "duration": 680,
-    "status": "Available"
+    "status": "Available",
+    "max_checkout_length": 14
   },
   {
     "id": 12,
@@ -87,6 +92,7 @@
     "narrator": "Sissy Spacek",
     "edition": 2,
     "duration": 723,
-    "status": "Available"
+    "status": "Available",
+    "max_checkout_length": 14
   }
 ]

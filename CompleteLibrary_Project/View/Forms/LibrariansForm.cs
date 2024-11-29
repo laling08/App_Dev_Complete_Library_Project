@@ -1,20 +1,8 @@
 ﻿using CompleteLibrary_Project.Controller.DataAccessibility;
 using CompleteLibrary_Project.Model.Medias;
 using CompleteLibrary_Project.Model.Users;
-using CompleteLibrary_Project.View.Forms;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
-using System.Reflection.Emit;
 using System.Resources;
-using System.Security.Permissions;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace CompleteLibrary_Project
 {
@@ -151,7 +139,7 @@ namespace CompleteLibrary_Project
             {
                 User member = userFactory.getUser("Member", fnameTB.Text, lnameTB.Text,
                     new DateTime(int.Parse(yearTB.Text), int.Parse(monthTB.Text), int.Parse(dayTB.Text)));
-                
+
                 DataAccess.SaveUserToFile(member);
                 userErrorLabel.Text = string.Format(rm.GetString("member_add"), member.Id);
                 userErrorLabel.Visible = true;
@@ -233,13 +221,8 @@ namespace CompleteLibrary_Project
                     break;
             }
 
+            DataAccess.SaveUsersToFile(users);
             returnErrorLabel.Visible = true;
-        }
-
-        private void manageMemberButton_Click(object sender, EventArgs e)
-        {
-            ManageMemberForm manageMemberForm = new ManageMemberForm(cultureInfo);
-            manageMemberForm.Show();
         }
     }
 }

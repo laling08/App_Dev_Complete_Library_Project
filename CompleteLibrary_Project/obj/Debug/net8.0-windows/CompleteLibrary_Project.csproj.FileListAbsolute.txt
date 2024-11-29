@@ -72,4 +72,3 @@ C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Pro
 C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.LibrarianAddMediaForm.resources
 C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.LibrarianAddMediaForm.resources
 C:\Users\ishil\Source\Repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.View.Forms.ManageMemberForm.resources
-C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\obj\Debug\net8.0-windows\CompleteLibrary_Project.View.Forms.ManageMemberForm.resources

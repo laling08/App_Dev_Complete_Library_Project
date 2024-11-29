@@ -480,7 +480,8 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You have now checked out {0}! You have this item for {1} days..
+        ///   Looks up a localized string similar to You have now checked out {0}!
+        ///You have this item for {1} days..
         /// </summary>
         internal static string successful_checkout {
             get {

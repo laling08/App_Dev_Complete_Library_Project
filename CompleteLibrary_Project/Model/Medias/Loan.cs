@@ -31,7 +31,7 @@ namespace CompleteLibrary_Project.Model.Medias
             MediaType = mediaType.GetType().ToString();
             Title = mediaType.Title;
             UserId = userId;
-            MediaId = mediaType.GetHashCode();
+            MediaId = mediaType.Id;
             CheckoutDate = DateTime.Now;
             ExpectedReturnDate = CheckoutDate.AddDays(mediaType.MaxCheckoutLength);
         }
