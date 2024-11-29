@@ -70,7 +70,7 @@ namespace CompleteLibrary_Project.View.Forms
 
             if (member is Member m)
             {
-                m.GiveLateFee();
+                //m.GiveLateFee();
                 MessageBox.Show(rm.GetString("late_fee_applied"), rm.GetString("success"), MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -89,10 +89,10 @@ namespace CompleteLibrary_Project.View.Forms
                 StringBuilder historyBuilder = new StringBuilder();
                 foreach (var loan in memberLoans)
                 {
-                    historyBuilder.AppendLine($"{rm.GetString("media_title")}: {loan.MediaTitle}");
-                    historyBuilder.AppendLine($"{rm.GetString("loan_date")}: {loan.LoanDate.ToShortDateString()}");
-                    historyBuilder.AppendLine($"{rm.GetString("return_date")}: {(loan.ReturnDate.HasValue ? loan.ReturnDate.Value.ToShortDateString() : rm.GetString("not_returned"))}");
-                    historyBuilder.AppendLine("----------------------------");
+                    //historyBuilder.AppendLine($"{rm.GetString("media_title")}: {loan.MediaTitle}");
+                    //historyBuilder.AppendLine($"{rm.GetString("loan_date")}: {loan.LoanDate.ToShortDateString()}");
+                    //historyBuilder.AppendLine($"{rm.GetString("return_date")}: {(loan.ReturnDate.HasValue ? loan.ReturnDate.Value.ToShortDateString() : rm.GetString("not_returned"))}");
+                    //historyBuilder.AppendLine("----------------------------");
                 }
 
                 memberHistoryRTB.Text = historyBuilder.ToString();

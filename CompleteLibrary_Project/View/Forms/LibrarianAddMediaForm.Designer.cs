@@ -57,7 +57,7 @@
             directorLabel = new Label();
             narratorTB = new TextBox();
             durationTB = new TextBox();
-            directoryTB = new TextBox();
+            directorTB = new TextBox();
             authorLabel = new Label();
             authorTB = new TextBox();
             submitButton = new Button();
@@ -71,9 +71,9 @@
             mediaTypeGB.Controls.Add(audiobookRB);
             mediaTypeGB.Controls.Add(movieRB);
             mediaTypeGB.Controls.Add(bookRB);
-            mediaTypeGB.Location = new Point(12, 12);
+            mediaTypeGB.Location = new Point(12, 3);
             mediaTypeGB.Name = "mediaTypeGB";
-            mediaTypeGB.Size = new Size(300, 118);
+            mediaTypeGB.Size = new Size(300, 101);
             mediaTypeGB.TabIndex = 0;
             mediaTypeGB.TabStop = false;
             mediaTypeGB.Text = "Select Media Type";
@@ -129,7 +129,7 @@
             // titleLabel
             // 
             titleLabel.AutoSize = true;
-            titleLabel.Location = new Point(18, 153);
+            titleLabel.Location = new Point(18, 113);
             titleLabel.Name = "titleLabel";
             titleLabel.Size = new Size(44, 25);
             titleLabel.TabIndex = 1;
@@ -138,7 +138,7 @@
             // languageLabel
             // 
             languageLabel.AutoSize = true;
-            languageLabel.Location = new Point(18, 204);
+            languageLabel.Location = new Point(18, 165);
             languageLabel.Name = "languageLabel";
             languageLabel.Size = new Size(89, 25);
             languageLabel.TabIndex = 2;
@@ -147,7 +147,7 @@
             // publicationYearLabel
             // 
             publicationYearLabel.AutoSize = true;
-            publicationYearLabel.Location = new Point(18, 256);
+            publicationYearLabel.Location = new Point(18, 219);
             publicationYearLabel.Name = "publicationYearLabel";
             publicationYearLabel.Size = new Size(137, 25);
             publicationYearLabel.TabIndex = 3;
@@ -156,7 +156,7 @@
             // ageRestrictionLabel
             // 
             ageRestrictionLabel.AutoSize = true;
-            ageRestrictionLabel.Location = new Point(18, 309);
+            ageRestrictionLabel.Location = new Point(18, 268);
             ageRestrictionLabel.Name = "ageRestrictionLabel";
             ageRestrictionLabel.Size = new Size(127, 25);
             ageRestrictionLabel.TabIndex = 4;
@@ -165,36 +165,36 @@
             // genreCB
             // 
             genreCB.FormattingEnabled = true;
-            genreCB.Location = new Point(18, 355);
+            genreCB.Location = new Point(18, 318);
             genreCB.Name = "genreCB";
-            genreCB.Size = new Size(303, 33);
+            genreCB.Size = new Size(338, 33);
             genreCB.TabIndex = 5;
             genreCB.Text = "Genre";
             // 
             // titleTB
             // 
-            titleTB.Location = new Point(171, 150);
+            titleTB.Location = new Point(206, 107);
             titleTB.Name = "titleTB";
             titleTB.Size = new Size(150, 31);
             titleTB.TabIndex = 6;
             // 
             // languageTB
             // 
-            languageTB.Location = new Point(171, 201);
+            languageTB.Location = new Point(206, 159);
             languageTB.Name = "languageTB";
             languageTB.Size = new Size(150, 31);
             languageTB.TabIndex = 7;
             // 
             // publicationYearTB
             // 
-            publicationYearTB.Location = new Point(171, 253);
+            publicationYearTB.Location = new Point(206, 213);
             publicationYearTB.Name = "publicationYearTB";
             publicationYearTB.Size = new Size(150, 31);
             publicationYearTB.TabIndex = 8;
             // 
             // ageRestrictionTB
             // 
-            ageRestrictionTB.Location = new Point(171, 306);
+            ageRestrictionTB.Location = new Point(206, 265);
             ageRestrictionTB.Name = "ageRestrictionTB";
             ageRestrictionTB.Size = new Size(150, 31);
             ageRestrictionTB.TabIndex = 9;
@@ -203,7 +203,7 @@
             // 
             isbnLabel.AutoSize = true;
             isbnLabel.Enabled = false;
-            isbnLabel.Location = new Point(362, 208);
+            isbnLabel.Location = new Point(383, 261);
             isbnLabel.Name = "isbnLabel";
             isbnLabel.Size = new Size(95, 25);
             isbnLabel.TabIndex = 10;
@@ -213,7 +213,7 @@
             // 
             monthLabel.AutoSize = true;
             monthLabel.Enabled = false;
-            monthLabel.Location = new Point(362, 259);
+            monthLabel.Location = new Point(383, 312);
             monthLabel.Name = "monthLabel";
             monthLabel.Size = new Size(157, 25);
             monthLabel.TabIndex = 11;
@@ -223,7 +223,7 @@
             // 
             publisherLabel.AutoSize = true;
             publisherLabel.Enabled = false;
-            publisherLabel.Location = new Point(362, 311);
+            publisherLabel.Location = new Point(383, 364);
             publisherLabel.Name = "publisherLabel";
             publisherLabel.Size = new Size(84, 25);
             publisherLabel.TabIndex = 12;
@@ -233,7 +233,7 @@
             // 
             illustratorLabel.AutoSize = true;
             illustratorLabel.Enabled = false;
-            illustratorLabel.Location = new Point(362, 364);
+            illustratorLabel.Location = new Point(383, 417);
             illustratorLabel.Name = "illustratorLabel";
             illustratorLabel.Size = new Size(87, 25);
             illustratorLabel.TabIndex = 13;
@@ -243,7 +243,7 @@
             // 
             editionLabel.AutoSize = true;
             editionLabel.Enabled = false;
-            editionLabel.Location = new Point(362, 413);
+            editionLabel.Location = new Point(18, 416);
             editionLabel.Name = "editionLabel";
             editionLabel.Size = new Size(67, 25);
             editionLabel.TabIndex = 14;
@@ -252,7 +252,7 @@
             // isbnTB
             // 
             isbnTB.Enabled = false;
-            isbnTB.Location = new Point(536, 205);
+            isbnTB.Location = new Point(601, 258);
             isbnTB.Name = "isbnTB";
             isbnTB.Size = new Size(150, 31);
             isbnTB.TabIndex = 15;
@@ -260,7 +260,7 @@
             // monthTB
             // 
             monthTB.Enabled = false;
-            monthTB.Location = new Point(536, 256);
+            monthTB.Location = new Point(601, 309);
             monthTB.Name = "monthTB";
             monthTB.Size = new Size(150, 31);
             monthTB.TabIndex = 16;
@@ -268,7 +268,7 @@
             // publisherTB
             // 
             publisherTB.Enabled = false;
-            publisherTB.Location = new Point(536, 308);
+            publisherTB.Location = new Point(601, 361);
             publisherTB.Name = "publisherTB";
             publisherTB.Size = new Size(150, 31);
             publisherTB.TabIndex = 17;
@@ -276,7 +276,7 @@
             // illustratorTB
             // 
             illustratorTB.Enabled = false;
-            illustratorTB.Location = new Point(536, 361);
+            illustratorTB.Location = new Point(601, 414);
             illustratorTB.Name = "illustratorTB";
             illustratorTB.Size = new Size(150, 31);
             illustratorTB.TabIndex = 18;
@@ -284,7 +284,7 @@
             // editionTB
             // 
             editionTB.Enabled = false;
-            editionTB.Location = new Point(536, 410);
+            editionTB.Location = new Point(206, 413);
             editionTB.Name = "editionTB";
             editionTB.Size = new Size(150, 31);
             editionTB.TabIndex = 19;
@@ -293,7 +293,7 @@
             // 
             narratorLabel.AutoSize = true;
             narratorLabel.Enabled = false;
-            narratorLabel.Location = new Point(362, 156);
+            narratorLabel.Location = new Point(383, 209);
             narratorLabel.Name = "narratorLabel";
             narratorLabel.Size = new Size(78, 25);
             narratorLabel.TabIndex = 20;
@@ -303,7 +303,7 @@
             // 
             durationLabel.AutoSize = true;
             durationLabel.Enabled = false;
-            durationLabel.Location = new Point(362, 109);
+            durationLabel.Location = new Point(383, 162);
             durationLabel.Name = "durationLabel";
             durationLabel.Size = new Size(81, 25);
             durationLabel.TabIndex = 21;
@@ -313,7 +313,7 @@
             // 
             directorLabel.AutoSize = true;
             directorLabel.Enabled = false;
-            directorLabel.Location = new Point(362, 60);
+            directorLabel.Location = new Point(383, 113);
             directorLabel.Name = "directorLabel";
             directorLabel.Size = new Size(75, 25);
             directorLabel.TabIndex = 22;
@@ -322,7 +322,7 @@
             // narratorTB
             // 
             narratorTB.Enabled = false;
-            narratorTB.Location = new Point(536, 153);
+            narratorTB.Location = new Point(601, 206);
             narratorTB.Name = "narratorTB";
             narratorTB.Size = new Size(150, 31);
             narratorTB.TabIndex = 23;
@@ -330,24 +330,24 @@
             // durationTB
             // 
             durationTB.Enabled = false;
-            durationTB.Location = new Point(536, 106);
+            durationTB.Location = new Point(601, 159);
             durationTB.Name = "durationTB";
             durationTB.Size = new Size(150, 31);
             durationTB.TabIndex = 24;
             // 
-            // directoryTB
+            // directorTB
             // 
-            directoryTB.Enabled = false;
-            directoryTB.Location = new Point(536, 57);
-            directoryTB.Name = "directoryTB";
-            directoryTB.Size = new Size(150, 31);
-            directoryTB.TabIndex = 25;
+            directorTB.Enabled = false;
+            directorTB.Location = new Point(601, 110);
+            directorTB.Name = "directorTB";
+            directorTB.Size = new Size(150, 31);
+            directorTB.TabIndex = 25;
             // 
             // authorLabel
             // 
             authorLabel.AutoSize = true;
             authorLabel.Enabled = false;
-            authorLabel.Location = new Point(18, 411);
+            authorLabel.Location = new Point(18, 365);
             authorLabel.Name = "authorLabel";
             authorLabel.Size = new Size(67, 25);
             authorLabel.TabIndex = 26;
@@ -356,7 +356,7 @@
             // authorTB
             // 
             authorTB.Enabled = false;
-            authorTB.Location = new Point(171, 411);
+            authorTB.Location = new Point(206, 365);
             authorTB.Name = "authorTB";
             authorTB.Size = new Size(150, 31);
             authorTB.TabIndex = 27;
@@ -369,13 +369,14 @@
             submitButton.TabIndex = 28;
             submitButton.Text = "Submit";
             submitButton.UseVisualStyleBackColor = true;
+            submitButton.Click += submitButton_Click;
             // 
             // errorLabel
             // 
             errorLabel.AutoSize = true;
-            errorLabel.Location = new Point(362, 12);
+            errorLabel.Location = new Point(318, 12);
             errorLabel.Name = "errorLabel";
-            errorLabel.Size = new Size(59, 25);
+            errorLabel.Size = new Size(97, 25);
             errorLabel.TabIndex = 29;
             errorLabel.Text = "nameLabel";
             errorLabel.Visible = false;
@@ -389,7 +390,7 @@
             Controls.Add(submitButton);
             Controls.Add(authorTB);
             Controls.Add(authorLabel);
-            Controls.Add(directoryTB);
+            Controls.Add(directorTB);
             Controls.Add(durationTB);
             Controls.Add(narratorTB);
             Controls.Add(directorLabel);
@@ -454,7 +455,7 @@
         private Label directorLabel;
         private TextBox narratorTB;
         private TextBox durationTB;
-        private TextBox directoryTB;
+        private TextBox directorTB;
         private Label authorLabel;
         private TextBox authorTB;
         private Button submitButton;

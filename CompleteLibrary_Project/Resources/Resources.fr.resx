@@ -276,4 +276,15 @@ ajouté ! Son identifiant est {0}.</value>
   <data name="media_selection" xml:space="preserve">
     <value>Sélectionnez le type d'oeuvre</value>
   </data>
+  <data name="media_insert" xml:space="preserve">
+    <value>Un nouveau document a été ajouté
+à votre bibliothèque. Son identifiant
+est {0}.</value>
+  </data>
+  <data name="int_error" xml:space="preserve">
+    <value>Attention : les éléments suivants doivent
+être des nombres entiers : année de
+publication, restriction d'âge, durée,
+et édition</value>
+  </data>
 </root>

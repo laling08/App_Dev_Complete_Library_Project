@@ -179,8 +179,8 @@ namespace CompleteLibrary_Project.Controller.UserControllers
             {
                 if (loan.ExpectedReturnDate < today)
                 {
-                    int overdueDays = (today - loan.DueDate).Days;
-                    member.LateFees += overdueDays * lateFeePerDay;
+                    //int overdueDays = (today - loan.DueDate).Days;
+                    //member.LateFees += overdueDays * lateFeePerDay;
                 }
             }
 
@@ -194,7 +194,7 @@ namespace CompleteLibrary_Project.Controller.UserControllers
             StringBuilder history = new StringBuilder();
             foreach (var loan in loans)
             {
-                history.AppendLine($"Media ID: {loan.MediaId}, Loan Date: {loan.CheckoutDate}, Due Date: {loan.ExpectedReturnDate}, Returned: {loan.IsReturned}");
+                //history.AppendLine($"Media ID: {loan.MediaId}, Loan Date: {loan.CheckoutDate}, Due Date: {loan.ExpectedReturnDate}, Returned: {loan.IsReturned}");
             }
 
             return history.ToString();

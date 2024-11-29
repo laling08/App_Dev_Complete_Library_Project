@@ -232,6 +232,17 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error: the following fields must be integers:
+        ///publication year, age restriction, duration,
+        ///and edition.
+        /// </summary>
+        internal static string int_error {
+            get {
+                return ResourceManager.GetString("int_error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This loan does not exist..
         /// </summary>
         internal static string invalid_loan {
@@ -310,6 +321,16 @@ namespace CompleteLibrary_Project.Resources {
         internal static string media_id {
             get {
                 return ResourceManager.GetString("media_id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A new item has been added to
+        ///your library! Its new id is {0}..
+        /// </summary>
+        internal static string media_insert {
+            get {
+                return ResourceManager.GetString("media_insert", resourceCulture);
             }
         }
         

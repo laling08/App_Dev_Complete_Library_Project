@@ -275,4 +275,13 @@ Their ID is {0}.</value>
   <data name="media_selection" xml:space="preserve">
     <value>Select Media Type</value>
   </data>
+  <data name="media_insert" xml:space="preserve">
+    <value>A new item has been added to
+your library! Its new id is {0}.</value>
+  </data>
+  <data name="int_error" xml:space="preserve">
+    <value>Error: the following fields must be integers:
+publication year, age restriction, duration,
+and edition</value>
+  </data>
 </root>
