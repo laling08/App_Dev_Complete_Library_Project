@@ -11,7 +11,8 @@
       "publisher": "Scribner",
       "illustrator": "N/A",
       "edition": 2,
-      "status": "Checked Out"
+      "status": "Checked Out",
+      "max_checkout_length": 21
     },
     {
       "id": 2,
@@ -25,7 +26,8 @@
       "publisher": "Bloomsbury",
       "illustrator": "Thomas Taylor",
       "edition": 2,
-      "status": "Checked Out"
+      "status": "Checked Out",
+      "max_checkout_length": 21
     },
     {
       "id": 3,
@@ -39,7 +41,7 @@
       "publisher": "Reynal & Hitchcock",
       "illustrator": "Antoine de Saint-Exupéry",
       "edition": 3,
-      "status": "Checked Out"
+      "status": "Checked Out",
+      "max_checkout_length": 21
     }
-  ]
-  
+]

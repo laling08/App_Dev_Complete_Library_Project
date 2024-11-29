@@ -37,15 +37,15 @@ namespace CompleteLibrary_Project.Model.Medias
         }
 
         public Book(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction,
-                    string isbn, string author, string publisher, string illustrator, int edition, string status)
-            : base(id, title, language, genre, publicationYear, ageRestriction, status)
+                    string isbn, string author, string publisher, string illustrator, int edition, string status, int maxCheckoutLength = 21)
+            : base(id, title, language, genre, publicationYear, ageRestriction, status, maxCheckoutLength)
         {
             ISBN = isbn;
             Author = author;
             Publisher = publisher;
             Illustrator = illustrator;
             Edition = edition;
-            MaxCheckoutLength = 21;
+            MaxCheckoutLength = maxCheckoutLength;
         }
 
         public Book()

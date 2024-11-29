@@ -144,8 +144,6 @@ namespace CompleteLibrary_Project
                     
                 }
             }
-
-            Console.WriteLine(DataAccess.LoadAudiobook(9).Status);
         }
 
         private void holdButton_Click(object sender, EventArgs e)
@@ -161,12 +159,12 @@ namespace CompleteLibrary_Project
                         {
                             DataAccess.SaveUsersToFile(users);
                             completedLabel.Visible = true;
-                            completedLabel.Text = string.Format(rm.GetString("successfule_hold"), item.Title);
+                            completedLabel.Text = string.Format(rm.GetString("successful_hold"), item.Title);
                         }
                         else
                         {
                             completedLabel.Visible = true;
-                            completedLabel.Text = string.Format(rm.GetString("unsuccessful_checkout"), item.Title);
+                            completedLabel.Text = string.Format(rm.GetString("unsuccessful_hold"), item.Title);
                         }
                     } catch (TooYoungException tye)
                     {

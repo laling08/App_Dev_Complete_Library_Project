@@ -8,7 +8,9 @@
   "dateOfBirth": "1985-03-25T00:00:00",
   "current_checkouts": [
     10,
-    1
+    1,
+    4,
+    14
   ],
   "current_holds": {
     "3": "2024-11-26T10:00:00",
@@ -39,7 +41,8 @@
   "current_checkouts": [
     3,
     9,
-    9
+    9,
+    14
   ],
   "current_holds": {}
 
@@ -55,11 +58,11 @@
     7,
     2,
     9,
-    9,
-    9,
-    9
+    17
   ],
-  "current_holds": {}
+  "current_holds": {
+    "3": "2024-11-28T19:43:15.2944667-05:00"
+  }
 
 },
 {
@@ -70,7 +73,8 @@
   "id": 5,
   "dateOfBirth": "1990-01-16T00:00:00",
   "current_checkouts": [
-    8
+    8,
+    4
   ],
   "current_holds": {
     "2": "2024-11-28T11:00:00"

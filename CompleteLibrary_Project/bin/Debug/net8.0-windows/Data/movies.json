@@ -8,7 +8,8 @@
       "age_restriction": 13,
       "director": "Christopher Nolan",
       "duration": 148,
-      "status": "Available"
+      "status": "Available",
+      "max_checkout_length": 7
     },
     {
       "id": 5,
@@ -19,7 +20,8 @@
       "age_restriction": 18,
       "director": "Bong Joon-ho",
       "duration": 132,
-      "status": "Available"
+      "status": "Available",
+      "max_checkout_length": 7
     },
     {
       "id": 6,
@@ -30,7 +32,8 @@
       "age_restriction": 0,
       "director": "Hayao Miyazaki",
       "duration": 125,
-      "status": "Available"
+      "status": "Available",
+      "max_checkout_length": 7
     },
     {
       "id": 7,
@@ -41,7 +44,7 @@
       "age_restriction": 18,
       "director": "Steven Spielberg",
       "duration": 195,
-      "status": "Checked  Out"
+      "status": "Checked  Out",
+      "max_checkout_length": 7
     }
-  ]
-  
+]

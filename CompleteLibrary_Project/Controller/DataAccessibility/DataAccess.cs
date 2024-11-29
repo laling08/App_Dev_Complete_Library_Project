@@ -204,10 +204,11 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
             Book bookToUpdate = books.First(book => book.Id == bookId);
             bookToUpdate.Status = status;
 
-            foreach (Book book in books)
-            {
-                SaveBookToFile(book);
-            }
+            string filePath = Path.Combine(basePath, "audiobooks.json");
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            string jsonString = JsonSerializer.Serialize(books, options);
+            File.WriteAllText(filePath, jsonString);
+            Console.WriteLine(jsonString);
         }
 
         /// <summary>
@@ -222,10 +223,11 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
             Movie movieToUpdate = movies.First(movie => movie.Id == movieId);
             movieToUpdate.Status = status;
 
-            foreach (Movie movie in movies)
-            {
-                SaveMovieToFile(movie);
-            }
+            string filePath = Path.Combine(basePath, "audiobooks.json");
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            string jsonString = JsonSerializer.Serialize(movies, options);
+            File.WriteAllText(filePath, jsonString);
+            Console.WriteLine(jsonString);
         }
 
         /// <summary>
@@ -244,7 +246,6 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
             var options = new JsonSerializerOptions { WriteIndented = true };
             string jsonString = JsonSerializer.Serialize(audiobooks, options);
             File.WriteAllText(filePath, jsonString);
-            Console.WriteLine(jsonString);
         }
 
         /// <summary>
@@ -259,11 +260,11 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
             Magazine magazineToUpdate = magazines.First(magazine => magazine.Id == magazineId);
             magazineToUpdate.Status = status;
 
-            foreach (Magazine magazine in magazines)
-            {
-                SaveMagazineToFile(magazine);
-
-            }
+            string filePath = Path.Combine(basePath, "audiobooks.json");
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            string jsonString = JsonSerializer.Serialize(magazines, options);
+            File.WriteAllText(filePath, jsonString);
+            Console.WriteLine(jsonString);
         }
 
         // User classes

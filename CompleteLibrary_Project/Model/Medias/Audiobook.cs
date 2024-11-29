@@ -40,8 +40,8 @@ namespace CompleteLibrary_Project.Model.Medias
         }
 
         public Audiobook(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction,
-                 string isbn, string author, string publisher, string narrator, int edition, int duration, string status)
-            : base(id, title, language, genre, publicationYear, ageRestriction, status)
+                 string isbn, string author, string publisher, string narrator, int edition, int duration, string status, int maxCheckoutLength = 14)
+            : base(id, title, language, genre, publicationYear, ageRestriction, status, maxCheckoutLength)
         {
             ISBN = isbn;
             Author = author;
@@ -49,7 +49,7 @@ namespace CompleteLibrary_Project.Model.Medias
             Narrator = narrator;
             Edition = edition;
             Duration = duration;
-            MaxCheckoutLength = 14;
+            MaxCheckoutLength = maxCheckoutLength;
         }
 
         public Audiobook()

@@ -193,11 +193,7 @@ namespace CompleteLibrary_Project.Model.Users
         {
             List<User> users = DataAccess.LoadAllUsers();
 
-            if (this != FindFirstReserver(users, media.Id))
-            {
-                return false;
-            }
-            else if (((DateTime.Now - Dob).TotalDays / 365.25) < media.AgeRestriction)
+            if (((DateTime.Now - Dob).TotalDays / 365.25) < media.AgeRestriction)
             {
                 throw new TooYoungException("Sorry! You are too young to check out this item.");
             }

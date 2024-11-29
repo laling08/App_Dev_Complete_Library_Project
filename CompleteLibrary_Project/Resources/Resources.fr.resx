@@ -178,7 +178,7 @@
     <value>Désolé ! Votre recherche n'a produit aucun résultat. Assurez-vous que votre titre est correctement écrit et que le bon type est sélectionné.</value>
   </data>
   <data name="successful_checkout" xml:space="preserve">
-    <value>Vous avez emprunté {0} ! \nVous possédez cet ouvrage pendant {1} jours.</value>
+    <value>Vous avez emprunté {0} ! Vous possédez cet ouvrage pendant {1} jours.</value>
   </data>
   <data name="unsuccessful_checkout" xml:space="preserve">
     <value>{0} n'est pas disponible l'emprunt.</value>
@@ -188,5 +188,8 @@
   </data>
   <data name="successful_hold" xml:space="preserve">
     <value>Vous avez réservé {0}!</value>
+  </data>
+  <data name="unsuccessful_hold" xml:space="preserve">
+    <value>{0} ne peut pas être mis en attente car il est déjà disponible.</value>
   </data>
 </root>

@@ -28,12 +28,12 @@ namespace CompleteLibrary_Project.Model.Medias
         }
 
         public Movie(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction,
-                     string director, int duration, string status)
-            : base(id, title, language, genre, publicationYear, ageRestriction, status)
+                     string director, int duration, string status, int maxCheckoutLength = 7)
+            : base(id, title, language, genre, publicationYear, ageRestriction, status, maxCheckoutLength)
         {
             Director = director;
             Duration = duration;
-            MaxCheckoutLength = 7;
+            MaxCheckoutLength = maxCheckoutLength;
         }
 
         public Movie()

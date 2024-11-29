@@ -31,13 +31,13 @@ namespace CompleteLibrary_Project.Model.Medias
         }
 
         public Magazine(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction,
-                        string issn, string publisher, string publicationMonth, string status)
-            : base(id, title, language, genre, publicationYear, ageRestriction, status)
+                        string issn, string publisher, string publicationMonth, string status, int maxCheckoutLength = 7)
+            : base(id, title, language, genre, publicationYear, ageRestriction, status, maxCheckoutLength)
         {
             ISSN = issn;
             Publisher = publisher;
             PublicationMonth = publicationMonth;
-            MaxCheckoutLength = 7;
+            MaxCheckoutLength = maxCheckoutLength;
         }
 
         public Magazine()
@@ -48,12 +48,12 @@ namespace CompleteLibrary_Project.Model.Medias
 
         public override string? ToString()
         {
-            return $"MAGAZINE\n{base.ToString()}ISSN:\t\t{ISSN}\nPublisher:\t{Publisher}\nYear:\t\t{PublicationYear}";
+            return $"MAGAZINE\n{base.ToString()}ISSN:\t\t{ISSN}\nPublisher:\t{Publisher}\nMonth:\t\t{PublicationMonth}";
         }
 
         public override string? ToStringFR()
         {
-            return $"MAGAZINE\n{base.ToString()}ISSN:\t\t{ISSN}\nMaison d'édition:\t{Publisher}\nAnnée:\t\t{PublicationYear}\n"; ;
+            return $"MAGAZINE\n{base.ToString()}ISSN:\t\t{ISSN}\nMaison d'édition:\t{Publisher}\nMois:\t\t{PublicationMonth}\n"; ;
         }
 
         /// <summary>

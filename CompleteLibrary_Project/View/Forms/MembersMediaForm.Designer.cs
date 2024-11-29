@@ -113,7 +113,7 @@
             // borrowButton
             // 
             borrowButton.Enabled = false;
-            borrowButton.Location = new Point(617, 387);
+            borrowButton.Location = new Point(620, 404);
             borrowButton.Name = "borrowButton";
             borrowButton.Size = new Size(112, 34);
             borrowButton.TabIndex = 5;
@@ -124,7 +124,7 @@
             // holdButton
             // 
             holdButton.Enabled = false;
-            holdButton.Location = new Point(407, 387);
+            holdButton.Location = new Point(407, 404);
             holdButton.Name = "holdButton";
             holdButton.Size = new Size(178, 34);
             holdButton.TabIndex = 6;
@@ -135,7 +135,7 @@
             // completedLabel
             // 
             completedLabel.AutoSize = true;
-            completedLabel.Location = new Point(60, 387);
+            completedLabel.Location = new Point(60, 362);
             completedLabel.Name = "completedLabel";
             completedLabel.Size = new Size(59, 25);
             completedLabel.TabIndex = 7;
