@@ -36,7 +36,7 @@
             lateFeeRadioButton = new RadioButton();
             historyRadioButton = new RadioButton();
             submitButton = new Button();
-            memberHistoryTB = new RichTextBox();
+            memberHistoryRTB = new RichTextBox();
             memberHistoryLabel = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
