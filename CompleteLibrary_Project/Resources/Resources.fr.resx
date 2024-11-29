@@ -190,7 +190,8 @@
     <value>Vous avez réservé {0}!</value>
   </data>
   <data name="unsuccessful_hold" xml:space="preserve">
-    <value>{0} ne peut pas être mis en attente car il est déjà disponible.</value>
+    <value>{0} ne peut pas être mis en attente car il est déjà disponible ou parce que
+vous avez déjà cet article en attente.</value>
   </data>
   <data name="add_user" xml:space="preserve">
     <value>Créer un membre</value>

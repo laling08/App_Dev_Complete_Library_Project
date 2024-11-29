@@ -525,7 +525,8 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} cannot be put on hold because it is already available..
+        ///   Looks up a localized string similar to {0} cannot be put on hold because it is already available
+        ///or because you already have place it on hold..
         /// </summary>
         internal static string unsuccessful_hold {
             get {

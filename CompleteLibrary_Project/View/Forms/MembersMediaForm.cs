@@ -1,4 +1,5 @@
 ﻿using CompleteLibrary_Project.Controller.DataAccessibility;
+using CompleteLibrary_Project.Controller.UserControllers;
 using CompleteLibrary_Project.Model.Exceptions;
 using CompleteLibrary_Project.Model.Medias;
 using CompleteLibrary_Project.Model.Users;
@@ -123,9 +124,10 @@ namespace CompleteLibrary_Project
             {
                 if (user.Id == member.Id)
                 {
+                    UserController controller = new UserController(user);
                     try
                     {
-                        if (user.Checkout(item))
+                        if (controller.Checkout(item))
                         {
                             DataAccess.SaveUsersToFile(users);
                             completedLabel.Visible = true;
@@ -153,9 +155,10 @@ namespace CompleteLibrary_Project
             {
                 if (user.Id == member.Id)
                 {
+                    UserController controller = new UserController(user);
                     try
                     {
-                        if (user.PlaceHold(item))
+                        if (controller.PlaceHold(item))
                         {
                             DataAccess.SaveUsersToFile(users);
                             completedLabel.Visible = true;

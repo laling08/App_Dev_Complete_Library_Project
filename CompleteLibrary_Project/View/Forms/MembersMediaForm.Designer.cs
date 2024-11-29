@@ -51,7 +51,7 @@
             queriedMediaLV.Size = new Size(672, 220);
             queriedMediaLV.TabIndex = 0;
             queriedMediaLV.UseCompatibleStateImageBehavior = false;
-            //queriedMediaLV.View = View.Details;
+            queriedMediaLV.View = System.Windows.Forms.View.Details;
             queriedMediaLV.SelectedIndexChanged += queriedMediaLV_SelectedIndexChanged;
             // 
             // titleColumn
@@ -137,7 +137,7 @@
             completedLabel.AutoSize = true;
             completedLabel.Location = new Point(60, 362);
             completedLabel.Name = "completedLabel";
-            completedLabel.Size = new Size(59, 25);
+            completedLabel.Size = new Size(97, 25);
             completedLabel.TabIndex = 7;
             completedLabel.Text = "nameLabel";
             completedLabel.Visible = false;

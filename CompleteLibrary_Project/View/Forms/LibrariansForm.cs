@@ -22,6 +22,7 @@ namespace CompleteLibrary_Project
     {
         ResourceManager rm = new ResourceManager("CompleteLibrary_Project.Resources.Resources", typeof(Program).Assembly);
         CultureInfo cultureInfo;
+        UserFactory userFactory = new UserFactory();
         public LibrariansForm(CultureInfo culture)
         {
             InitializeComponent();
@@ -148,15 +149,16 @@ namespace CompleteLibrary_Project
         {
             if (memberRB.Checked)
             {
-                User member = new Member(fnameTB.Text, lnameTB.Text,
+                User member = userFactory.getUser("Member", fnameTB.Text, lnameTB.Text,
                     new DateTime(int.Parse(yearTB.Text), int.Parse(monthTB.Text), int.Parse(dayTB.Text)));
+                
                 DataAccess.SaveUserToFile(member);
                 userErrorLabel.Text = string.Format(rm.GetString("member_add"), member.Id);
                 userErrorLabel.Visible = true;
             }
             else
             {
-                User librarian = new Librarian(fnameTB.Text, lnameTB.Text,
+                User librarian = userFactory.getUser("Librarian", fnameTB.Text, lnameTB.Text,
                     new DateTime(int.Parse(yearTB.Text), int.Parse(monthTB.Text), int.Parse(dayTB.Text)));
                 DataAccess.SaveUserToFile(librarian);
                 userErrorLabel.Text = string.Format(rm.GetString("librarian_add"), librarian.Id);

@@ -7,10 +7,7 @@
   "id": 1,
   "dateOfBirth": "1985-03-25T00:00:00",
   "current_checkouts": [
-    10,
-    1,
-    4,
-    14
+    1
   ],
   "current_holds": {
     "3": "2024-11-26T10:00:00",
@@ -39,12 +36,11 @@
   "id": 3,
   "dateOfBirth": "1978-11-02T00:00:00",
   "current_checkouts": [
-    3,
-    9,
-    9,
-    14
+    3
   ],
-  "current_holds": {}
+  "current_holds": {
+    "3": "2024-11-29T16:38:13.5218092-05:00"
+  }
 
 },
 {
@@ -55,10 +51,8 @@
   "id": 4,
   "dateOfBirth": "1995-01-30T00:00:00",
   "current_checkouts": [
-    7,
     2,
-    9,
-    17
+    7
   ],
   "current_holds": {
     "3": "2024-11-28T19:43:15.2944667-05:00"
@@ -73,8 +67,7 @@
   "id": 5,
   "dateOfBirth": "1990-01-16T00:00:00",
   "current_checkouts": [
-    8,
-    4
+    8
   ],
   "current_holds": {
     "2": "2024-11-28T11:00:00"
@@ -93,11 +86,11 @@
 
 },
 {
- "type": "Member",
+  "type": "Member",
  
   "firstName": "Samantha",
   "lastName": "Morse",
-  "id": 15,
+  "id": 7,
   "dateOfBirth": "2006-01-18T00:00:00",
   "current_checkouts": [],
   "current_holds": {}

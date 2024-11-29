@@ -190,7 +190,8 @@
     <value>You have now placed {0} on hold!</value>
   </data>
   <data name="unsuccessful_hold" xml:space="preserve">
-    <value>{0} cannot be put on hold because it is already available.</value>
+    <value>{0} cannot be put on hold because it is already available
+or because you already have place it on hold.</value>
   </data>
   <data name="add_user" xml:space="preserve">
     <value>Add User</value>

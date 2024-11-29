@@ -204,7 +204,7 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
             Book bookToUpdate = books.First(book => book.Id == bookId);
             bookToUpdate.Status = status;
 
-            string filePath = Path.Combine(basePath, "audiobooks.json");
+            string filePath = Path.Combine(basePath, "books.json");
             var options = new JsonSerializerOptions { WriteIndented = true };
             string jsonString = JsonSerializer.Serialize(books, options);
             File.WriteAllText(filePath, jsonString);
@@ -223,7 +223,7 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
             Movie movieToUpdate = movies.First(movie => movie.Id == movieId);
             movieToUpdate.Status = status;
 
-            string filePath = Path.Combine(basePath, "audiobooks.json");
+            string filePath = Path.Combine(basePath, "movies.json");
             var options = new JsonSerializerOptions { WriteIndented = true };
             string jsonString = JsonSerializer.Serialize(movies, options);
             File.WriteAllText(filePath, jsonString);
@@ -260,7 +260,7 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
             Magazine magazineToUpdate = magazines.First(magazine => magazine.Id == magazineId);
             magazineToUpdate.Status = status;
 
-            string filePath = Path.Combine(basePath, "audiobooks.json");
+            string filePath = Path.Combine(basePath, "magazines.json");
             var options = new JsonSerializerOptions { WriteIndented = true };
             string jsonString = JsonSerializer.Serialize(magazines, options);
             File.WriteAllText(filePath, jsonString);
