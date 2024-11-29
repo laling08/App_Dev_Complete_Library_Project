@@ -15,7 +15,7 @@ namespace CompleteLibrary_Project.Model.Medias
     /// </summary>
     public abstract class Media : ILoanable
     {
-        private static int count = 18;
+        private static int count = 20;
         [JsonPropertyName("id")]
         public int Id { get; set; }
         public List<Loan> History { get; set; } = new List<Loan>();

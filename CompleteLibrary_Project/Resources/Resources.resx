@@ -242,4 +242,37 @@ Their ID is {0}.</value>
   <data name="return" xml:space="preserve">
     <value>This loan has been successfully returned!</value>
   </data>
+  <data name="publication_year" xml:space="preserve">
+    <value>Publication year</value>
+  </data>
+  <data name="age_restriction" xml:space="preserve">
+    <value>Age restriction</value>
+  </data>
+  <data name="author" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="director" xml:space="preserve">
+    <value>Director</value>
+  </data>
+  <data name="duration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="narrator" xml:space="preserve">
+    <value>Narrator</value>
+  </data>
+  <data name="publication_month" xml:space="preserve">
+    <value>Publication month</value>
+  </data>
+  <data name="publisher" xml:space="preserve">
+    <value>Publisher</value>
+  </data>
+  <data name="illustrator" xml:space="preserve">
+    <value>Illustrator</value>
+  </data>
+  <data name="edition" xml:space="preserve">
+    <value>Edition</value>
+  </data>
+  <data name="media_selection" xml:space="preserve">
+    <value>Select Media Type</value>
+  </data>
 </root>

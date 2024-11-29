@@ -88,11 +88,29 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Age restriction.
+        /// </summary>
+        internal static string age_restriction {
+            get {
+                return ResourceManager.GetString("age_restriction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Audiobook.
         /// </summary>
         internal static string audiobook {
             get {
                 return ResourceManager.GetString("audiobook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Author.
+        /// </summary>
+        internal static string author {
+            get {
+                return ResourceManager.GetString("author", resourceCulture);
             }
         }
         
@@ -133,11 +151,38 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Director.
+        /// </summary>
+        internal static string director {
+            get {
+                return ResourceManager.GetString("director", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to DOB (yyyy/mm/dd):.
         /// </summary>
         internal static string dob {
             get {
                 return ResourceManager.GetString("dob", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Duration.
+        /// </summary>
+        internal static string duration {
+            get {
+                return ResourceManager.GetString("duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edition.
+        /// </summary>
+        internal static string edition {
+            get {
+                return ResourceManager.GetString("edition", resourceCulture);
             }
         }
         
@@ -174,6 +219,15 @@ namespace CompleteLibrary_Project.Resources {
         internal static string id_error {
             get {
                 return ResourceManager.GetString("id_error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Illustrator.
+        /// </summary>
+        internal static string illustrator {
+            get {
+                return ResourceManager.GetString("illustrator", resourceCulture);
             }
         }
         
@@ -260,6 +314,15 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select Media Type.
+        /// </summary>
+        internal static string media_selection {
+            get {
+                return ResourceManager.GetString("media_selection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Member.
         /// </summary>
         internal static string member {
@@ -297,11 +360,47 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Narrator.
+        /// </summary>
+        internal static string narrator {
+            get {
+                return ResourceManager.GetString("narrator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sorry! Your search has not yielded any results. Make sure your title is spelt correctly and the correct type is selected..
         /// </summary>
         internal static string null_search {
             get {
                 return ResourceManager.GetString("null_search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Publication month.
+        /// </summary>
+        internal static string publication_month {
+            get {
+                return ResourceManager.GetString("publication_month", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Publication year.
+        /// </summary>
+        internal static string publication_year {
+            get {
+                return ResourceManager.GetString("publication_year", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Publisher.
+        /// </summary>
+        internal static string publisher {
+            get {
+                return ResourceManager.GetString("publisher", resourceCulture);
             }
         }
         

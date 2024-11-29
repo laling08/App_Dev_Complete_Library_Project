@@ -243,4 +243,37 @@ ajouté ! Son identifiant est {0}.</value>
   <data name="return" xml:space="preserve">
     <value>Ce prêt a été retourné avec succès!</value>
   </data>
+  <data name="publication_year" xml:space="preserve">
+    <value>Année de publication</value>
+  </data>
+  <data name="age_restriction" xml:space="preserve">
+    <value>Limite d'âge</value>
+  </data>
+  <data name="author" xml:space="preserve">
+    <value>Auteur</value>
+  </data>
+  <data name="director" xml:space="preserve">
+    <value>Réalisateur</value>
+  </data>
+  <data name="duration" xml:space="preserve">
+    <value>Longueur</value>
+  </data>
+  <data name="narrator" xml:space="preserve">
+    <value>Narrateur/Narratrice</value>
+  </data>
+  <data name="publication_month" xml:space="preserve">
+    <value>Mois de publication</value>
+  </data>
+  <data name="publisher" xml:space="preserve">
+    <value>Maison d'édition</value>
+  </data>
+  <data name="illustrator" xml:space="preserve">
+    <value>Illustrateur/Illustratrice</value>
+  </data>
+  <data name="edition" xml:space="preserve">
+    <value>Édition</value>
+  </data>
+  <data name="media_selection" xml:space="preserve">
+    <value>Sélectionnez le type d'oeuvre</value>
+  </data>
 </root>
