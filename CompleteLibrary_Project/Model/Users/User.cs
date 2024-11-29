@@ -27,7 +27,7 @@ namespace CompleteLibrary_Project.Model.Users
         public int Id { get; set; }
         [JsonPropertyName("dateOfBirth")]
         public DateTime Dob { get; set; }
-        private static int _count = 1;
+        private static int _count = 15;
 
         //private Media[] _currentCheckouts;
         //private Media[] _currentHolds;

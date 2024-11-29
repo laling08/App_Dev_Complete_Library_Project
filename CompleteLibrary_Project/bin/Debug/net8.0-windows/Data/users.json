@@ -91,5 +91,16 @@
   "current_checkouts": [],
   "current_holds": {}
 
+},
+{
+ "type": "Member",
+ 
+  "firstName": "Samantha",
+  "lastName": "Morse",
+  "id": 15,
+  "dateOfBirth": "2006-01-18T00:00:00",
+  "current_checkouts": [],
+  "current_holds": {}
+
 }
 ]

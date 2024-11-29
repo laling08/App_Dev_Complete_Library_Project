@@ -192,4 +192,49 @@
   <data name="unsuccessful_hold" xml:space="preserve">
     <value>{0} ne peut pas être mis en attente car il est déjà disponible.</value>
   </data>
+  <data name="add_user" xml:space="preserve">
+    <value>Créer un membre</value>
+  </data>
+  <data name="add_media" xml:space="preserve">
+    <value>Ajouter un média</value>
+  </data>
+  <data name="return_item" xml:space="preserve">
+    <value>Retourner un object</value>
+  </data>
+  <data name="member" xml:space="preserve">
+    <value>Membre</value>
+  </data>
+  <data name="librarian" xml:space="preserve">
+    <value>Bibliothécaire</value>
+  </data>
+  <data name="fname" xml:space="preserve">
+    <value>Prénom(s):</value>
+  </data>
+  <data name="lname" xml:space="preserve">
+    <value>Nom(s) de famille:</value>
+  </data>
+  <data name="dob" xml:space="preserve">
+    <value>DDN (aaaa/mm/jj):</value>
+  </data>
+  <data name="submit" xml:space="preserve">
+    <value>Soumettre</value>
+  </data>
+  <data name="user_id" xml:space="preserve">
+    <value>ID du membre:</value>
+  </data>
+  <data name="media_id" xml:space="preserve">
+    <value>ID média:</value>
+  </data>
+  <data name="date_error" xml:space="preserve">
+    <value>La date de naissance indiquée
+n'est pas valid!</value>
+  </data>
+  <data name="member_add" xml:space="preserve">
+    <value>Un nouveau membre a été ajouté !
+Son identifiant est {0}.</value>
+  </data>
+  <data name="librarian_add" xml:space="preserve">
+    <value>Un nouveau bibliothécaire a été
+ajouté ! Son identifiant est {0}.</value>
+  </data>
 </root>

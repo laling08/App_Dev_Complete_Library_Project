@@ -192,4 +192,48 @@
   <data name="unsuccessful_hold" xml:space="preserve">
     <value>{0} cannot be put on hold because it is already available.</value>
   </data>
+  <data name="add_user" xml:space="preserve">
+    <value>Add User</value>
+  </data>
+  <data name="add_media" xml:space="preserve">
+    <value>Add Media</value>
+  </data>
+  <data name="return_item" xml:space="preserve">
+    <value>Return Item</value>
+  </data>
+  <data name="member" xml:space="preserve">
+    <value>Member</value>
+  </data>
+  <data name="librarian" xml:space="preserve">
+    <value>Librarian</value>
+  </data>
+  <data name="fname" xml:space="preserve">
+    <value>Given name(s):</value>
+  </data>
+  <data name="lname" xml:space="preserve">
+    <value>Family name(s):</value>
+  </data>
+  <data name="dob" xml:space="preserve">
+    <value>DOB (yyyy/mm/dd):</value>
+  </data>
+  <data name="submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="user_id" xml:space="preserve">
+    <value>User ID:</value>
+  </data>
+  <data name="media_id" xml:space="preserve">
+    <value>Media ID:</value>
+  </data>
+  <data name="date_error" xml:space="preserve">
+    <value>The given birthdate is invalid!</value>
+  </data>
+  <data name="member_add" xml:space="preserve">
+    <value>A new member has been added!
+Their ID is {0}.</value>
+  </data>
+  <data name="librarian_add" xml:space="preserve">
+    <value>A new librarian has been added!
+Their ID is {0}.</value>
+  </data>
 </root>

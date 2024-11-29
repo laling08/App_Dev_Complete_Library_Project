@@ -61,6 +61,24 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Media.
+        /// </summary>
+        internal static string add_media {
+            get {
+                return ResourceManager.GetString("add_media", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add User.
+        /// </summary>
+        internal static string add_user {
+            get {
+                return ResourceManager.GetString("add_user", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Audiobook.
         /// </summary>
         internal static string audiobook {
@@ -97,11 +115,38 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The given birthdate is invalid!.
+        /// </summary>
+        internal static string date_error {
+            get {
+                return ResourceManager.GetString("date_error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DOB (yyyy/mm/dd):.
+        /// </summary>
+        internal static string dob {
+            get {
+                return ResourceManager.GetString("dob", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter ID Number:.
         /// </summary>
         internal static string enter_id {
             get {
                 return ResourceManager.GetString("enter_id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Given name(s):.
+        /// </summary>
+        internal static string fname {
+            get {
+                return ResourceManager.GetString("fname", resourceCulture);
             }
         }
         
@@ -142,6 +187,25 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Librarian.
+        /// </summary>
+        internal static string librarian {
+            get {
+                return ResourceManager.GetString("librarian", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A new librarian has been added!
+        ///Their ID is {0}..
+        /// </summary>
+        internal static string librarian_add {
+            get {
+                return ResourceManager.GetString("librarian_add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Librarians.
         /// </summary>
         internal static string librarians {
@@ -151,11 +215,48 @@ namespace CompleteLibrary_Project.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Family name(s):.
+        /// </summary>
+        internal static string lname {
+            get {
+                return ResourceManager.GetString("lname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Magazine.
         /// </summary>
         internal static string magazine {
             get {
                 return ResourceManager.GetString("magazine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Media ID:.
+        /// </summary>
+        internal static string media_id {
+            get {
+                return ResourceManager.GetString("media_id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Member.
+        /// </summary>
+        internal static string member {
+            get {
+                return ResourceManager.GetString("member", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A new member has been added!
+        ///Their ID is {0}..
+        /// </summary>
+        internal static string member_add {
+            get {
+                return ResourceManager.GetString("member_add", resourceCulture);
             }
         }
         
@@ -183,6 +284,15 @@ namespace CompleteLibrary_Project.Resources {
         internal static string null_search {
             get {
                 return ResourceManager.GetString("null_search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Return Item.
+        /// </summary>
+        internal static string return_item {
+            get {
+                return ResourceManager.GetString("return_item", resourceCulture);
             }
         }
         
@@ -219,6 +329,15 @@ namespace CompleteLibrary_Project.Resources {
         internal static string status {
             get {
                 return ResourceManager.GetString("status", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Submit.
+        /// </summary>
+        internal static string submit {
+            get {
+                return ResourceManager.GetString("submit", resourceCulture);
             }
         }
         
@@ -273,6 +392,15 @@ namespace CompleteLibrary_Project.Resources {
         internal static string unsuccessful_hold {
             get {
                 return ResourceManager.GetString("unsuccessful_hold", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User ID:.
+        /// </summary>
+        internal static string user_id {
+            get {
+                return ResourceManager.GetString("user_id", resourceCulture);
             }
         }
         

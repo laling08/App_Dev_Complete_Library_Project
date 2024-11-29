@@ -283,6 +283,8 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
             var userType = user.GetType().Name;
             var userProperties = JsonSerializer.Serialize(user, new JsonSerializerOptions { WriteIndented = true });
 
+            userProperties = userProperties.TrimStart('{').TrimEnd('}');
+
             string userJsonString = $"{{\n \"type\": \"{userType}\",\n {userProperties}\n}}";
             jsonString += ",\n" + userJsonString + "\n]";
 
