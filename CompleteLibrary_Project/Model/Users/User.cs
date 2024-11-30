@@ -95,7 +95,6 @@ namespace CompleteLibrary_Project.Model.Users
             }
             else
             {
-                // check how many people have reserved this item
                 int holdCount = 0;
                 foreach (User user in users)
                 {

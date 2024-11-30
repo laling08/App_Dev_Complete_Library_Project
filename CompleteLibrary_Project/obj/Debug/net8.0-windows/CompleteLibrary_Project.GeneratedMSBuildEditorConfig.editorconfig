@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CompleteLibrary_Project
-build_property.ProjectDir = C:\Users\melsw\Documents\AppDev_CompleteLibrary\App_Dev_Complete_Library_Project\CompleteLibrary_Project\
+build_property.ProjectDir = C:\Users\ishil\source\repos\App_Dev_Complete_Library_Project\CompleteLibrary_Project\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

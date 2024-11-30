@@ -26,6 +26,20 @@ namespace CompleteLibrary_Project.Model.Medias
         [JsonPropertyName("duration")]
         public int Duration { get; set; }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Audiobook"/> class with the specified parameters.
+        /// </summary>
+        /// <param name="title">The title of the audiobook.</param>
+        /// <param name="language">The language of the audiobook.</param>
+        /// <param name="genre">The genre of the audiobook.</param>
+        /// <param name="publicationYear">The publication year of the audiobook.</param>
+        /// <param name="ageRestriction">The age restriction for the audiobook.</param>
+        /// <param name="isbn">The ISBN of the audiobook.</param>
+        /// <param name="author">The author of the audiobook.</param>
+        /// <param name="publisher">The publisher of the audiobook.</param>
+        /// <param name="narrator">The narrator of the audiobook.</param>
+        /// <param name="edition">The edition of the audiobook.</param>
+        /// <param name="duration">The duration of the audiobook.</param>
         public Audiobook(string title, string language, Genre genre, int publicationYear, int ageRestriction,
                          string isbn, string author, string publisher, string narrator, int edition, int duration)
             : base(title, language, genre, publicationYear, ageRestriction)
@@ -39,6 +53,23 @@ namespace CompleteLibrary_Project.Model.Medias
             MaxCheckoutLength = 14;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Audiobook"/> class with the specified parameters, including status.
+        /// </summary>
+        /// <param name="id">The ID of the audiobook.</param>
+        /// <param name="title">The title of the audiobook.</param>
+        /// <param name="language">The language of the audiobook.</param>
+        /// <param name="genre">The genre of the audiobook.</param>
+        /// <param name="publicationYear">The publication year of the audiobook.</param>
+        /// <param name="ageRestriction">The age restriction for the audiobook.</param>
+        /// <param name="isbn">The ISBN of the audiobook.</param>
+        /// <param name="author">The author of the audiobook.</param>
+        /// <param name="publisher">The publisher of the audiobook.</param>
+        /// <param name="narrator">The narrator of the audiobook.</param>
+        /// <param name="edition">The edition of the audiobook.</param>
+        /// <param name="duration">The duration of the audiobook.</param>
+        /// <param name="status">The status of the audiobook.</param>
+        /// <param name="maxCheckoutLength">The maximum checkout length of the audiobook (default is 14 days).</param>
         public Audiobook(int id, string title, string language, Genre genre, int publicationYear, int ageRestriction,
                  string isbn, string author, string publisher, string narrator, int edition, int duration, string status, int maxCheckoutLength = 14)
             : base(id, title, language, genre, publicationYear, ageRestriction, status, maxCheckoutLength)
@@ -52,11 +83,18 @@ namespace CompleteLibrary_Project.Model.Medias
             MaxCheckoutLength = maxCheckoutLength;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Audiobook"/> class. (Required for deserialization)
+        /// </summary>
         public Audiobook()
         {
             // empty constructor required for deserialization
         }
 
+        /// <summary>
+        /// Returns a string that represents the audiobook's information in English.
+        /// </summary>
+        /// <returns>A string containing the audiobook's details in English.</returns>
         public override string? ToString()
         {
             string baseToString = base.ToString();
@@ -65,6 +103,10 @@ namespace CompleteLibrary_Project.Model.Medias
                 $"\nNarrator:\t\t{Narrator}\nEdition:\t\t{Edition}\nDuration:\t{Duration}\n";
         }
 
+        /// <summary>
+        /// Returns a string that represents the audiobook's information in French.
+        /// </summary>
+        /// <returns>A string containing the audiobook's details in French.</returns>
         public override string? ToStringFR()
         {
             string baseToString = base.ToStringFR();

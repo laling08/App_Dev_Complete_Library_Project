@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace CompleteLibrary_Project.Model.Interfaces
 {
+    /// <summary>
+    /// Defines the operations that can be performed on media items in the library system.
+    /// </summary>
     public interface IMediaController
     {
         public void Checkout(Media media);

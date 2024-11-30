@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 
 namespace CompleteLibrary_Project
 {
+
     public partial class CompleteLibrary : Form
     {
         ResourceManager rm = new ResourceManager("CompleteLibrary_Project.Resources.Resources", typeof(Program).Assembly);

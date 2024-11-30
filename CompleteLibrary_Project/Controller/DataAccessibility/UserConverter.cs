@@ -9,8 +9,18 @@ using System.Threading.Tasks;
 
 namespace CompleteLibrary_Project.Controller.DataAccessibility
 {
+    /// <summary>
+    /// Custon JSON converter for the <see cref="User"/> class to handle deserialization of different user types.
+    /// </summary>
     public class UserConverter : JsonConverter<User>
     {
+        /// <summary>
+        /// Reads and converts a JSON to a <see cref="User"/> object.
+        /// </summary>
+        /// <param name="reader"> The <see cref="Utf8JsonReader"/> to read from.</param>
+        /// <param name="typeToConvert">The type to convert (should be <see cref="User").</param>
+        /// <param name="options">A <see cref="User"/> object, rither a <see cref="Member"/> or <see cref="Librarian"/>.</see></param>
+        /// <returns></returns>
         public override User? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             using (JsonDocument doc = JsonDocument.ParseValue(ref reader))
@@ -33,6 +43,12 @@ namespace CompleteLibrary_Project.Controller.DataAccessibility
             }
         }
 
+        /// <summary>
+        /// Write a <see cref="User"/> object to JSON.
+        /// </summary>
+        /// <param name="writer">The <see cref="Utf8JsonReader"/> to write to.</param>
+        /// <param name="value">The <see cref="User"/> object to serialize.</param>
+        /// <param name="options">Options for the serializer</param>
         public override void Write(Utf8JsonWriter writer, User value, JsonSerializerOptions options)
         {
             JsonSerializer.Serialize(writer, value, value.GetType(), options);

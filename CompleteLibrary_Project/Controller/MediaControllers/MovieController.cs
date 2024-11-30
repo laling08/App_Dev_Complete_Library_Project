@@ -14,15 +14,19 @@ namespace CompleteLibrary_Project.Controller.MediaControllers
     public class MovieController : IMediaController
     {
         /// <summary>
-        /// Attempts to cast a media object to a movie.
+        /// Attempts to cast a media object to a <see cref="Movie"/>.
         /// </summary>
         /// <param name="media">The media item to cast.</param>
-        /// <returns>The movie instance, or null if the cast fails.</returns>
+        /// <returns>The <see cref="Movie"/> instance, or <c>null</c> if the cast fails.</returns>
         private Movie? GetMovie(Media media)
         {
             return media as Movie;
         }
 
+        /// <summary>
+        /// Checks out a movie.
+        /// </summary>
+        /// <param name="media">The movie to check out.</param>
         public void Checkout(Media media)
         {
             var movie = GetMovie(media);
@@ -37,6 +41,10 @@ namespace CompleteLibrary_Project.Controller.MediaControllers
             }
         }
 
+        /// <summary>
+        /// Returns a movie.
+        /// </summary>
+        /// <param name="media">The movie to return.</param>
         public void ReturnItem(Media media)
         {
             var movie = GetMovie(media);
@@ -51,6 +59,10 @@ namespace CompleteLibrary_Project.Controller.MediaControllers
             }
         }
 
+        /// <summary>
+        /// Renews the loan of a movie.
+        /// </summary>
+        /// <param name="media">The movie to renew.</param>
         public void RenewLoan(Media media)
         {
             var movie = GetMovie(media);
@@ -65,6 +77,10 @@ namespace CompleteLibrary_Project.Controller.MediaControllers
             }
         }
 
+        /// <summary>
+        /// Applies a late fee to a movie.
+        /// </summary>
+        /// <param name="media">The movie to apply the late fee to.</param>
         public void ApplyLateFee(Media media)
         {
             var movie = GetMovie(media);
@@ -79,6 +95,11 @@ namespace CompleteLibrary_Project.Controller.MediaControllers
             }
         }
 
+        /// <summary>
+        /// Gets information about a movie.
+        /// </summary>
+        /// <param name="media">The movie to get information about.</param>
+        /// <returns>A string containing the movie's information, or an error message if the media is invalid.</returns>
         public string GetMediaInfo(Media media)
         {
             var movie = GetMovie(media);

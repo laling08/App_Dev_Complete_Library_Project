@@ -16,6 +16,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CompleteLibrary_Project
 {
+
     public partial class LibrarianAddMediaForm : Form
     {
         ResourceManager rm = new ResourceManager("CompleteLibrary_Project.Resources.Resources", typeof(Program).Assembly);

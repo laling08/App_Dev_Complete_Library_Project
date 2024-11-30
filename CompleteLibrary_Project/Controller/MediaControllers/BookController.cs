@@ -23,6 +23,10 @@ namespace CompleteLibrary_Project.Controller.MediaControllers
             return media as Book;
         }
 
+        /// <summary>
+        /// Checks out a book if the provided media is of type <see cref="Book"/>.
+        /// </summary>
+        /// <param name="media">The media item to check out.</param>
         public void Checkout(Media media)
         {
             var book = GetBook(media);
@@ -37,6 +41,10 @@ namespace CompleteLibrary_Project.Controller.MediaControllers
             }
         }
 
+        /// <summary>
+        /// Returns a book if the provided media is of type <see cref="Book"/>.
+        /// </summary>
+        /// <param name="media">The media item to return.</param>
         public void ReturnItem(Media media)
         {
             var book = GetBook(media);
@@ -51,6 +59,10 @@ namespace CompleteLibrary_Project.Controller.MediaControllers
             }
         }
 
+        /// <summary>
+        /// Renews the loan for a book if the provided media is of type <see cref="Book"/>.
+        /// </summary>
+        /// <param name="media">The media item to renew.</param>
         public void RenewLoan(Media media)
         {
             var book = GetBook(media);
@@ -65,6 +77,11 @@ namespace CompleteLibrary_Project.Controller.MediaControllers
             }
         }
 
+
+        /// <summary>
+        /// Applies a late fee to a book if the provided media is of type <see cref="Book"/>.
+        /// </summary>
+        /// <param name="media">The media item to apply the late fee to.</param>
         public void ApplyLateFee(Media media)
         {
             var book = GetBook(media);
@@ -79,6 +96,11 @@ namespace CompleteLibrary_Project.Controller.MediaControllers
             }
         }
 
+        /// <summary>
+        /// Retrieves detailed information about a book if the provided media is of type <see cref="Book"/>.
+        /// </summary>
+        /// <param name="media">The media item to retrieve information for.</param>
+        /// <returns>A string containing detailed information about the book, or an error message if the media type is invalid.</returns>
         public string GetMediaInfo(Media media)
         {
             var book = GetBook(media);

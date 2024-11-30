@@ -186,19 +186,6 @@ namespace CompleteLibrary_Project.Controller.UserControllers
 
             DataAccess.SaveUserToFile(member); // Save updated member data
         }
-
-        public string GetMemberHistory(int memberId)
-        {
-            var loans = DataAccess.LoadAllLoans().Where(loan => loan.UserId == memberId);
-
-            StringBuilder history = new StringBuilder();
-            foreach (var loan in loans)
-            {
-                //history.AppendLine($"Media ID: {loan.MediaId}, Loan Date: {loan.CheckoutDate}, Due Date: {loan.ExpectedReturnDate}, Returned: {loan.IsReturned}");
-            }
-
-            return history.ToString();
-        }
     }
 }
 

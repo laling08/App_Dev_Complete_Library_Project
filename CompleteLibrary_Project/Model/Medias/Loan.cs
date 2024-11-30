@@ -24,8 +24,13 @@ namespace CompleteLibrary_Project.Model.Medias
         public DateTime CheckoutDate { get; set; }
         [JsonPropertyName("expected_return_date")]
         public DateTime ExpectedReturnDate { get; set; }
-        
 
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Loan"/> class for a media item.
+        /// </summary>
+        /// <param name="mediaType">The media item being borrowed.</param>
+        /// <param name="userId">The ID of the user borrowing the media.</param>
         public Loan(Media mediaType, int userId)
         {
             MediaType = mediaType.GetType().ToString();
@@ -36,6 +41,15 @@ namespace CompleteLibrary_Project.Model.Medias
             ExpectedReturnDate = CheckoutDate.AddDays(mediaType.MaxCheckoutLength);
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Loan"/> class with specific values.
+        /// </summary>
+        /// <param name="mediaType">The type of media being borrowed.</param>
+        /// <param name="title">The title of the media being borrowed.</param>
+        /// <param name="userId">The ID of the user borrowing the media.</param>
+        /// <param name="mediaId">The ID of the media item being borrowed.</param>
+        /// <param name="checkoutDate">The date the media was checked out.</param>
+        /// <param name="expectedReturnDate">The expected return date for the media.</param>
         public Loan(string mediaType, string title, int userId, int mediaId, DateTime checkoutDate, DateTime expectedReturnDate)
         {
             MediaType = mediaType;
@@ -46,9 +60,12 @@ namespace CompleteLibrary_Project.Model.Medias
             ExpectedReturnDate = expectedReturnDate;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Loan"/> class (required for deserialization).
+        /// </summary>
         public Loan()
         {
-            // empty constructor required for deserialization
+            // Empty constructor required for deserialization
         }
     }
 }
